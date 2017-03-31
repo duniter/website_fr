@@ -102,3 +102,7 @@ blockquote {
 img.credits {
     width: 50px;
 }
+
+.highlight pre {
+    border: none;
+}

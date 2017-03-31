@@ -16,6 +16,7 @@ Cette page regroupe l'ensemble des tutoriels, explications et connaissances réd
 Installation de nœud Duniter, accès et modification code source, techniques cryptographiques, ...
 
 * [Rapporter un bug](/wiki/rapporter-un-bug)
+* [Ajouter/Retirer des interfaces spécifiques de pair](/wiki/interfaces-specifiques-de-pair)
 
 ### Auto-hébergement
 
