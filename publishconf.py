@@ -25,6 +25,17 @@ DEFAULT_LANG = u'fr'
 PLUGIN_PATHS = ['pelican-plugins/']
 PLUGINS = ['i18n_subsites', 'tipue_search', 'pelican-page-hierarchy']
 
+MARKDOWN = {
+  'extension_configs': {
+    'markdown.extensions.codehilite': { 'css_class': 'highlight' },
+    'markdown.extensions.fenced_code': {},
+    'markdown.extensions.extra': {},
+    'markdown.extensions.toc': {}
+  }
+}
+
+PYGMENTS_STYLE = 'default'
+
 PATH_METADATA = 'pages/(?P<path>.*)\..*'
 
 JINJA_EXTENSIONS = ['jinja2.ext.i18n']
@@ -61,19 +72,13 @@ ACCEPTED_MENUS = ['comprendre',
 
 SOCIAL = (('Forum', 'https://forum.duniter.org', 'comment'),
           ('Salon XMPP', 'https://chat.duniter.org', 'comments'),
-          ('Bugs', '/pages/rapporter-un-bug', 'bug'),
+          ('Bugs', '/wiki/rapporter-un-bug', 'bug'),
           ('Twitter', 'https://twitter.com/duniter'),
           ('GitHub', 'https://github.com/duniter'),
           ('Diaspora', 'https://framasphere.org/people/1949ee70f6bc0134e6b32a0000053625', 'asterisk'),
           ('RSS', '/feeds/all.atom.xml'),)
 
 DEFAULT_PAGINATION = 10
-
-MARKDOWN = {
-  'extension_configs': {
-    'markdown.extensions.toc': ''
-  }
-}
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
