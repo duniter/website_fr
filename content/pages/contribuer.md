@@ -29,6 +29,8 @@ La meilleure façon de faire prendre de la valeur à Ğ1 est de la faire adopter
 
 **Si vous n'êtes pas développeur**, il vous reste des qualités ! Notamment votre œil d'informaticien saura repérer les problématiques de sécurité, d'installation ou encore d'ergonomie des logiciels ! Faites donc profitez l'ensemble de la communauté de vos propres compétences et de votre énergie.
 
+Dans tous les cas, vous pouvez aller faire un tour sur le [Wiki](/wiki) afin de réperer les sujets pouvant vous intéresser.
+
 ### Vous avez trouvé un bug !
 
 N'hésitez surtout pas à le rapporter ! Cela permet aux logiciels d'évoluer et évitera à d'autres de tomber dessus.

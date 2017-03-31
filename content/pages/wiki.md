@@ -5,11 +5,25 @@ Tags: wiki, blockchain, trm, yunohost
 Slug: wiki
 Authors: cgeek
 
-Cette page regroupe l'ensemble des tutoriels, explications et connaissances rédigées par des contributeurs. Ces documents sont autant à destination de nouveaux entrants qui ne connaissent pas grand-chose à Ğ1, Duniter ou la monnaie libre qu'à des utilisateurs avancés.
+Cette page regroupe des informations importantes concernant Duniter à des fins d'indexation. Elle sert également de base de connaissances pour ses contributeurs.
 
 ## Monnaie
 
 * [Devenir membre de la toile de confiance Ğ1](/wiki/devenir-membre)
+
+## Installation de Duniter
+
+* [Installer son nœud Duniter](https://github.com/duniter/duniter/blob/master/doc/install-a-node.md)
+* [Mettre à jour son nœud Duniter](https://github.com/duniter/duniter/blob/master/doc/update-a-node.md)
+* [Mettre à jour Duniter sur YunoHost en ligne de commande](https://forum.duniter.org/t/full-https-support-for-duniter-package-for-yunohost/1892/18)
+* [Lancer Duniter automatiquement au démarrage de la machine](https://diaspora-fr.org/posts/2703333)
+
+## Logiciels
+
+* Serveur [Duniter](https://duniter.org/fr), application serveur / application de bureau [[tutoriel de développement](https://github.com/duniter/duniter/blob/master/doc/contribute-french.md)]
+* Client [Sakia](http://sakia-wallet.org/), application de bureau [[tutoriel de développement](https://github.com/duniter/sakia/blob/master/doc/install_for_developpers.md)]
+* Client [Cesium](https://github.com/duniter/cesium), application web [[tutoriel de développement](https://github.com/duniter/cesium/blob/master/doc/fr/development_tutorial-01.md)]
+* Client [Silkaj](https://github.com/duniter/silkaj), client python en ligne de commande
 
 ## Technique
 
@@ -20,20 +34,27 @@ Installation de nœud Duniter, accès et modification code source, techniques cr
 
 ### Auto-hébergement
 
+* [Duniter sur un VPN](https://forum.duniter.org/t/duniter-sur-un-vpn/2280/13)
 * [Duniter sur Yunohost derrière une box privatrice (type livebox)](https://forum.duniter.org/t/duniter-sur-yunohost-derriere-une-box-privatrice-type-livebox/2169)
 
-----
+## Fondations théoriques
 
-> TODO :
+* *[Théorie Relative de la Monnaie](http://trm.creationmonetaire.info/)* par Stéphane Laborde
+* *[Une solution technique pour la monnaie libre](/comprendre/theorie/#une-solution)* par cgeek
+* *[Étude de la WoT](https://forum.duniter.org/t/etude-de-la-wot/977)* sur le forum Duniter
+* *[Introduction à la gestion des membres](/introduction-a-la-toile-de-confiance)* par greyzlii
+* [Le projet OpenUDC](https://github.com/Open-UDC/open-udc), précurseur de Duniter
 
-* Tuto BMAS
-* VPN (voir forum)
-* Tutos YunoHost
-* Extraire le Wiki existant sur GitHub
-* Service proposé par mmu_man sur diaspora (version MAJ)
-* Article de Turblog
-* Tutos FR Cesium/Sakia/Duniter (à *citer* dans la page « Contribuer »)
-* Réflexions sur la toile de confiance
-* TRM
-* Vidéos importantes (RML, RMLL, Ubuntu Party, ...)
-* Billet de Moul
+## Compréhension et vulgarisation
+
+* *[La TRM En Couleur](http://cuckooland.free.fr/LaTrmEnCouleur.html)* par cuckooland
+* *[La TRM pour les enfants](http://cuckooland.free.fr/LaTrmPourLesEnfants.html)* par cuckooland
+* *[La TRM en détails](http://monnaie.ploc.be/)* par Emmanuel Bultot
+* Vidéo *[Une monnaie libre avec OpenUDC/uCoin](https://www.youtube.com/watch?v=ljflI-JAsbc)* par Stéphane Laborde
+* Vidéo *[Le paradigme TRM et le RdB](https://www.youtube.com/watch?v=PdSEpQ8ZtY4)* par Stéphane Laborde
+* Vidéo *[Révolution monétaire : débat entre Etienne Chouard, Stéphane Laborde et Jean-Baptiste Bersac](https://www.youtube.com/watch?v=kvjstlFaxUw)* par Le 4ème singe
+* *[Duniter, Théorie relative de la monnaie et projets autour des monnaies libres](https://moul.re/blog/index.php?article3/duniter)* par Moul
+
+## Articles
+
+* *[Oh les cons, ils ont doublé Hamon !](http://blog.spyou.org/wordpress-mu/2017/03/14/oh-les-cons-ils-ont-double-hamon/)* par Spyou
