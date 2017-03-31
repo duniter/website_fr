@@ -106,3 +106,36 @@ img.credits {
 .highlight pre {
     border: none;
 }
+
+#sidebar #github {
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: white;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#github h5 {
+    margin: 0;
+}
+
+#github a {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    font-size: 14px;
+}
+
+#github .list-group-item {
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#sidebar section > ul {
+    margin-bottom: 0px;
+}

@@ -101,5 +101,30 @@
         {% include 'includes/twitter_timeline.html' %}
         {% include 'includes/links.html' %}
         {% include 'includes/sidebar-images.html' %}
+
+        {% if page %}
+        <li class="list-group-item" id="github">
+            <ul class="list-group">
+                <li class="list-group-item"><h5>Vous voyez une erreur ?</h5></li>
+                <li class="list-group-item">
+                    <a class="btn btn-info github" target="_blank" href="https://github.com/duniter/website/edit/master/content/pages/{{ page.path }}.md">
+                        <i class="fa fa-random"></i> Modifiez la page sur GitHub
+                    </a>
+                </li>
+            </ul>
+        </li>
+        {% endif %}
+        {% if article %}
+        <li class="list-group-item" id="github">
+            <ul class="list-group">
+                <li class="list-group-item"><h5>Vous voyez une erreur ?</h5></li>
+                <li class="list-group-item">
+                    <a class="btn btn-info github" target="_blank" href="https://github.com/duniter/website/edit/master/content/{{ article.date.strftime('%Y-%m-%d') ~ '-' ~ article.slug }}.md">
+                        <i class="fa fa-random"></i> Modifiez l'article sur GitHub
+                    </a>
+                </li>
+            </ul>
+        </li>
+        {% endif %}
     </ul>
 </section>
