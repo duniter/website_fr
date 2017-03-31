@@ -65,7 +65,7 @@ Une fois suffisamment aguerri avec ĞTest, vous pourrez alors tenter de passer �
 >
 > 2°) De la rencontrer physiquement pour vous assurer que c'est bien cette personne que vous connaissez qui gère cette clé publique.
 >
-> 3°) Ou bien avez-vous vérifé à distance ce lien personne / clé publique en contactant la personne par plusieurs moyens de communication différents, comme forum + mail + vidéo conférence + téléphone (reconnaître la voix).
+> 3°) Ou bien de vérifer à distance ce lien personne / clé publique en contactant la personne par plusieurs moyens de communication différents, comme forum + mail + vidéo conférence + téléphone (reconnaître la voix).
 
 > Car si l'on peut pirater un compte mail ou un compte forum, il sera bien plus difficile d'imaginer pirater quatre moyens de communication distincts, et imiter l'apparence (vidéo) ainsi que la voix de la personne en plus.
 >
@@ -73,4 +73,4 @@ Une fois suffisamment aguerri avec ĞTest, vous pourrez alors tenter de passer �
 >
 > **Rappel :**
 
-> Certifier n'est pas uniquement s'assurer que vous avez rencontré la personne, c'est assurer à la communauté Ğ1 que vous connaissez suffisamment bien la personne certifié et que vous saurez repérer un double compte effectué par une personne certifiée par vous-même en faisant des recoupements qui permettront de révéler le problème le cas échéant.
+> Certifier n'est pas uniquement s'assurer que vous avez rencontré la personne, c'est assurer à la communauté Ğ1 que vous connaissez suffisamment bien la personne certifiée et que vous saurez repérer un double compte effectué par une personne certifiée par vous-même en faisant des recoupements qui permettront de révéler le problème le cas échéant.
