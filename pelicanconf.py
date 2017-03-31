@@ -72,7 +72,7 @@ ACCEPTED_MENUS = ['comprendre',
 
 SOCIAL = (('Forum', 'https://forum.duniter.org', 'comment'),
           ('Salon XMPP', 'https://chat.duniter.org', 'comments'),
-          ('Bugs', '/pages/rapporter-un-bug', 'bug'),
+          ('Bugs', '/wiki/rapporter-un-bug', 'bug'),
           ('Twitter', 'https://twitter.com/duniter'),
           ('GitHub', 'https://github.com/duniter'),
           ('Diaspora', 'https://framasphere.org/people/1949ee70f6bc0134e6b32a0000053625', 'asterisk'),

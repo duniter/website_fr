@@ -6,6 +6,11 @@ Slug: publiez-un-article
 Authors: cgeek
 Thumbnail: /images/share.svg
 
+> **/!\ IMPORTANT** : depuis Avril 2017 le site s'est transformé et ce billet n'est plus d'actualité.
+>
+> Vous pouvez toutefois participer à la vie de ce site en ajoutant ou modifiant ses pages, ses articles ou son wiki en suivant le tutoriel [Wiki > Améliorer le site](/wiki/ameliorer-le-site).
+
+-----
 Le blog [duniter.org](https://fr.duniter.org) a subit depuis peu une transformation technique : désormais [l'intégralité des articles du blog](https://github.com/duniter/blog-posts/tree/master/posts/fr_FR/) est mise à disposition sur GitHub.
 
 Pour quoi faire ? Très simplement, nous apprécions de pouvoir découpler le contenu du contenant, en l'occurrence découpler les articles du moteur de blog qui les affiche. Cela nous permet entre autres choses :

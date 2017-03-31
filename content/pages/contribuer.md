@@ -15,7 +15,7 @@ Suivez quelques tutoriels pour [tenter de devenir membre de la Toile de Confianc
 
 #### Vous avez déjà utilisé un peu Ğ1
 
-Vous avez certainement appris beaucoup de choses : partagez-les ! Vous pouvez relater votre expérience, vos difficultés et vos solutions sur votre propre blog, sur le [forum duniter.org](https://forum.duniter.org), ou encore sur le [Wiki](/wiki) !
+Vous avez certainement appris beaucoup de choses : partagez-les ! Par exemple vous pouvez relater votre expérience, vos difficultés et vos solutions sur votre propre blog, sur le [forum duniter.org](https://forum.duniter.org) ou [ici même](/wiki/ameliorer-le-site) !
 
 #### Vous êtres membre de Ğ1
 
