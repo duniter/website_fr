@@ -1,0 +1,104 @@
+
+body {
+    padding-top: 85px;
+}
+
+.navbar-search {
+    margin-top: 10px;
+}
+
+.search-query {
+    border-radius: 4px !important;
+}
+
+.download {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.download h3 {
+    margin-top: 0px;
+}
+
+.download .btn {
+    margin: 5px;
+}
+
+.download a {
+    width: 200px;
+}
+
+.currency_network {
+    font-weight: bold;
+    /*text-decoration: underline;*/
+}
+
+.entry-content p a, .entry-content ul a, .summary a {
+    color: #4582ec !important;
+}
+
+.entry-content p a:hover, .entry-content ul a:hover, .summary a:hover {
+    color: #134fb8;
+}
+
+blockquote {
+    background-color: #f7f7f7;
+    border-left: 5px solid #bad3ff;
+    font-size: 16px;
+}
+
+@media (max-width:480px) {
+
+    .thumbnail {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 10px;
+        padding: 0;
+        border: none;
+        display: inline;
+        float: left;
+    }
+
+    .thumbnail img {
+        margin-top: 2px;
+        width: 50px;
+    }
+
+    article > h2, article > .summary {
+        margin-left: 0;
+    }
+}
+
+@media (min-width:480px) {
+
+    .thumbnail {
+        margin: 0;
+        padding: 0;
+        border: none;
+        display: inline;
+        float: left;
+    }
+
+    .thumbnail img {
+        width: 125px;
+    }
+
+    article > h2, article > .summary {
+        margin-left: 160px;
+    }
+}
+
+.summary h3, .summary h2 {
+    font-size: 20px;
+    margin-left: 0;
+}
+
+#content img {
+    /*border: 1px dashed grey;*/
+}
+
+img.credits {
+    width: 50px;
+}

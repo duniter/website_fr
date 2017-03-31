@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if articles %}
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 download">
+                <h3>Télécharger le logiciel</h3>
+                <a type="button" class="btn btn-warning" href="https://github.com/duniter/duniter/releases/tag/v0.91.4">
+                    <span class="fa fa-cloud-download" aria-hidden="true"></span> Duniter v0.91.4
+                    <br>
+                    <span class="currency_network">Réseau ĞTest</span> (test)
+                </a>
+                <a type="button" class="btn btn-primary" href="https://github.com/duniter/duniter/releases/latest">
+                    <span class="fa fa-cloud-download" aria-hidden="true"></span>
+                    <span id="duniterProdVersion">Duniter</span>
+                    <br>
+                    <span class="currency_network">Réseau Ğ1</span> (réel)
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        {% for article in (articles_page.object_list if articles_page else articles) %}
+            <article>
+                {% if article.thumbnail %}
+                <a class="thumbnail" href="{{ SITEURL }}/{{ article.url }}"><img src="{{ SITEURL }}/{{ article.thumbnail }}" alt="{{ article.title|striptags }}" class="post-image"/></a>
+                {% else %}
+                <a class="thumbnail" href="{{ SITEURL }}/{{ article.url }}"><img src="{{ SITEURL }}/{{ THUMBNAIL_DEFAULT }}" alt="{{ article.title|striptags }}" class="post-image"/></a>
+                {% endif %}
+                <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+                {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
+                    <div class="well well-sm">
+                        {% include "includes/article_info.html" %}
+                    </div>
+                {% endif %}
+                <div class="summary">{{ article.summary }}
+                    {% include 'includes/comment_count.html' %}
+                    <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">{{ _('more') }} ...</a>
+                </div>
+            </article>
+            <hr/>
+        {% endfor %}
+    {% endif %}
+
+    {% include 'includes/pagination.html' %}
+{% endblock content %}
