@@ -9,7 +9,7 @@ Authors: cgeek
 
 Que vous soyez un individu, une association, entreprise ou un robot, vous pouvez tout à fait vous procurer des unités de monnaie Ğ1. En ce 31 mars 2017, il existe **15.370,00 Ğ1** en circulation.
 
-Pour ce faire rien de plus simple : créez un porte-monnaie Ğ1 puis trouvez une personne prête à faire un échange ! Oui mais un échange de quoi ? D'unités Ğ1 pour celui qui en possède, contre un bien ou service que vous proposeriez.
+Pour ce faire rien de plus simple : créez un porte-monnaie Ğ1 puis trouvez une personne prête à faire un échange. Oui mais un échange de quoi ? D'unités Ğ1 pour celui qui en possède, contre un bien ou service pour celui qui en veut.
 
 Toutefois, il n'existe pour le moment aucun endroit dédié à l'échange de biens et services dans cette monnaie.
 
