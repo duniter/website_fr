@@ -33,7 +33,7 @@ Une fois suffisamment aguerri avec ĞTest, vous pourrez alors tenter de passer �
 > ### Licence de la monnaie et engagement de responsabilité.
 > ----
 
-Toute certification d'un nouveau membre de Ğ1 doit préalablement s'accompagner de cette licence de la monnaie Ğ1 qui doit être transmise par le certificateur, qui doit s'assurer qu'elle a été étudiée, comprise et acceptée par la personne qui sera certifiée.
+> Toute certification d'un nouveau membre de Ğ1 doit préalablement s'accompagner de cette licence de la monnaie Ğ1 dont le certificateur doit s'assurer qu'elle a été étudiée, comprise et acceptée par la personne qui sera certifiée.
 
 > #### Production d'unités Ğ1
 
