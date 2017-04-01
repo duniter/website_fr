@@ -33,7 +33,7 @@ C’est ici qu’intervient la toile de confiance (ou Web of Trust, WoT). Ce con
 
 > Duniter n'utilisera cependant pas OpenPGP pour ses fonctions cryptographiques mais plutôt les Courbes Elliptiques. Celles-ci sont beaucoup plus concises et il en résulte des avantages pratiques importants. Cela implique pour nous de définir notre propre processus de génération de toile de confiance, mais nous pensons que cela en vaut la peine.
 
-### La Blockchain
+### La Blockchain
 
 Le mécanisme de blockchain de Bitcoin est important pour nous, pour deux raisons principales: **la synchronisation et la sécurité**. Duniter l’utilisera aussi pour bénéficier de ces deux caractéristiques. Cependant, la blockchain de Duniter est légèrement différente : tout comme Bitcoin elle sert à stocker les transactions, mais aussi la Toile de Confiance. Elle dispose également d'un mécanisme différent de _preuve de travail_ (Proof-of-Work = PoW) rendu possible par définition de la WoT, et permettant une économie d'énergie considérable.
 
@@ -45,7 +45,7 @@ Nous sommes donc en mesure de définir la **WoT(t)** : la communauté à un inst
 
 #### Les transactions
 
-La blockchain stocke également les _transactions_ : ce sont les documents permettent de transférer la monnaie d'un compte à un autre. Pour cette partie, Duniter ressemble vraiment à Bitcoin : les transactions ont des entrées (les comptes débités) et des sorties (les comptes crédités). La particularité de Duniter, est que la monnaie débitée peut soit provenir :
+La blockchain stocke également les _transactions_ : ce sont les documents qui permettent de transférer la monnaie d'un compte à un autre. Pour cette partie, Duniter ressemble vraiment à Bitcoin : les transactions ont des entrées (les comptes débités) et des sorties (les comptes crédités). La particularité de Duniter est que la monnaie débitée peut soit provenir :
 
 * d'une autre transaction [comme Bitcoin]
 * d'un Dividende Universel [spécifique à Duniter]
@@ -56,19 +56,19 @@ Par ailleurs, un compte peut être créé n'importe quand et est *totalement ind
 
 Et donc, une entreprise peut tout à fait se créer un compte « porte-monnaie », qui ne fait rien d'autre que recevoir de la monnaie et en envoyer. De même, un individu peut très bien avoir plusieurs comptes : un pour créer la monnaie via le Dividende Universel, puis un autre pour les paiements réguliers, un autre pour l'épargne, un autre pour servir de pot commun, etc.
 
-#### La preuve de travail
+#### La preuve de travail
 
 Comme tout système de crypto-monnaie P2P, Duniter a une façon de synchroniser ses pairs pour la rédaction de son document commun : la blockchain. Celle-ci est écrite de façon régulière grâce à une *preuve de travail*, tout comme Bitcoin. Cependant, Duniter bénéficie d'un environnement très différent de celui d'autres altcoins : il possède une **toile de confiance**, où chaque membre est supposé représenter un unique être humain vivant.
 
-Cette différence peu paraître minime, mais elle a pourtant un impact énorme : alors que Bitcoin doit proposer une **course généralisée** basée sur la puissance de machines, Duniter a la possibilité de créer un cadre *qui n'est pas une course*. Concrètement, Duniter propose plutôt *une mini-loterie* où, chaque fois que quelqu'un gagne, se voit exclut de celle-ci pendant un certain temps. De plus, ceux qui gagnent plus souvent la course que les autres se voient handicapés, de façon à laisser les autres gagner un minimum.
+Cette différence peu paraître minime, mais elle a pourtant un impact énorme : alors que Bitcoin doit proposer une **course généralisée** basée sur la puissance de machines, Duniter a la possibilité de créer un cadre *qui n'est pas une course*. Concrètement, Duniter propose plutôt *une mini-loterie* où, chaque fois que quelqu'un gagne, il se voit exclut de celle-ci pendant un certain temps. De plus, ceux qui gagnent plus souvent la course que les autres se voient handicapés, de façon à laisser les autres gagner un minimum.
 
-Cela est rendu possible car la Toile de Confiance rend possible **la course personnalisée** : en posant comme principe que seuls les membres peuvent calculer de nouveaux blocs, et en rendant très dangereux le fait de calculer à plusieurs, ce mécanisme permet ainsi une rotation dans l'écriture de la blockchain tout en gardant l'avantage de synchronisation apportée par la preuve de travail.
+Cela est rendu possible car la Toile de Confiance rend possible **la course personnalisée** : en posant comme principe que seuls les membres peuvent calculer de nouveaux blocs, et en rendant très dangereux le fait de calculer à plusieurs, ce mécanisme permet ainsi une rotation dans l'écriture de la blockchain tout en gardant l'avantage de synchronisation apporté par la preuve de travail.
 
-Mais de plus, les participants peuvent s'accorder pour abaisser le niveau de difficulté de cette mini-loterie, ce qui se traduit par un diminution *directe* de la consommation en électricité dont le niveau dépend principalement de la volonté des participants, et de leur nombre. Qui plus est, n'ayant aucune création monétaire à gagner à cette loterie, on peut supposer qu'injecter une forte puissance de calcul n'est pas très intéressant en termes économiques.
+Mais de plus, les participants peuvent s'accorder pour abaisser le niveau de difficulté de cette mini-loterie, ce qui se traduit par une diminution *directe* de la consommation en électricité dont le niveau dépend principalement de la volonté des participants, et de leur nombre. Qui plus est, n'ayant aucune création monétaire à gagner à cette loterie, on peut supposer qu'injecter une forte puissance de calcul n'est pas très intéressant en termes économiques.
 
-On pourrait donc dire que Duniter utilise une preuve de travail « écologique », où à défaut qui peut tendre vers une très basse consommation relativement à Bitcoin.
+On pourrait donc dire que Duniter utilise une preuve de travail « écologique », ou à défaut qui peut tendre vers une très basse consommation relativement à Bitcoin.
 
-### Pour résumer
+### Pour résumer
 
 La blockchain de Duniter peut être comparée à la blockchain de Bitcoin : un grand livre retraçant l'histoire de la Toile de Confiance, ainsi que les transactions réalisées par ses utilisateurs. Avec la blockchain, nous avons le **référentiel fondamental** de la Théorie Relative de la Monnaie : les humains, ainsi que le flux des transactions émises par les utilisateurs de la monnaie.
 
@@ -81,4 +81,4 @@ Le but de tout cela est de permettre aux gens de participer à une économie lib
 *   **La liberté d'estimer et de produire de la valeur** : parce que la     valeur est une notion relative à chaque individu, dans l'espace et le     temps
 *   **La liberté d'échanger dans la monnaie** : parce que nous ne devrions     pas être limités par le stock de monnaie disponible
 
-Ces quatre libertés économiques doivent être comprises ensemble, pas exclusivement. De plus, la «_liberté_» doit être comprise comme «_non-nuisance_». Donc ici, la liberté ne signifie pas le droit de prendre toutes les ressources (comme une source d'eau dans un désert) et qu'il n'y en ai plus à la disposition des autres. Maintenant vous comprenez quel est l'objectif : une _économie libre_ à travers des _monnaies libres_.
+Ces quatre libertés économiques doivent être comprises ensemble, pas exclusivement. De plus, la «_liberté_» doit être comprise comme «_non-nuisance_». Donc ici, la liberté ne signifie pas le droit de prendre toutes les ressources (comme une source d'eau dans un désert) et qu'il n'y en ait plus à la disposition des autres. Maintenant vous comprenez quel est l'objectif : une _économie libre_ à travers des _monnaies libres_.
