@@ -15,7 +15,7 @@ Install python stuff
     cd website
     virtualenv .
     source bin/activate
-    pip install pelican pelican-youtube markdown
+    pip install pelican pelican-youtube markdown beautifulsoup4
 
 Generate the site
 
