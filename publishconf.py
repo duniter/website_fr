@@ -53,7 +53,8 @@ BOOTSTRAP_THEME = 'readable'
 
 DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'search')
 
-STATIC_PATHS = ['images', 'content', 'files', 'css']
+ARTICLE_EXCLUDES = ['files']
+STATIC_PATHS = ['images', 'content', 'files', 'files/licence_g1.rst', 'css']
 CUSTOM_CSS = 'css/custom.css'
 
 
