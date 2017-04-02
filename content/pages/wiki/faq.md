@@ -1,7 +1,7 @@
-Title: Devenir membre de la toile de confiance Ğ1
+Title: FAQ
 Order: 9
-Date: 2017-03-27
-Slug: devenir-membre
+Date: 2017-04-02
+Slug: faq
 Authors: cgeek
 
 > Page à réaliser. **Pourquoi pas par vous ?**
