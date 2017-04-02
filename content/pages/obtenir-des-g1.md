@@ -27,6 +27,4 @@ Une fois suffisamment aguerri avec ĞTest, vous pourrez alors tenter de passer �
 
 > **/!\ Attention : adhérer à la monnaie Ğ1 suppose l'acceptation de sa licence, dont vous trouverez une copie ci-dessous.**
 
-> (Le fichier s'ouvre avec n'importe quel éditeur de texte.)
-
-<center id="licence_g1">[Télécharger la Licence Ğ1 (format .rst)](/files/licence_g1.rst)</center>
+<center id="licence_g1">[Télécharger la Licence Ğ1 (format texte)](/fr/files/licence_g1.txt)</center>
