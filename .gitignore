@@ -12,3 +12,4 @@ pip-selfcheck.json
 publishconf.pyc
 share/
 srv.pid
+*.pyc
