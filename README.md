@@ -1,6 +1,6 @@
 # Duniter website
 
-Public site available -- temporarily -- at https://dn2.cgeek.fr/fr. It aims at replacing https://fr.duniter.org.
+Public site available at https://duniter.org/fr
 
 ## Reproduce it locally
 
