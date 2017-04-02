@@ -1,8 +1,5 @@
 from pelican import signals, contents
 from os.path import splitext, dirname
-import logging
-
-logger = logging.getLogger()
 
 '''
 This plugin creates a URL hierarchy for pages that matches the
@@ -46,10 +43,6 @@ def set_relationships(generator):
     # set immediate parents and children
     for page in generator.pages:
         parent_url = dirname(dirname(page.url))
-        logger.warning('page.title = %s', page.title)
-        logger.warning('page.url = %s', page.url)
-        logger.warning('dirname(page.url) = %s', dirname(page.url))
-        logger.warning('parent_url = %s', parent_url)
         if parent_url: parent_url += '/'
         for page2 in generator.pages:
             if page2.url == parent_url and page2 != page:
