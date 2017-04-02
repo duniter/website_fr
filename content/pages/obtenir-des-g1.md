@@ -91,7 +91,7 @@ Une fois suffisamment aguerri avec ĞTest, vous pourrez alors tenter de passer �
 
 > Pour rester membre il faut renouveler son accord régulièrement avec sa clé privée (tous les 12 mois) et s'assurer d'avoir toujours au moins 5 certifications valides au delà des 2 ans.
 
-> #### Logiciels Ğ1 et licence Ğ1**
+> #### Logiciels Ğ1 et licence Ğ1
 
 > Les logiciels Ğ1 permettant aux utilisateurs de gérer leur utilisation de Ğ1 doivent transmettre cette licence avec le logiciel ainsi que l'ensemble des paramètres techniques de la monnaie Ğ1 et de la TdC Ğ1 qui sont inscrits dans le bloc 0 de Ğ1.
 
