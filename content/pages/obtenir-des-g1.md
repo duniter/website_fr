@@ -95,6 +95,6 @@ Une fois suffisamment aguerri avec ĞTest, vous pourrez alors tenter de passer �
 
 > Les logiciels Ğ1 permettant aux utilisateurs de gérer leur utilisation de Ğ1 doivent transmettre cette licence avec le logiciel ainsi que l'ensemble des paramètres techniques de la monnaie Ğ1 et de la TdC Ğ1 qui sont inscrits dans le bloc 0 de Ğ1.
 
-> Pour plus de précisions dans les détails techniques il est possible de consulter directement le code de Duniter qui est un logiciel libre.
+> Pour plus de précisions dans les détails techniques il est possible de consulter directement le code de Duniter qui est un logiciel libre ansi que les données de la blockchain Ğ1 en la récupérant via une instance (ou noeud) Duniter Ğ1.
 
 > Plus d'informations sur le site de l'équipe Duniter https://www.duniter.org
