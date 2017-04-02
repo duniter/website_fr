@@ -81,7 +81,7 @@ Une fois suffisamment aguerri avec ĞTest, vous pourrez alors tenter de passer �
 
 > Pour devenir un nouveau membre de la TdC Ğ1 il faut donc obtenir 5 certifications est ne pas se trouver à une distance > 5 de 80% des sentinelles de la TdC.
 
-> Un membre de la TdC Ğ1 est sentinelle lorsqu'il a reçu et émis au moins Y[N] certifications où N est le nombre de membres et de la TdC et Y[N] = plafond N^(1/5). Exemples :
+> Un membre de la TdC Ğ1 est sentinelle lorsqu'il a reçu et émis au moins Y[N] certifications où N est le nombre de membres de la TdC et Y[N] = plafond N^(1/5). Exemples :
 
 > * Pour 1024 < N ≤ 3125 on a Y[N] = 5
 > * Pour 7776 < N ≤ 16807 on a Y[N] = 7
