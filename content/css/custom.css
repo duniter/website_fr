@@ -90,6 +90,10 @@ blockquote {
     }
 }
 
+.summary {
+    min-height: 50px;
+}
+
 .summary h3, .summary h2 {
     font-size: 20px;
     margin-left: 0;
@@ -97,6 +101,14 @@ blockquote {
 
 #content img {
     /*border: 1px dashed grey;*/
+}
+
+#content .thumbnail {
+    float: right;
+}
+
+#content .thumbnail img {
+    height: 60px;
 }
 
 img.credits {
@@ -143,4 +155,8 @@ img.credits {
 #licence_g1 {
     font-size: 42px;
     color: #4582ec;
+}
+
+.dashed {
+    border: 1px dashed gray;
 }

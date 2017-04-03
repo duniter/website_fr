@@ -71,6 +71,11 @@
     <section id="content">
         <article>
             <header class="page-header">
+                {% if article.thumbnail %}
+                <a class="thumbnail" href="{{ SITEURL }}/{{ article.url }}"><img src="{{ SITEURL }}/{{ article.thumbnail }}" alt="{{ article.title|striptags }}" class="post-image"/></a>
+                {% else %}
+                <a class="thumbnail" href="{{ SITEURL }}/{{ article.url }}"><img src="{{ SITEURL }}/{{ THUMBNAIL_DEFAULT }}" alt="{{ article.title|striptags }}" class="post-image"/></a>
+                {% endif %}
                 <h1>
                     <a href="{{ SITEURL }}/{{ article.url }}"
                        rel="bookmark"
