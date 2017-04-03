@@ -15,7 +15,7 @@ En réalité, cela va plus loin qu'un simple changement ergonomique. Petit tour 
 
 D'abord, l'ergonomie a été revue : nous souhaitions que le site soit plus attrayant et ne freine pas sa consultation. Quelques images supplémentaires et un agencement revu évitent un accueil trop austère :
 
-![](/images/refonte/changement.png)
+![]({filename}/images/refonte/changement.png)
 
 ## Un site entièrement éditable
 
@@ -23,7 +23,7 @@ Une des grandes nouveautés : le site est désormais [entièrement éditable](/w
 
 Vous trouverez sur chacune des pages dans la barre latérale un bouton « Modifier la page sur GitHub » ou « Modifier l'article sur GitHub ». Il ressemble à ceci :
 
-![](/images/wiki/btn_modifier.png)
+![]({filename}/images/wiki/btn_modifier.png)
 
 Vous pourrez donc proposer des modifications ou même ajouter du nouveau contenu à ce site. Une simple validation de notre part, et voilà le site modifié !
 
