@@ -1,8 +1,8 @@
 Title: Devenir membre de la toile de confiance Ğ1
 Order: 9
-Date: 2017-03-27
+Date: 2017-04-03
 Slug: devenir-membre
-Authors: cgeek
+Authors: cgeek, galuel
 
 > **/!\ L'utilisation de la la monnaie Ğ1 suppose l'acceptation de sa licence, dont vous trouverez une copie ci-dessous.**
 
