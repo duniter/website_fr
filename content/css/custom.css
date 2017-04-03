@@ -108,7 +108,8 @@ blockquote {
 }
 
 #content .thumbnail img {
-    height: 60px;
+    height: 50px;
+    width: 50px;
 }
 
 img.credits {
