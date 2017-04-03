@@ -1,5 +1,6 @@
 Title: Refonte du site /fr !
 Date: 2017-04-03
+Modified: 2017-04-03 13:18
 Category: Divers
 Tags: site, blog
 Slug: refonte-du-site
@@ -14,7 +15,7 @@ En réalité, cela va plus loin qu'un simple changement ergonomique. Petit tour 
 
 D'abord, l'ergonomie a été revue : nous souhaitions que le site soit plus attrayant et ne freine pas sa consultation. Quelques images supplémentaires et un agencement revu évitent un accueil trop austère :
 
-<img class="dashed" width="800px" src="/images/refonte/changement.png"/>
+![](/images/refonte/changement.png)
 
 ## Un site entièrement éditable
 
