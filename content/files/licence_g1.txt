@@ -42,13 +42,9 @@ Lorsque vous êtes membre de la TdC Ğ1 et que vous vous apprêtez à certifier 
 
 2a°) De la rencontrer physiquement pour vous assurer que c'est bien cette personne que vous connaissez qui gère cette clé publique.
 
-2b°) Ou bien de vérifer à distance le lien personne / clé publique en contactant la personne par plusieurs moyens de communication différents, comme réseau social + forum + mail + vidéo conférence + téléphone (reconnaître la voix).
+2b°) Ou bien de vérifer à distance le lien personne / clé publique en contactant la personne par plusieurs moyens de communication différents, comme réseau social + forum + mail + vidéo conférence + téléphone (reconnaître la voix). Car si l'on peut pirater un compte mail ou un compte forum, il sera bien plus difficile d'imaginer pirater quatre moyens de communication distincts, et imiter l'apparence (vidéo) ainsi que la voix de la personne en plus. Le 2a°) restant toutefois préférable au 2b°), tandis que le 1°) est toujours indispensable dans tous les cas.
 
 3°) D'avoir bien vérifié avec la personne concernée qu'elle a bien généré son document Duniter de révocation de compte, qui lui permettra le cas échéant de pouvoir annuler son compte (cas d'un vol de compte, d'un changement de ID, d'un compte créé à tort etc.).
-
-Car si l'on peut pirater un compte mail ou un compte forum, il sera bien plus difficile d'imaginer pirater quatre moyens de communication distincts, et imiter l'apparence (vidéo) ainsi que la voix de la personne en plus.
-
-Le 2a°) restant toutefois préférable au 2b°) tandis que le 1°) est toujours indispensable dans tous les cas.
 
 **Règles abrégées de la TdC :**
 
