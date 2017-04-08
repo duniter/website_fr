@@ -7,3 +7,4 @@ Authors: cgeek
 Page concernant spécifiquement le logiciel Duniter.
 
 * [Duniter en ligne de Commande](/wiki/duniter/commandes)
+* [Tutoriel de développement](https://github.com/duniter/duniter/blob/master/doc/contribute-french.md)

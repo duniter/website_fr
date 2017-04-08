@@ -20,7 +20,7 @@ Cette page regroupe des informations importantes concernant Duniter à des fins 
 
 ## Logiciels
 
-* Serveur [Duniter](https://duniter.org/fr), application serveur / application de bureau [[tutoriel de développement](https://github.com/duniter/duniter/blob/master/doc/contribute-french.md)]
+* Serveur [Duniter](/wiki/duniter), application serveur / application de bureau
 * Client [Sakia](http://sakia-wallet.org/), application de bureau [[tutoriel de développement](https://github.com/duniter/sakia/blob/master/doc/install_for_developpers.md)]
 * Client [Cesium](https://github.com/duniter/cesium), application web [[tutoriel de développement](https://github.com/duniter/cesium/blob/master/doc/fr/development_tutorial-01.md)]
 * Client [Silkaj](https://github.com/duniter/silkaj), client python en ligne de commande
