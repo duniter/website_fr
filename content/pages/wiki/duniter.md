@@ -6,4 +6,4 @@ Authors: cgeek
 
 Page concernant spécifiquement le logiciel Duniter.
 
-* [Duniter en ligne de Commande]({filename}/wiki/duniter/commandes)
+* [Duniter en ligne de Commande](/wiki/duniter/commandes)
