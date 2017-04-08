@@ -42,6 +42,12 @@ Pour un nœud tout neuf ou dont les données ont été effacées (par exemple su
 Synchroniser son nœud avec le réseau Ğ1 (monnaie Duniter) :
 
    duniter sync g1.duniter.org 443
+   Progress:
+
+   Download: [||||                ] 23 %
+   Apply:    [                    ] 0 %
+
+   Status: Getting chunck #23/34 from 5750 to 5999 on peer g1.smyds.net:80
    
 Cette commande prend du temps. Soyez patients.
    
@@ -67,8 +73,28 @@ Raccourci pour `stop` suivi d'un `start`. Si aucun nœud n'était lancé, la com
 
 ### `webstart`
 
-Démarre le nœud Duniter *avec interface graphique*, en tâche de fond. Le nœud est alors accessible graphiquement à l'adresse [localhost:9220](http://localhost:9220).
+Démarre le nœud Duniter *avec interface graphique*, en tâche de fond.
+
+Le nœud est alors accessible graphiquement à l'adresse [localhost:9220](http://localhost:9220).
+
+#### Option `--webmhost`
+
+Il est possible de remplacer l'interface `localhost` par l'interface de votre choix.
+
+    duniter webstart --webmhost 192.168.1.35
+
+Le nœud est alors accessible graphiquement à l'adresse http://192.168.1.35:9220.
+
+#### Option `--webmport`
+
+Il est possible de remplacer le port `9220` par le port de votre choix.
+
+    duniter webstart --webmport 9330
+
+Le nœud est alors accessible graphiquement à l'adresse http://localhost:9330.
 
 ### `webrestart`
 
 Raccourci pour `stop` suivi d'un `webstart`. Si aucun nœud n'était lancé, la commande équivaut alors à un simple `webstart`.
+
+Le nœud est alors accessible graphiquement à l'adresse [localhost:9220](http://localhost:9220).
