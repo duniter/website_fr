@@ -47,8 +47,6 @@ Synchroniser son nœud avec le réseau Ğ1 (monnaie Duniter) :
     Download: [||||                ] 23 %
     Apply:    [                    ] 0 %
 
-    Status: Getting chunck #23/34 from 5750 to 5999 on peer g1.smyds.net:80
-   
 Cette commande prend du temps. Soyez patients.
    
 ## Démarrer/Arrêter son nœud
