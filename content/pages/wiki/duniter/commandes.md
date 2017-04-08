@@ -41,13 +41,13 @@ Pour un nœud tout neuf ou dont les données ont été effacées (par exemple su
 
 Synchroniser son nœud avec le réseau Ğ1 (monnaie Duniter) :
 
-   duniter sync g1.duniter.org 443
-   Progress:
+    duniter sync g1.duniter.org 443
+    Progress:
 
-   Download: [||||                ] 23 %
-   Apply:    [                    ] 0 %
+    Download: [||||                ] 23 %
+    Apply:    [                    ] 0 %
 
-   Status: Getting chunck #23/34 from 5750 to 5999 on peer g1.smyds.net:80
+    Status: Getting chunck #23/34 from 5750 to 5999 on peer g1.smyds.net:80
    
 Cette commande prend du temps. Soyez patients.
    
