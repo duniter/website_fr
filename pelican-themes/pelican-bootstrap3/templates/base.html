@@ -115,7 +115,7 @@
             {% endif %}
             <a href="{{ SITEURL }}/" class="navbar-brand">
                 {% if SITELOGO %}<img class="img-responsive pull-left gap-right" src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}"/> {% endif %}
-                {% if not HIDE_SITENAME %}{{ SITENAME }}{% endif %}
+                {% if not HIDE_SITENAME %}<span id="siteName">{{ SITENAME }}</span>{% endif %}
             </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -145,13 +145,6 @@
                 {% endif %}
             </ul>
             <ul class="nav navbar-nav navbar-right">
-            {% if 'tipue_search' in PLUGINS %}
-              <li><span>
-                <form class="navbar-search" action="{{ SEARCH_URL | default('/search.html') }}">
-                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
-                </form></span>
-              </li>
-            {% endif %}
             {% if ARCHIVES_SAVE_AS %}
               <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}"><i class="fa fa-th-list"></i><span class="icon-label">{{ _('Archives') }}</span></a></li>
             {% endif %}

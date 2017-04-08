@@ -7,6 +7,10 @@ body {
     margin-top: 10px;
 }
 
+#tipue_search_input {
+    width: 100%;
+}
+
 .search-query {
     border-radius: 4px !important;
 }
@@ -160,4 +164,32 @@ img.credits {
 
 .dashed {
     border: 1px dashed gray;
+}
+
+@media (max-width:992px) {
+
+    .navbar-header a {
+        /*padding-right: 0 !important;*/
+    }
+
+    .navbar-header img {
+        margin-right: 0 !important;
+    }
+
+    #siteName {
+        display: none;
+    }
+
+    .navbar-collapse li {
+        /*max-width: 100px;*/
+    }
+
+    .navbar-collapse li a {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .nav.navbar-nav {
+        width: 90%;
+    }
 }

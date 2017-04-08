@@ -4,6 +4,16 @@
 
 <section class="well well-sm">
     <ul class="list-group list-group-flush">
+
+        <!-- Search bar in low width mode -->
+        {% if 'tipue_search' in PLUGINS %}
+        <li id="searchSideBar" class="list-group-item"><span>
+                <form class="navbar-search" action="{{ SEARCH_URL | default('/search.html') }}">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+        </li>
+        {% endif %}
+
         {% if SOCIAL %}
         <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">{{ _('Social') }}</span></h4>
               <ul class="list-group" id="social">
