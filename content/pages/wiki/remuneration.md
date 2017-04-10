@@ -4,8 +4,6 @@ Date: 2017-04-10
 Slug: theorie
 Authors: inso
 
-# Rémunération des calculateurs
-
 Dans Duniter, à la différence des cryptomonnaies usuelles, le réseau n'intègre pas de *taxe* sur les transactions.
 La raison est qu'il faut éviter de mélanger les sujets. Afin de rester simple, la base technique (la blockchain, 
 le réseau P2P) ne devrait pas intégrer les moyens de rémunérer ceux qui hébergent les noeuds. 
