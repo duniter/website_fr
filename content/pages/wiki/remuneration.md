@@ -19,7 +19,7 @@ puissance nécessaire !
 
 > Tant que votre PC est dans la moyenne des puissances existantes (environ du Raspberry Pi au PC 4 coeurs), votre noeud pourra participer au calcul des blocs.
 
-**Vous ne devriez pas attendre que d'autre calcul pour vous.** Exécuter votre noeud, c'est vous assurer que le 
+**Vous ne devriez pas attendre que d'autres membres calculent pour vous.** Exécuter votre noeud, c'est vous assurer que le 
 réseau respecte les règles communes inscrites dans la blockchain. Ce noeud s'assurera pour vous que les Dividendes
 Universels sont correctements générés, et que les transactions soient transmises. 
 
