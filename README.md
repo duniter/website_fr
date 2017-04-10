@@ -8,11 +8,11 @@ You may want to reproduce this website locally, for developement purposes for ex
 
 Clone the sources
 
-    git clone https://github.com/duniter/website.git
+    git clone https://github.com/duniter/website_fr.git
     
 Install python stuff
 
-    cd website
+    cd website_fr
     virtualenv .
     source bin/activate
     pip install pelican pelican-youtube markdown beautifulsoup4
@@ -23,9 +23,21 @@ Generate the site
 
 Serve it
 
-    ./develop_server.sh restart 8556
+    ./develop_server.sh start 8556
 
-The website should be available at http://localhost:8556.
+The website should be available at : http://localhost:8556
+
+## Manage the development server
+
+Parameters available 
+* default port: 8556
+* start <port_number>
+* restart <port_number>
+* stop
+
+If you want to use an another port number :
+1) Edit the ```SITEURL``` variable in ```pelicanconf.py``` file
+2) ./develop_server.sh {start|restart} <port_number>
 
 ## Generate production site
 
