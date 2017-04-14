@@ -22,12 +22,12 @@ Paramétrer la Freebox
 -------------
 
 La fonction routeur de la Freebox v5 est accessible depuis l'interface web de Free :
-![Freebox v5 routeur](./images/freebox_v5_routeur.png)
+![Freebox v5 routeur](../../../images/wiki/duniter_freebox_v5/freebox_v5_routeur.png)
 
 **Ouvrir les ports de la Freebox**
 
  Il s'agit d'ouvrir les ports suivants :
-![Freebox v5 ports ouverts](./images/freebox_v5_redirections_ports.PNG)
+![Freebox v5 ports ouverts](../../../images/wiki/duniter_freebox_v5/freebox_v5_redirections_ports.PNG)
 
 Pour pouvoir enregistrer mes modifications, j'ai du ajouter une ligne vide (visible sur la capture d'écran ci-dessus).
 
@@ -39,7 +39,7 @@ Une fois le système d'exploitation installé, j'ai lancé la commande suivante 
 > ifconfig
 
 Dans l'interface web de la Freebox, il faut ensuite se rendre dans la rubrique "Baux DHCP permanents" et ajouter les informations relatives au RPi fournies par la commande précédente.
-![Freebox v5 - Baux DHCP permanents](./images/freebox_v5_baux_dhcp_perm.PNG)
+![Freebox v5 - Baux DHCP permanents](../../../images/wiki/duniter_freebox_v5/freebox_v5_baux_dhcp_perm.PNG)
 
 
 ----------
@@ -70,11 +70,11 @@ Pour ma part, j'ai acheté un nom de domaine (auprès de 1and1 en l'occurrence m
 Contrairement à la Livebox, la Freebox v5 propose une adresse ipv4 fixe, ce qui facilite normalement l'installation. Cette adresse ip externe est consultable depuis l'interface Free (voir 1ère capture d'écran).
 
 Dans mon cas, j'ai paramétré la résolution du nom de domaine dans l'interface de 1and1 comme suit :
-![Gestion domaine](./images/gestion_domaine.PNG)
+![Gestion domaine](../../../images/wiki/duniter_freebox_v5/gestion_domaine.PNG)
 
 J'ai ensuite créé un alias pour le sous-domaine
-![Gestion domaine1](./images/gestion_sous_domaine.PNG)
-![Gestion domaine2](./images/gestion_sous_domaine_2.PNG)
+![Gestion domaine1](../../../images/wiki/duniter_freebox_v5/gestion_sous_domaine.PNG)
+![Gestion domaine2](../../../images/wiki/duniter_freebox_v5/gestion_sous_domaine_2.PNG)
 
 Après cette étape, vous pouvez désormais accéder au RPi via ssh en spécifiant votre nom de domaine à la place de l'ip fixe externe.
 
@@ -94,7 +94,7 @@ Générer un certificat ssl
 
 Une fois le noeud installé, j'ai du générer un certificat ssl pour accéder à l'interface web de Duniter depuis un navigateur.
 
-![Generer certificat ssl](./images/yunohost_certificat_ssl.PNG)
+![Generer certificat ssl](../../../images/wiki/duniter_freebox_v5/yunohost_certificat_ssl.PNG)
 
 L'installation est terminée ! Vous pouvez accéder à l'interface web de Duniter depuis https://duniter.mondomaine.fr/webui.
 
