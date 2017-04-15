@@ -37,7 +37,7 @@ Installation de nœud Duniter, accès et modification code source, techniques cr
 
 * [Duniter sur un VPN](https://forum.duniter.org/t/duniter-sur-un-vpn/2280/13)
 * [Duniter sur Yunohost derrière une box privatrice (type livebox)](https://forum.duniter.org/t/duniter-sur-yunohost-derriere-une-box-privatrice-type-livebox/2169)
-* [Duniter sur Raspberry Pi 3 derrière une Freebox v5 avec Yunohost](wiki/duniter/install-duniter-freebox_v5-yunohost.md)
+* [Duniter sur Raspberry Pi 3 derrière une Freebox v5 avec Yunohost](/wiki/duniter/install-duniter-freebox_v5-yunohost)
 
 ## Fondations théoriques
 
