@@ -12,13 +12,6 @@ Cette page regroupe des informations importantes concernant Duniter à des fins 
 * [Devenir membre de la toile de confiance Ğ1](/wiki/devenir-membre)
 * [Rémunération des calculateurs](/wiki/remuneration)
 
-## Installation de Duniter
-
-* [Installer son nœud Duniter](https://github.com/duniter/duniter/blob/master/doc/install-a-node.md)
-* [Mettre à jour son nœud Duniter](https://github.com/duniter/duniter/blob/master/doc/update-a-node.md)
-* [Mettre à jour Duniter sur YunoHost en ligne de commande](https://forum.duniter.org/t/full-https-support-for-duniter-package-for-yunohost/1892/18)
-* [Lancer Duniter automatiquement au démarrage de la machine](https://diaspora-fr.org/posts/2703333)
-
 ## Logiciels
 
 * Serveur [Duniter](/wiki/duniter), application serveur / application de bureau
