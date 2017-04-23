@@ -6,5 +6,21 @@ Authors: cgeek
 
 Page concernant spécifiquement le logiciel Duniter.
 
+## Installation
+
+* [Installer son nœud Duniter](https://github.com/duniter/duniter/blob/master/doc/install-a-node.md)
+* [Mettre à jour son nœud Duniter](https://github.com/duniter/duniter/blob/master/doc/update-a-node.md)
+* [Mettre à jour Duniter sur YunoHost en ligne de commande](https://forum.duniter.org/t/full-https-support-for-duniter-package-for-yunohost/1892/18)
+
+## Utilisation
+
+* [Lancer Duniter automatiquement au démarrage de la machine](https://diaspora-fr.org/posts/2703333)
 * [Duniter en ligne de Commande](/wiki/duniter/commandes)
+
+## Débogage
+
+* [Crash de l'application](https://pad.aquilenet.fr/p/duniter_crash_oom-killer)
+
+## Développement
+
 * [Tutoriel de développement](https://github.com/duniter/duniter/blob/master/doc/contribute-french.md)
