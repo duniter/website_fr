@@ -17,10 +17,6 @@ Page concernant spécifiquement le logiciel Duniter.
 * [Lancer Duniter automatiquement au démarrage de la machine](https://diaspora-fr.org/posts/2703333)
 * [Duniter en ligne de Commande](/wiki/duniter/commandes)
 
-## Débogage
-
-* [Crash de l'application (mémoire insuffisante)](https://pad.aquilenet.fr/p/duniter_crash_oom-killer)
-
 ## Développement
 
 * [Tutoriel de développement](https://github.com/duniter/duniter/blob/master/doc/contribute-french.md)
