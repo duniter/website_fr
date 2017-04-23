@@ -19,7 +19,7 @@ Page concernant spécifiquement le logiciel Duniter.
 
 ## Débogage
 
-* [Crash de l'application (pas assez de mémoire)](https://pad.aquilenet.fr/p/duniter_crash_oom-killer)
+* [Crash de l'application (mémoire insuffisante)](https://pad.aquilenet.fr/p/duniter_crash_oom-killer)
 
 ## Développement
 
