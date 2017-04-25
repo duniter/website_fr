@@ -17,18 +17,20 @@ Une solution possible pour le moment **est d'utiliser les réseaux sociaux tels 
 
 ## En produire
 
-Mais si vous êtes un individu ne produisant pas encore d'unités Ğ1, sachez que *vous pourriez en produire vous-même*. C'est en effet l'une des caractéristiques fondamentales de Ğ1 : tout être humain peut, sous réserve d'acceptation par ses pairs, produire sa part légitime de monnaie.
+Mais si vous êtes un individu ne produisant pas encore d'unités Ğ1, sachez que *vous pourriez en produire vous-même*. C'est une propriété fondamentale de Ğ1 : tout individu peut produire sa part de monnaie sous réserve de de devenir membre de la toile de confiance Ğ1.
 
-En tout premier lieu, prenez connaissances de **[la licence de la monnaie Ğ1](https://duniter.org/fr/wiki/devenir-membre)**. Vous pouvez aussi la télécharger pour en conserver une copie.
+Cette étape n'est ni anodine ni instantanée. Devenir membre suppose une reconnaissance de la part de personnes déjà membres, procédure que l'on appele « être certifié ». Ces certifications agrégées à toutes celles déjà existantes sont ce qui forme cette toile de confiance : les individus sont les points, les certifications les liens.
 
-### Connaître l'état des demandes pour devenir membre de la toile de confiance Ğ1
+Si donc vous souhaitez poursuivre et devenir membre de la toile, prenez tout d'abord connaissances de **[la licence de la monnaie Ğ1](https://duniter.org/fr/wiki/devenir-membre)**. Vous pouvez aussi la télécharger pour en conserver une copie.
 
-Vous pouvez voir cette file d'attente, et connaître les certifications reçues sur [la page « willMembers »](https://g3.librelois.fr/willMembers?d=65&sort_by=sigCount&order=desc&lg=fr&hideIdtyWithZeroCert=yes&sortSig=Availability). Dans cette page, les membres qui sont le plus en haut ont le plus de chances de devenir membre à plus ou moins court terme.
-
-Vous pouvez également consulter l'outil [WoTex](http://wotex.cgeek.fr/) pour visualiser les distances entre membres.
-
-### Tutoriaux
+### Tutoriaux d'inscription
 
 Nous vous conseillons d'abord de vous essayer au *réseau de test* et sa monnaie ĞTest en suivant [les tutoriaux de l'association Monnaie Libre Occitanie](https://www.monnaielibreoccitanie.org/2017/01/24/nouvelle-monnaie-de-test-gtest/). Ce faisant, vous ne prenez aucun risque : il n'y a aucun enjeu dans cette monnaie, nous l'avons conçue pour cela.
 
 Une fois suffisamment aguerri avec ĞTest, vous pourrez alors tenter de passer à Ğ1. Vous pourrez commencer par *vous rapprocher de personnes déjà membres de Ğ1 et vous connaissant*, leurs certifications étant nécessaires pour devenir membre.
+
+### Connaître l'état des demandes
+
+Vous pouvez voir cette file d'attente, et connaître les certifications reçues sur [la page « willMembers »](https://g3.librelois.fr/willMembers?d=65&sort_by=sigCount&order=desc&lg=fr&hideIdtyWithZeroCert=yes&sortSig=Availability). Dans cette page, les membres qui sont le plus en haut ont le plus de chances de devenir membre à plus ou moins court terme.
+
+Vous pouvez également consulter l'outil [WoTex](http://wotex.cgeek.fr/) pour visualiser les distances entre membres.
