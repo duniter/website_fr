@@ -19,7 +19,7 @@ Une solution possible pour le moment **est d'utiliser les réseaux sociaux tels 
 
 Mais si vous êtes un individu ne produisant pas encore d'unités Ğ1, sachez que *vous pourriez en produire vous-même*. C'est une propriété fondamentale de Ğ1 : tout individu peut produire sa part de monnaie sous réserve de de devenir membre de la toile de confiance Ğ1.
 
-Cette étape n'est ni anodine ni instantanée. Devenir membre suppose une reconnaissance de la part de personnes déjà membres, procédure que l'on appele « être certifié ». Ces certifications agrégées à toutes celles déjà existantes sont ce qui forme cette toile de confiance : les individus sont les points, les certifications les liens.
+Cette étape n'est ni anodine ni instantanée. Elle fait intervenir des humains et s'effectue donc à temps humain : devenir membre consiste à être reconnu par des personnes déjà membres de la toile, c'est ce que l'on appele « être certifié ». Si vous recevez suffisamment de certifications (cinq minimum) et en bonne qualité (notion de distance), alors ces certifications seront agrégées à toutes celles déjà existantes et viendront augmenter la toile de confiance.
 
 Si donc vous souhaitez poursuivre et devenir membre de la toile, prenez tout d'abord connaissances de **[la licence de la monnaie Ğ1](https://duniter.org/fr/wiki/devenir-membre)**. Vous pouvez aussi la télécharger pour en conserver une copie.
 
