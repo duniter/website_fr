@@ -10,6 +10,7 @@ Cette page regroupe des informations importantes concernant Duniter à des fins 
 ## Monnaie
 
 * [Devenir membre de la toile de confiance Ğ1](/wiki/devenir-membre)
+* [Certifier de nouveaux membres](/wiki/certifier-de-nouveax-membres)
 * [Rémunération des calculateurs](/wiki/remuneration)
 
 ## Logiciels

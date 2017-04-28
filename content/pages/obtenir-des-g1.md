@@ -33,4 +33,6 @@ Une fois suffisamment aguerri avec ĞTest, vous pourrez alors tenter de passer �
 
 Vous pouvez voir cette file d'attente, et connaître les certifications reçues sur [la page « willMembers » de ğ1-monit](https://g1-monit.elois.org/willMembers?lg=fr&hideIdtyWithZeroCert=yes). Dans cette page, les membres qui sont le plus en haut ont le plus de chances de devenir membre à plus ou moins court terme.
 
-Vous pouvez également consulter l'outil [WoTex](http://wotex.cgeek.fr/) pour visualiser les distances entre membres.
+### Une fois membre
+
+Quand vous serez vous-même membre, vous pourrez alors [certifier de nouveaux membres](./wiki/certifier-de-nouveaux-membres).
