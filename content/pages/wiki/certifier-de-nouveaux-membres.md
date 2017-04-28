@@ -18,7 +18,7 @@ Toutefois, il ne s'agit pas de donner des certifications à tout va ou pour fair
 
 Notamment si vous certifiez une personne qui aurait déjà un compte, ou certifiez une identité factice, cela crée un préjudice pour le reste de la toile de confiance.
 
-Il faut bien avoir conscience que la certification, tout autant que l'identité sont des données publiques et vérifiables. Ainsi, créer de fausses identités et de faux liens dans la toile pourrait très bien être repéré et révélé publiquement, ceci pouvant mener à des sanctions prises par la communauté Ğ1 notamment en termes d'exclusion des tricheurs **mais aussi de ses complices**.
+Il faut bien avoir conscience que la certification, tout autant que l'identité sont des données publiques et vérifiables. Ainsi, créer de fausses identités et de faux liens dans la toile pourrait très bien être repéré et révélé publiquement, ceci pouvant mener à des sanctions prises par la communauté Ğ1 notamment en termes d'exclusion des tricheurs **mais aussi de leurs complices**.
 
 ## Outils
 
