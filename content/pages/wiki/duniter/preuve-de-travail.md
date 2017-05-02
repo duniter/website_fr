@@ -28,7 +28,7 @@ Exemples de valeurs de Nonce :
 
 En réalité ces valeurs de `Nonce` suivent toutes un même schéma `XYY00000000000`. Le Nonce ne correspond pas aux nombres d'essais, mais plutôt à un espace de Nonce possible. La décomposition est la suivante :
 
-* X correspond au numéro de pair. Par exemple toi qui a plusieurs nœuds avec ta clé personnelle et donc tous capable de calculer, chacun de tes nœuds réaliser sa preuve avec un X différent, afin de ne pas calculer la même preuve justement. Car potentiellement, ils réalisent exactement le même prochain bloc (puisque l'émetteur est le même, le contenu possiblement identique, seul le Nonce peut varier), donc il faut avoir un Nonce qui les différencie.
+* X correspond au numéro de pair. Par exemple celui qui a plusieurs nœuds avec la même clé personnelle et donc sont tous capable de calculer, chacun de ces nœuds va réaliser sa preuve avec un X différent, afin de ne pas calculer la même preuve justement. Car potentiellement, ils réalisent exactement le même prochain bloc (puisque l'émetteur est le même, le contenu possiblement identique, seul le Nonce peut varier), donc il faut avoir un Nonce qui les différencie.
 * Y correspond au numéro de cœur du processeur. On peut voir par exemple que quelqu'un possède au moins 7 cores dans son CPU ici, car on lit le Nonce `107[...]`. Un serveur avec 99 cores pourrait réaliser une preuve `199[...]` par exemple.
 
 Le reste du Nonce, la partie derrière XYY, est l'espace de Nonce du nœud pour chaque core du CPU. Ce qui fait donc un espace de 11 chiffres (`00000000000`) pour trouver un Nonce correct pour chaque core du CPU de la machine (CPU au sens large, ce peut-être un bi-CPU, on considère le nombre de cores résultants pour la PoW).
