@@ -12,7 +12,6 @@ Duniter est livré sous la forme de différents binaires pour les environnements
   * Pour Debian (.deb)
   * Pour Linux (archive tar.gz)
   * Pour Windows (.exe)
-
 * Duniter Server
   * Pour Debian (.deb)
   * Pour Debian ARM (.deb)
@@ -25,11 +24,11 @@ N'importe qui peut réaliser la livraison de Duniter, c'est-à-dire produire et 
 
 * Être administrateur de l'organisation [Duniter sur GitHub](https://github.com/duniter)
 * Disposer d'une machine Linux avec :
-  * Bash
-  * Node.js v6+
-  * VirtualBox
-  * Vagrant
-  * Git
+   * Bash
+   * Node.js v6+
+   * VirtualBox
+   * Vagrant
+   * Git
 
 ### Création d'un token GitHub
 
