@@ -86,7 +86,7 @@ Vous pouvez alors consulter les livrables [sur la page releases du dépôt GitHu
 
     ./release/set_release.sh 1.2.3 rel
 
-La *pre-release* passera alors en *release*, et les utilisateurs seront alertés du changement via Duniter UI (dont disposent Duniter Desktop ou Duniter Desktop démarré en `webstart`). La page d'accueil https://duniter.org/fr affichera également cette nouvelle version.
+La *pre-release* passera alors en *release*, et les utilisateurs seront alertés du changement via Duniter UI (dont disposent Duniter Desktop ou Duniter Server démarré en `webstart`). La page d'accueil https://duniter.org/fr affichera également cette nouvelle version.
 
 ### 5. Le build ARM
 
