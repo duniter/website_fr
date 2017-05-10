@@ -20,6 +20,7 @@ Page concernant spécifiquement le logiciel Duniter.
 ## Développement
 
 * [Tutoriel de développement](https://github.com/duniter/duniter/blob/master/doc/contribute-french.md)
+* [Livraisons](./duniter/livraisons)
 
 ## Concepts
 
