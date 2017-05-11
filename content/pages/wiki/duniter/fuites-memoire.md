@@ -1,6 +1,6 @@
 Title: Fuites mémoire
 Order: 9
-Date: 2017-05-10
+Date: 2017-05-11
 Slug: fuites-memoire
 Authors: cgeek
 
