@@ -46,10 +46,11 @@ Copiez alors le jeton généré, par exemple `b23ab3cbe624a8552545900d781a1779b9
 
 ## Procédure
 
-### 1. Cloner Duniter
+### 1. Cloner Duniter et installer ses modules
 
     git clone git@github.com:duniter/duniter.git
     cd duniter
+    npm install
 
 ### 2. Créer une nouvelle version
 
