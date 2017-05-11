@@ -27,6 +27,7 @@ N'importe qui peut réaliser la livraison de Duniter, c'est-à-dire produire et 
 
 * Être administrateur de l'organisation [Duniter sur GitHub](https://github.com/duniter)
 * Disposer d'une machine Linux avec :
+    * 4Go de RAM minimum
     * Bash
     * Node.js v6+
     * VirtualBox
