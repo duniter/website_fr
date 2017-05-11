@@ -1,4 +1,4 @@
-Licence Ğ1 - v0.2.1
+Licence Ğ1 - v0.2.2
 ===================
 
 :date: 2017-04-04 12:59
@@ -15,7 +15,7 @@ Monnaie Ğ1
 
 * 1 DU par personne et par jour
 
-Le montant du DU est identique chaque jour jusqu'au prochain équinoxe, où le DU sera alors réévalué selon la formule :
+Le montant du DU est identique chaque jour jusqu'au prochain équinoxe, où le DU sera alors réévalué selon la formule (avec 1 jour = 86 400 secondes) :
 
 * DUjour(équinoxe suivant) = DUjour(équinoxe) + c² (M/N)(équinoxe) / (182,625 jours)
 
@@ -32,7 +32,7 @@ Et comme variables :
 Toile de confiance Ğ1 (TdC Ğ1)
 ------------------------------
 
-**Avertissement :** Certifier n'est pas uniquement s'assurer que vous avez rencontré la personne, c'est assurer à la communauté Ğ1 que vous connaissez suffisamment bien la personne certifiée et que vous saurez repérer un double compte effectué par une personne certifiée par vous-même, ou d'autres types de problèmes (disparition...), en effectuant des recoupements qui permettront de révéler le problème le cas échéant.
+**Avertissement :** Certifier n'est pas uniquement s'assurer que vous avez rencontré la personne, c'est assurer à la communauté Ğ1 que vous connaissez suffisamment bien la personne certifiée et que vous saurez ainsi la contacter facilement, et être en mesure de repérer un double compte effectué par une personne certifiée par vous-même, ou d'autres types de problèmes (disparition...), en effectuant des recoupements qui permettront de révéler le problème le cas échéant.
 
 Lorsque vous êtes membre de la TdC Ğ1 et que vous vous apprêtez à certifier un nouveau compte :
 
