@@ -20,3 +20,9 @@ Page concernant spécifiquement le logiciel Duniter.
 ## Développement
 
 * [Tutoriel de développement](https://github.com/duniter/duniter/blob/master/doc/contribute-french.md)
+* [Fuites mémoire](./duniter/fuites-memoire)
+* [Livraisons](./duniter/livraisons)
+
+## Concepts
+
+* [Preuve de travail](./duniter/preuve-de-travail)

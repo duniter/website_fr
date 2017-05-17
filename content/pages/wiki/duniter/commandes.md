@@ -49,6 +49,14 @@ Synchroniser son nœud avec le réseau Ğ1 (monnaie Duniter) :
 
 Cette commande prend du temps. Soyez patients.
 
+#### Option `--slow`
+
+> A partir de la version 1.3.0.
+
+Télécharge lentement la blockchain pour les connexion à faible débit (< 150 ko/s). Permet d'éviter des goulots d'étranglement.
+
+    duniter sync g1.duniter.org 443 --slow
+
 #### Option `--nointeractive`
 
 Désactive l'affichage avec barres de progression au profit d'une sortie classique de commande.
