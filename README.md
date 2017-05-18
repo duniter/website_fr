@@ -9,7 +9,7 @@ You may want to reproduce this website locally, for developement purposes for ex
 Clone the sources
 
     git clone https://github.com/duniter/website_fr.git
-    
+
 Install python stuff
 
     cd website_fr
@@ -29,7 +29,7 @@ The website should be available at : http://localhost:8556
 
 ## Manage the development server
 
-Parameters available 
+Parameters available
 * default port: 8556
 * start <port_number>
 * restart <port_number>
@@ -40,6 +40,9 @@ If you want to use an another port number :
 2) ./develop_server.sh {start|restart} <port_number>
 
 ## Generate production site
+
+To permit a nice-looking license inclusion in the wiki, we use a pre-run script that should be ran before creating the site with pelican:
+
 
 You just need to give the production configuration file to Pelican:
 
