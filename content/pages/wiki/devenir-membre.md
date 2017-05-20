@@ -8,9 +8,9 @@ Authors: cgeek, galuel
 
 <center id="licence_g1">[Télécharger la Licence Ğ1 (format texte)](/fr/files/licence_g1.txt)</center>
 
-##start_license##
+[//]: # BeginLicense
 
-##end_license##
+[//]: # EndLicense
 
 > Une fois la licence reçue, lue et acceptée, le processus pour devenir membre de la TdC Ğ1 passe par la création d'un ID (votre identifiant / pseudo) et d'une paire (clé privée / clé publique) si possible [de façon sécurisée](https://forum.duniter.org/t/recommandations-de-securite-a-lire-avant-de-creer-votre-compte-g1/1819). La clé publique devient un numéro de compte utilisable uniquement par celui qui possède la clé privée, laquelle se construit par une autre paire (phrase secrète / password) = clé privée, qu'il faut précieusement garder pour soi.
 
