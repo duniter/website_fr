@@ -1,7 +1,7 @@
 Title: Livraisons
 Order: 9
 Date: 2017-05-10
-Slug: livraions
+Slug: livraisons
 Authors: cgeek
 
 > Cette page est un guide à destination des développeurs.

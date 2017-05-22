@@ -15,15 +15,15 @@ Page concernant spécifiquement le logiciel Duniter.
 ## Utilisation
 
 * [Lancer Duniter automatiquement au démarrage de la machine](https://diaspora-fr.org/posts/2703333)
-* [Duniter en ligne de Commande](/wiki/duniter/commandes)
+* [Duniter en ligne de Commande](./commandes)
 
 ## Développement
 
 * [Tutoriel de développement](https://github.com/duniter/duniter/blob/master/doc/contribute-french.md)
-* [Fuites mémoire](./duniter/fuites-memoire)
-* [Les modules C/C++](./duniter/les-modules-c-cpp)
-* [Livraisons](./duniter/livraisons)
+* [Fuites mémoire](./fuites-memoire)
+* [Les modules C/C++](./les-modules-c-cpp)
+* [Livraisons](./livraisons)
 
 ## Concepts
 
-* [Preuve de travail](./duniter/preuve-de-travail)
+* [Preuve de travail](./preuve-de-travail)
