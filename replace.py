@@ -28,7 +28,7 @@ def replace(original_file, placeholder_start, placeholder_end,
 
     with open(replace_file, 'r') as my_replace_file:
         #we keep placeholders to be able to replay the process several times
-        replace_content = placeholder_start.replace('\\','') + "\n\n```\n" + my_replace_file.read() + "\n```\n\n" + placeholder_end.replace('\\','')
+        replace_content = placeholder_start.replace('\\','') + "\n\n\n" + my_replace_file.read() + "\n\n\n" + placeholder_end.replace('\\','')
 
     regex = placeholder_start + r'(.*)' + placeholder_end
     new_content = re.sub(regex, replace_content, original_content, flags=re.DOTALL)
