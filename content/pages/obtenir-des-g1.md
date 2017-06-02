@@ -35,4 +35,4 @@ Vous pouvez voir cette file d'attente, et connaître les certifications reçues 
 
 ### Une fois membre
 
-Quand vous serez vous-même membre, vous pourrez alors [certifier de nouveaux membres](./wiki/certifier-de-nouveaux-membres).
+Quand vous serez vous-même membre, vous pourrez alors [certifier de nouveaux membres](../wiki/certifier-de-nouveaux-membres).

@@ -1,7 +1,7 @@
 Title: Livraisons
 Order: 9
 Date: 2017-05-10
-Slug: livraions
+Slug: livraisons
 Authors: cgeek
 
 > Cette page est un guide à destination des développeurs.
@@ -92,8 +92,8 @@ La *pre-release* passera alors en *release*, et les utilisateurs seront alertés
 
 ### 5. Le build ARM
 
-A tout moment, il est possible de réaliser cette opération sur ARM : si la release ou pre-release GitHub existe déjà, elle ne sera pas davantage touchée. Sinon elle sera créée.
+À partir du moment où l'étape 2. a été réalisée (depuis x86 ou ARM, peu importe), il est possible de lancer le **build ARM**.
 
-Réaliser les opérations 1., 3. et 4. sur ARM (pas la 2., puisque le tag existe déjà) produira un résultat strictement identique, *excepté* le fait que seul le livrable ARM sera produit.
+Il suffit de réaliser les opérations 1. et 3. sur ARM. Le livrable sera alors produit et uploadé avec les autres versions.
 
-Une bonne pratique est donc de démarrer les étapes 1., 2. et 3. sur un poste Linux 64bits, *puis* de lancer les étapes 1., 3. et 3. sur ARM en parallèle. Il existera alors 2 machines apportant leur concurrence à la construction de la release.
+Une bonne pratique est donc de démarrer les étapes 1., 2. et 3. sur un poste Linux 64bits, *puis* de lancer les étapes 1. et 3. sur ARM en parallèle. Il existera alors 2 machines apportant leur concurrence à la construction de la release.
