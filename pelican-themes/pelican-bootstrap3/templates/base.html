@@ -209,14 +209,29 @@
   $(document).ready(function() {
 
     var btn = $('#duniterProdVersion');
+    var btnPre = $('#duniterTestVersion');
     var initialButtonText = btn.text();
 
     // Latest release
     $.get( "https://api.github.com/repos/duniter/duniter/releases/latest", function( data ) {
       if (data && data.tag_name) {
-        console.log(data.tag_name);
-        console.log(initialButtonText);
+        console.log('Prod_version:', data.tag_name);
         btn.html(initialButtonText + ' ' + data.tag_name);
+      }
+    });
+
+    // Latest pre-release
+    $.get( "https://api.github.com/repos/duniter/duniter/releases", function( list ) {
+      var data = list[0]
+      for (var i = 1; i < list.length; i++) {
+        var release = list[i];
+        if (release.tag_name > data.tag_name) {
+          data = release;
+        }
+      }
+      if (data && data.tag_name) {
+        console.log('Test_version:', data.tag_name);
+        btnPre.html(initialButtonText + ' ' + data.tag_name);
       }
     });
   });
