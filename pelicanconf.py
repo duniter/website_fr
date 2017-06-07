@@ -44,7 +44,7 @@ I18N_SUBSITES = {
 
 ARTICLE_URL = '{slug}'
 ARTICLE_SAVE_AS = '{slug}.html'
-PAGE_URL = 'pages/{slug}'
+PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}.html'
 CATEGORY_URL = 'category/{slug}'
 CATEGORY_SAVE_AS = 'category/{slug}.html'
