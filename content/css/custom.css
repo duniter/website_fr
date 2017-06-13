@@ -201,3 +201,12 @@ img.credits {
 .entry-content a:hover {
     color: #134fb8;
 }
+
+.icon img {
+    width: 20px;
+    margin-right: 3px;
+}
+
+img.screenshot {
+    padding: 30px;
+}
