@@ -9,13 +9,13 @@ Cette page regroupe des informations importantes concernant Duniter à des fins 
 
 ## Monnaie
 
-* [Devenir membre de la toile de confiance Ğ1](/wiki/devenir-membre)
-* [Certifier de nouveaux membres](/wiki/certifier-de-nouveaux-membres)
-* [Rémunération des calculateurs](/wiki/remuneration)
+* [Devenir membre de la toile de confiance Ğ1](/fr/wiki/devenir-membre)
+* [Certifier de nouveaux membres](/fr/wiki/certifier-de-nouveaux-membres)
+* [Rémunération des calculateurs](/fr/wiki/remuneration)
 
 ## Logiciels
 
-* Serveur [Duniter](/wiki/duniter), application serveur / application de bureau
+* Serveur [Duniter](/fr/wiki/duniter), application serveur / application de bureau
 * Client [Sakia](http://sakia-wallet.org/), application de bureau [[tutoriel de développement](https://github.com/duniter/sakia/blob/master/doc/install_for_developpers.md)]
 * Client [Cesium](https://github.com/duniter/cesium), application web [[tutoriel de développement](https://github.com/duniter/cesium/blob/master/doc/fr/development_tutorial-01.md)]
 * Client [Silkaj](https://github.com/duniter/silkaj), client python en ligne de commande
@@ -24,21 +24,21 @@ Cette page regroupe des informations importantes concernant Duniter à des fins 
 
 Installation de nœud Duniter, accès et modification code source, techniques cryptographiques, ...
 
-* [Rapporter un bug](/wiki/rapporter-un-bug)
-* [Ajouter/Retirer des interfaces spécifiques de pair](/wiki/interfaces-specifiques-de-pair)
+* [Rapporter un bug](/fr/wiki/rapporter-un-bug)
+* [Ajouter/Retirer des interfaces spécifiques de pair](/fr/wiki/interfaces-specifiques-de-pair)
 
 ### Auto-hébergement
 
 * [Duniter sur un VPN](https://forum.duniter.org/t/duniter-sur-un-vpn/2280/13)
 * [Duniter sur Yunohost derrière une box privatrice (type livebox)](https://forum.duniter.org/t/duniter-sur-yunohost-derriere-une-box-privatrice-type-livebox/2169)
-* [Duniter sur Raspberry Pi 3 derrière une Freebox v5 avec Yunohost](/wiki/duniter/install-duniter-freebox_v5-yunohost)
+* [Duniter sur Raspberry Pi 3 derrière une Freebox v5 avec Yunohost](/fr/wiki/duniter/install-duniter-freebox_v5-yunohost)
 
 ## Fondations théoriques
 
 * *[Théorie Relative de la Monnaie](http://trm.creationmonetaire.info/)* par Stéphane Laborde
-* *[Une solution technique pour la monnaie libre](/comprendre/theorie/#une-solution)* par cgeek
+* *[Une solution technique pour la monnaie libre](/fr/comprendre/theorie/#une-solution)* par cgeek
 * *[Étude de la WoT](https://forum.duniter.org/t/etude-de-la-wot/977)* sur le forum Duniter
-* *[Introduction à la gestion des membres](/introduction-a-la-toile-de-confiance)* par greyzlii
+* *[Introduction à la gestion des membres](/fr/introduction-a-la-toile-de-confiance)* par greyzlii
 * [Le projet OpenUDC](https://github.com/Open-UDC/open-udc), précurseur de Duniter
 
 ## Compréhension et vulgarisation
