@@ -13,12 +13,19 @@ Cette page regroupe des informations importantes concernant Duniter à des fins 
 * [Certifier de nouveaux membres](/fr/wiki/certifier-de-nouveaux-membres)
 * [Rémunération des calculateurs](/fr/wiki/remuneration)
 
-## Logiciels
+## Écosystème logiciel
 
-* Serveur [Duniter](/fr/wiki/duniter), application serveur / application de bureau
-* Client [Sakia](http://sakia-wallet.org/), application de bureau [[tutoriel de développement](https://github.com/duniter/sakia/blob/master/doc/install_for_developpers.md)]
-* Client [Cesium](https://github.com/duniter/cesium), application web [[tutoriel de développement](https://github.com/duniter/cesium/blob/master/doc/fr/development_tutorial-01.md)]
-* Client [Silkaj](https://github.com/duniter/silkaj), client python en ligne de commande
+### [Logiciel Duniter](/fr/wiki/duniter)
+
+Cœur du réseau Duniter, application P2P qui synchronise et modifie la blockchain commune.
+
+### Clients
+
+Logiciels qui se ne font que se connecter au réseau Duniter pour l'utiliser. Les clients ne font pas le travail d'un nœud, mais réalisent des opérations sur la blockchain : créer un porte-monnaie, transférer de la monnaie entre deux porte-monnaie,  créer une identité dans la toile de confiance, etc.
+
+* [Sakia](http://sakia-wallet.org/), application de bureau [[tutoriel de développement](https://github.com/duniter/sakia/blob/master/doc/install_for_developpers.md)]
+* [Cesium](https://github.com/duniter/cesium), application web [[tutoriel de développement](https://github.com/duniter/cesium/blob/master/doc/fr/development_tutorial-01.md)]
+* [Silkaj](https://github.com/duniter/silkaj), client python en ligne de commande
 
 ## Technique
 

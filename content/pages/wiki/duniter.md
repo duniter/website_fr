@@ -8,7 +8,7 @@ Page concernant spécifiquement le logiciel Duniter.
 
 ## Installation
 
-* [Installer son nœud Duniter](https://github.com/duniter/duniter/blob/master/doc/install-a-node.md)
+* [Installer son nœud Duniter](./installer)
 * [Mettre à jour son nœud Duniter](https://github.com/duniter/duniter/blob/master/doc/update-a-node.md)
 * [Mettre à jour Duniter sur YunoHost en ligne de commande](https://forum.duniter.org/t/full-https-support-for-duniter-package-for-yunohost/1892/18)
 
