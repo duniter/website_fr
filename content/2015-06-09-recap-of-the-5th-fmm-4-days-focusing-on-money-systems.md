@@ -6,7 +6,7 @@ Slug: recap-of-the-5th-fmm-4-days-focusing-on-money-systems
 Authors: cgeek
 Thumbnail: /images/calendar.svg
 
-Ça y est ! Les **5èmes Rencontres des Monnaies Libres sont terminées**. Cela a été une [très riche expérience de 4 jours](/ucoin-at-the-5th-freedom-money-meeting) à se concentrer sur les systèmes monétaires. Voici ci-dessous un récapitulatif rapide de ce qui s'est passé durant ces jours pour ceux d'entre-vous qui ne sont pas venus .
+Ça y est ! Les **5èmes Rencontres des Monnaies Libres sont terminées**. Cela a été une [très riche expérience de 4 jours](../ucoin-at-the-5th-freedom-money-meeting) à se concentrer sur les systèmes monétaires. Voici ci-dessous un récapitulatif rapide de ce qui s'est passé durant ces jours pour ceux d'entre-vous qui ne sont pas venus .
 
 ## Premier jour : plongeon dans le protocole uCoin
 

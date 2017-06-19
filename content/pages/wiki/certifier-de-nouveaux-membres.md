@@ -14,7 +14,7 @@ Vous pouvez être d'accord pour donner une certification à cette personne, et m
 
 ## Précautions
 
-Toutefois, il ne s'agit pas de donner des certifications à tout va ou pour faire plaisir. En tant que nouveau membre, **[vous avez étudié et accepté la licence Ğ1](https://duniter.org/fr/wiki/devenir-membre)**. Vous comprenez donc qu'il est important de connaître la personne que vous certifiez, et que votre propre responsabilité de membre est engagée dans ce processus envers les autres membres de la toile Ğ1.
+Toutefois, il ne s'agit pas de donner des certifications à tout va ou pour faire plaisir. En tant que nouveau membre, **[vous avez étudié et accepté la licence Ğ1](../devenir-membre)**. Vous comprenez donc qu'il est important de connaître la personne que vous certifiez, et que votre propre responsabilité de membre est engagée dans ce processus envers les autres membres de la toile Ğ1.
 
 Notamment si vous certifiez une personne qui aurait déjà un compte, ou certifiez une identité factice, cela crée un préjudice pour le reste de la toile de confiance.
 

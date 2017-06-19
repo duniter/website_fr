@@ -11,11 +11,11 @@ Voici quelques possibilités.
 
 #### Vous êtes totalement nouveau
 
-Suivez quelques tutoriels pour [tenter de devenir membre de la Toile de Confiance Ğ1](/wiki/devenir-membre). C'est la toute 1ère étape : devenir utilisateur !
+Suivez quelques tutoriels pour [tenter de devenir membre de la Toile de Confiance Ğ1](../wiki/devenir-membre). C'est la toute 1ère étape : devenir utilisateur !
 
 #### Vous avez déjà utilisé un peu Ğ1
 
-Vous avez certainement appris beaucoup de choses : partagez-les ! Par exemple vous pouvez relater votre expérience, vos difficultés et vos solutions sur votre propre blog, sur le [forum duniter.org](https://forum.duniter.org) ou [ici même](/wiki/ameliorer-le-site) !
+Vous avez certainement appris beaucoup de choses : partagez-les ! Par exemple vous pouvez relater votre expérience, vos difficultés et vos solutions sur votre propre blog, sur le [forum duniter.org](https://forum.duniter.org) ou [ici même](../wiki/ameliorer-le-site) !
 
 #### Vous êtres membre de Ğ1
 
@@ -29,11 +29,11 @@ La meilleure façon de faire prendre de la valeur à Ğ1 est de la faire adopter
 
 **Si vous n'êtes pas développeur**, il vous reste des qualités ! Notamment votre œil d'informaticien saura repérer les problématiques de sécurité, d'installation ou encore d'ergonomie des logiciels ! Faites donc profitez l'ensemble de la communauté de vos propres compétences et de votre énergie.
 
-Dans tous les cas, vous pouvez aller faire un tour sur le [Wiki](/wiki) afin de réperer les sujets pouvant vous intéresser.
+Dans tous les cas, vous pouvez aller faire un tour sur le [Wiki](../wiki) afin de réperer les sujets pouvant vous intéresser.
 
 ### Vous avez trouvé un bug !
 
 N'hésitez surtout pas à le rapporter ! Cela permet aux logiciels d'évoluer et évitera à d'autres de tomber dessus.
 
-Instructions sur la page [Wiki > Rapporter un bug](/wiki/rapporter-un-bug).
+Instructions sur la page [Wiki > Rapporter un bug](../wiki/rapporter-un-bug).
 

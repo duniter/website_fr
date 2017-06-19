@@ -10,4 +10,4 @@ Un Ğeconomicus est organisé à Lodève le 18/06/2017.
 
 Plus d'informations sur :
 
-[![](/images/evenements/geconomicus-lodeve.jpg)](https://www.monnaielibreoccitanie.org/event/jeu-geconomicus-a-lodeve/)
+[![](../images/evenements/geconomicus-lodeve.jpg)](https://www.monnaielibreoccitanie.org/event/jeu-geconomicus-a-lodeve/)

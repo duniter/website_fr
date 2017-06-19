@@ -13,7 +13,7 @@ Son code est par ailleurs intégralement disponible sur le dépôt [github.com/d
 
 ## Images utilisées sur ce site
 
-Certains logos ou images sont la production d'autres personnes, vous trouverez leur origine sur la page [Crédits](/credits).
+Certains logos ou images sont la production d'autres personnes, vous trouverez leur origine sur la page [Crédits](../credits).
 
 ## Qui sommes-nous ?
 
@@ -25,4 +25,4 @@ Si le projet prend de l'ampleur sur le long terme, la création d'une associatio
 
 ## Contact
 
-Plus d'informations sur la page [Contact](/contact).
+Plus d'informations sur la page [Contact](../contact).

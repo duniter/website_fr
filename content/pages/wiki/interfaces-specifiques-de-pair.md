@@ -58,4 +58,4 @@ Une bonne pratique est de réaliser ces opérations **exclusivement sur un seul 
 * un nœud qui ajouter l'interface `EP1`
 * un *autre* nœud qui supprime l'interface `EP1`
 
-Alors vous tomberez dans un [ping-pong infini](/cles-partagees#le-stock-de-blockstamp), ce qui consommera tout le stock disponible de tampons temporels pour émettre de nouvelles fiches de pair. Vous n'aurez alors plus la possibilité de mettre à jour votre fiche de pair avant qu'un nouveau bloc apparaisse.
+Alors vous tomberez dans un [ping-pong infini](../cles-partagees#le-stock-de-blockstamp), ce qui consommera tout le stock disponible de tampons temporels pour émettre de nouvelles fiches de pair. Vous n'aurez alors plus la possibilité de mettre à jour votre fiche de pair avant qu'un nouveau bloc apparaisse.

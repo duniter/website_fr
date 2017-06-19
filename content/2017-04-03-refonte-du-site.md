@@ -19,7 +19,7 @@ D'abord, l'ergonomie a été revue : nous souhaitions que le site soit plus attr
 
 ## Un site entièrement éditable
 
-Une des grandes nouveautés : le site est désormais [entièrement éditable](/wiki/ameliorer-le-site/) !
+Une des grandes nouveautés : le site est désormais [entièrement éditable](../wiki/ameliorer-le-site/) !
 
 Vous trouverez sur chacune des pages dans la barre latérale un bouton « Modifier la page sur GitHub » ou « Modifier l'article sur GitHub ». Il ressemble à ceci :
 
@@ -29,7 +29,7 @@ Vous pourrez donc proposer des modifications ou même ajouter du nouveau contenu
 
 ## Un wiki !
 
-L'édition du site prend tout son sens avec l'apparition d'une partie [Wiki](/wiki) : celle-ci permet de centraliser les ressources connues à propos de Duniter.
+L'édition du site prend tout son sens avec l'apparition d'une partie [Wiki](../wiki) : celle-ci permet de centraliser les ressources connues à propos de Duniter.
 
 Ainsi il devient plus simple d'accompagner les nouveaux venus en les orientant vers des articles et tutoriaux pertinents, tout en apportant une base de connaissances pour nous-mêmes.
 

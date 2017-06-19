@@ -21,7 +21,7 @@ Mais si vous êtes un individu ne produisant pas encore d'unités Ğ1, sachez qu
 
 Devenir membre n'est ni anodin ni instantané. Cette étape fait intervenir des humains et s'effectue donc à temps humain : devenir membre consiste à être reconnu par des personnes déjà membres de la toile, c'est ce que l'on appele « être certifié ». Si vous recevez suffisamment de certifications (cinq minimum) et en bonne qualité (notion de distance), alors ces certifications seront agrégées à toutes celles déjà existantes et viendront augmenter la toile de confiance.
 
-Si donc vous souhaitez poursuivre et devenir membre de la toile, prenez tout d'abord connaissances de **[la licence de la monnaie Ğ1](https://duniter.org/fr/wiki/devenir-membre)**. Vous pouvez aussi la télécharger pour en conserver une copie.
+Si donc vous souhaitez poursuivre et devenir membre de la toile, prenez tout d'abord connaissances de **[la licence de la monnaie Ğ1](../wiki/devenir-membre)**. Vous pouvez aussi la télécharger pour en conserver une copie.
 
 ### Tutoriaux d'inscription
 

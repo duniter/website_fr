@@ -5,7 +5,7 @@ Tags: salon, chat, xmpp, forum, contact, contribuer
 Slug: contact
 Authors: cgeek
 
-> **Pour un bug :** merci de suivre la procédure indiquée sur la page [Wiki > Rapporter un bug](/wiki/rapporter-un-bug).
+> **Pour un bug :** merci de suivre la procédure indiquée sur la page [Wiki > Rapporter un bug](../wiki/rapporter-un-bug).
 
 ## Le forum
 

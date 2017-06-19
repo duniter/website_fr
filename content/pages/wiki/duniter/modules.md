@@ -27,13 +27,13 @@ Vous avez deux façon d'opérer :
 
 * avec l'interface graphique (méthode recommandée) : 
 
-![](/images/modules/modules_ui.png)
+![](../../../images/modules/modules_ui.png)
     
 ### Droits d'écriture
 
 Selon votre installation, il se peut que vous ne puissiez pas installer de modules : 
 
-![](/images/modules/modules_droits.png)
+![](../../../images/modules/modules_droits.png)
 
 En effet, pour installer un module, Duniter va devoir télécharger, ajouter et modifier des fichiers dans son répertoire d'installation. Si pendant votre exécution de Duniter vous n'avez pas assez de droits système, l'installation sera impossible et vous aurez le message ci-dessus.
 
@@ -63,17 +63,17 @@ Vous pouvez ajouter le module d'exemple :
     
 Ou dans l'interface graphique : 
 
-![](/images/modules/modules_install.png)
+![](../../../images/modules/modules_install.png)
 
 Puis cliquez sur « Installer ». A la fin de la procédure, relancez votre nœud.
 
 Vous devriez alors voir dans l'interface graphique un nouveau menu :
 
-![](/images/modules/modules_menu.png)
+![](../../../images/modules/modules_menu.png)
 
 Vous pouvez cliquer dessus pour voir le contenu du module :
 
-![](/images/modules/modules_resultat.png)
+![](../../../images/modules/modules_resultat.png)
 
 ## Désinstaller un module
 

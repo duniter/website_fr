@@ -20,11 +20,11 @@ Désormais, la réception de nouveaux blocs ainsi que la synchronisation initial
  
 ### L'arrivée des modules !
 
-C'était une fonctionnalité [annoncée durant les RML9 au Havre](/videos-rml9) : Duniter 1.3 permettrait de brancher des modules sur son propre nœud !
+C'était une fonctionnalité [annoncée durant les RML9 au Havre](../videos-rml9) : Duniter 1.3 permettrait de brancher des modules sur son propre nœud !
 
 A titre d'exemple, il est désormais possible d'ajouter [le plugin duniter-currency-monit](https://github.com/duniter/duniter-currency-monit/releases) à son nœud local :
 
-<img class="screenshot" src="/images/duniter-1.3/g1-monit.png"></img>
+<img class="screenshot" src="./images/duniter-1.3/g1-monit.png"></img>
 
 Une documentation sur les modules est mise à disposition sur le [Wiki](wiki/duniter/modules/).
 
@@ -36,11 +36,11 @@ Le client Cesium était historiquement livré avec Duniter. Avec l'arrivée des 
 
 ## Synchronisation
 
-> <span class="icon">![](/images/icons/white_check_mark.png)</span> Pas besoin de resynchroniser.
+> <span class="icon">![](../images/icons/white_check_mark.png)</span> Pas besoin de resynchroniser.
 
 ## Compatibilité
 
-> <span class="icon">![](/images/icons/white_check_mark.png)</span> Compatible avec la Ğ1.
+> <span class="icon">![](../images/icons/white_check_mark.png)</span> Compatible avec la Ğ1.
 
 -----
 
