@@ -6,5 +6,5 @@ Authors: cgeek
 
 Mettre à jour son nœud Duniter consiste simplement à : 
 
-* [réinstaller son nœud Duniter](./installer)
+* [réinstaller son nœud Duniter](../installer)
 * relancer son nœud pour appliquer les modifications
