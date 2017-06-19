@@ -113,7 +113,7 @@ blockquote {
 
 #content .thumbnail img {
     height: 50px;
-    width: 50px;
+    width: auto;
 }
 
 img.credits {
@@ -209,4 +209,9 @@ img.credits {
 
 img.screenshot {
     padding: 30px;
+}
+
+.flag-lang {
+    margin-right: 10px;
+    width: 45px;
 }
