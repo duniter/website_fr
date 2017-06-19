@@ -4,7 +4,7 @@ Category: Divers
 Tags: site, blog
 Slug: duniter-org-en
 Authors: cgeek
-Thumbnail: /images/i18n/flag-gb.png
+Thumbnail: /images/i18n/flag-en.png
 
 Nous sommes heureux de vous présenter la version anglaise du site duniter.org : [https://duniter.org/en](https://duniter.org/en)
 
