@@ -20,31 +20,6 @@ Notamment si vous certifiez une personne qui aurait déjà un compte, ou certifi
 
 Il faut bien avoir conscience que la certification, tout autant que l'identité sont des données publiques et vérifiables. Ainsi, créer de fausses identités et de faux liens dans la toile pourrait très bien être repéré et révélé publiquement, ceci pouvant mener à des sanctions prises par la communauté Ğ1 notamment en termes d'exclusion des tricheurs **mais aussi de leurs complices**.
 
-
-## Quelques règles simples
-
-**Certifier des nouveaux venus va tendre la toile.**
-
-> La conséquence est qu'en ne certifiant que des nouveaux venus, la toile peut devenir tellement tendue qu'elle ne permet plus à personne d'y rentrer !
-
-**Certifier des membres va détendre la toile tout en consolidant les liens qui la constitue**
-
-> La toile est alors consolidée. Les chemins entre membres qui la constituent sont doublement renforcés. Elle se détend et peut alors accueillir de nouveaux membres.
-
-**Par courtoisie, lorsque l'on rejoint la toile de confiance, on peut contre-certifier ses certifieurs en priorité**
-
-> On aide ainsi nos certifieurs à ne pas être placés sur les bords de la toile au fur et à mesure de l'arrivée des nouveaux. En effet, une fois que vous êtes membres référent, vos certifications peuvent exclure quelqu'un de la toile si il est trop éloigné de vous !
-
-## Les stratégies de certifications
-
-**Certifier que vers l'extérieur est une bonne stratégie pour contrer les attaques sybilles**
-
-> Lorsque l'on certifie uniquement vers l'extérieur, la toile est de plus en plus tendue. La présence constante de membres à une distance de 5 d'autres membre va freiner et limiter l'arrivée de comptes sybilles en cas d'attaques.
-
-**Le rythme des certifications internes et externes fait respirer la toile**
-
-> Lorsque la toile arrive a sa dimension maximum, certifier vers l'intérieur va la détendre. Lorsque les utilisateurs certifient vers l'extérieur, elle va se tendre. Un peu de la même manière respiration des êtres vivants !
-
 ## Outils
 
 Ces remarques étant faites, sachez qu'il existe 2 outils pour vous aider à « voir » qui attend des certifications, combien ont été reçues, quelle est la distance de ce membre vis-à-vis de la toile.
