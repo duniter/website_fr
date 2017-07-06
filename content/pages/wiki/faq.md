@@ -35,6 +35,6 @@ Lorsque l'on certifie uniquement vers l'extérieur, la toile est de plus en plus
 #### A quelle rythme évolue la toile de confiance au début de la monnaie ?
 
 > **A ses débuts, la toile évolue au rythme des certifications internes et externes.**
-Lorsque la toile arrive a sa dimension maximum, certifier vers l'intérieur va la détendre. Lorsque les utilisateurs certifient vers l'extérieur, elle va se tendre. Un peu de la même manière respiration des êtres vivants ! A terme, l'évolution de la toile sera de plus en plus fluide au fur et à mesure du nombre de membres qui certifieront de manière active.
+Lorsque la toile arrive a sa dimension maximum, certifier vers l'intérieur va la détendre. Lorsque les utilisateurs certifient vers l'extérieur, elle va se tendre. Un peu de la même manière que la respiration des êtres vivants ! A terme, l'évolution de la toile sera plus fluide. Cette fluidité dépend du nombre de membres certifiant de manière active ! 
 
 
