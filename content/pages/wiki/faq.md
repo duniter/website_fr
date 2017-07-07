@@ -1,8 +1,8 @@
 Title: FAQ
 Order: 9
-Date: 2017-04-02
+Date: 2017-07-07
 Slug: faq
-Authors: cgeek
+Authors: cgeek, inso, Ğaluel
 
 # La toile de confiance
 
