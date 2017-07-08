@@ -30,7 +30,7 @@ Lorsqu'il révoque un compte membre, l'utilisateur déclare au réseau de la mon
 
 > Mais la révocation n'impact pas l'envoi et la réception de monnaie sur la clé associée à l'identité révoquée.
 
-#### Pourquoi revoquer un compte membre, qu'il soit en cours d'adhésion ou déja membre ?
+#### Pourquoi révoquer un compte membre, qu'il soit en cours d'adhésion ou déja membre ?
 
 > **En révoquant un compte membre, vous assurez à la toile : **
 
@@ -40,7 +40,7 @@ Lorsqu'il révoque un compte membre, l'utilisateur déclare au réseau de la mon
 
 #### J'ai perdu mes identifiants, ou je souhaite changer mon pseudonyme ou ma clé privée, que puis-je faire ?
 
-> **Vous devez révoquer le compte perdu, recréer un compte et redémarrer le processus de certifications.**
+> **Vous devez révoquer le compte, recréer un compte et redémarrer le processus de certifications.**
 Si le compte était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. En effet, si ce compte recevait suffisamment de certifications et devenait membre, vous n'auriez alors pas le droit de créer un nouveau compte ! Vous seriez dans l'obligation d'attendre l'expiration de celui-ci.
 
 
