@@ -4,6 +4,28 @@ Date: 2017-07-07
 Slug: faq
 Authors: cgeek, inso, Ğaluel
 
+
+# Portefeuilles et identités
+
+#### Comment recevoir de la monnaie ?
+
+> **Pour recevoir de la monnaie, vous avez besoin de générer votre clé privée.**. Cette clé privée est associée à une clé publique. En partageant cette clé publique, vous pouvez recevoir de la monnaie. La clé privée peut-être générée par différente méthode :  
+> - En mémorisant une clé secrète et un mot de passe. Cette clé secrète et ce mot de passe, associés, vont générer une clé privée. Pour être utilisée, il faut connaître le couple clé secrète/mot de passe.
+> - En générant dans un fichier une clé privée aléatoire. Pour être utilisée, il faut être en possession du fichier de clé privée.
+
+#### Qu'est-ce que la création d'un compte membre ?
+
+> **La création d'un compte membre est l'association entre une clé publique et un UID (Pseudonyme du compte).**
+Lorsqu'il créé un compte membre, l'utilisateur déclare au réseau de la monnaie *à dater d'aujourd'hui, cette clé publique est dorénavant associée à cette identité*.
+
+#### Qu'est-ce que la révocation d'un compte membre ?
+
+> **La révocation d'un compte membre consiste à invalider une identité.**
+Lorsqu'il révoque un compte membre, l'utilisateur déclare au réseau de la monnaie *à dater d'aujourd'hui, l'identité créée à telle date antérieure n'est plus valide*. L'identité est invalide mais la monnaie présente sur la clé associée est toujours valide ! La révocation empêchera :  
+> - de certifier l'identité révoquée
+> - de demander une adhésion pour l'identité révoquée  
+ Mais la révocation n'impact pas l'envoi et la réception de monnaie sur la clé associée à l'identité révoquée.
+
 # La toile de confiance
 
 ## Les certifications 
