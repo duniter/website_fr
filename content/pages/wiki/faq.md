@@ -11,6 +11,7 @@ Authors: cgeek, inso, Ğaluel
 #### Comment recevoir de la monnaie ?
 
 > **Pour recevoir de la monnaie, vous avez besoin de générer votre clé privée.**. Cette clé privée est associée à une clé publique. En partageant cette clé publique, vous pouvez recevoir de la monnaie. La clé privée peut-être générée par différente méthode :  
+
 > - En mémorisant une clé secrète et un mot de passe. Cette clé secrète et ce mot de passe, associés, vont générer une clé privée. Pour être utilisée, il faut connaître le couple clé secrète/mot de passe.
 > - En générant dans un fichier une clé privée aléatoire. Pour être utilisée, il faut être en possession du fichier de clé privée.
 
@@ -23,6 +24,7 @@ Lorsqu'il créé un compte membre, l'utilisateur déclare au réseau de la monna
 
 > **La révocation d'un compte membre consiste à invalider une identité.**
 Lorsqu'il révoque un compte membre, l'utilisateur déclare au réseau de la monnaie *à dater d'aujourd'hui, l'identité créée à telle date antérieure n'est plus valide*. L'identité est invalide mais la monnaie présente sur la clé associée est toujours valide ! La révocation empêchera :  
+
 > - de certifier l'identité révoquée
 > - de demander une adhésion pour l'identité révoquée  
  Mais la révocation n'impact pas l'envoi et la réception de monnaie sur la clé associée à l'identité révoquée.
@@ -31,6 +33,7 @@ Lorsqu'il révoque un compte membre, l'utilisateur déclare au réseau de la mon
 
 > **Vous devez révoquer le compte perdu, recréer un compte et redémarrer le processus de certifications.**
 Si le compte dont vous avez perdu les identifiants était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. Ainsi, vous assurez :  
+
 > - Que ce compte, aux identifiants perdus, ne pourra pas devenir membre. Vous n'auriez alors pas le droit de créer un nouveau compte et seriez dans l'obligation d'attendre l'expiration de celui-ci.
 > - Que vous ne cherchez pas à créer de multiples comptes membres
 > - Que les certifications sont émises vers un compte qui est en votre possession !
