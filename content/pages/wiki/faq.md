@@ -4,6 +4,7 @@ Date: 2017-07-07
 Slug: faq
 Authors: cgeek, inso, Ğaluel
 
+[TOC]
 
 # Portefeuilles et identités
 
