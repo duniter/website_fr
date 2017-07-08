@@ -38,21 +38,10 @@ Lorsqu'il révoque un compte membre, l'utilisateur déclare au réseau de la mon
 > - Que vous ne cherchez pas à créer de multiples comptes membres
 > - Que les certifications sont émises vers un compte qui est en votre possession !
 
-#### J'ai perdu la clé associée à mon compte de membre, que puis-je faire ?
+#### J'ai perdu mes identifiants, ou je souhaite changer mon pseudonyme ou ma clé privée, que puis-je faire ?
 
 > **Vous devez révoquer le compte perdu, recréer un compte et redémarrer le processus de certifications.**
-Si le compte dont vous avez perdu les identifiants était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. En effet, si ce compte recevait suffisamment de certifications et devenait membre, vous n'auriez alors pas le droit de créer un nouveau compte ! Vous seriez dans l'obligation d'attendre l'expiration de celui-ci.
-
-#### Je souhaite changer de pseudonyme, que puis-je faire ?
-
-> **Vous devez révoquer le compte précédent, recréer un compte et redémarrer le processus de certifications.**
-Si le compte dont vous souhaitez changer le pseudonyme était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. En effet, si ce compte recevait suffisamment de certifications et devenait membre, vous n'auriez alors pas le droit de créer un nouveau compte ! Vous seriez dans l'obligation d'attendre l'expiration de celui-ci.
-
-#### Je souhaite changer de clé associée à mon compte membre, que puis-je faire ?
-
-> **Vous devez révoquer le compte précédent, recréer un compte et redémarrer le processus de certifications.**
-Si le compte dont vous avez perdu les identifiants était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. En effet, si ce compte recevait suffisamment de certifications et devenait membre, vous n'auriez alors pas le droit de créer un nouveau compte ! Vous seriez dans l'obligation d'attendre l'expiration de celui-ci.
-
+Si le compte était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. En effet, si ce compte recevait suffisamment de certifications et devenait membre, vous n'auriez alors pas le droit de créer un nouveau compte ! Vous seriez dans l'obligation d'attendre l'expiration de celui-ci.
 
 
 # La toile de confiance
