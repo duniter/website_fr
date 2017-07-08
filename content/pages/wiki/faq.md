@@ -27,16 +27,33 @@ Lorsqu'il révoque un compte membre, l'utilisateur déclare au réseau de la mon
 
 > - de certifier l'identité révoquée
 > - de demander une adhésion pour l'identité révoquée  
- Mais la révocation n'impact pas l'envoi et la réception de monnaie sur la clé associée à l'identité révoquée.
+
+> Mais la révocation n'impact pas l'envoi et la réception de monnaie sur la clé associée à l'identité révoquée.
+
+#### Pourquoi revoquer un compte membre, qu'il soit en cours d'adhésion ou déja membre ?
+
+> **En révoquant un compte membre, vous assurez à la toile : **
+
+> - Que ce compte ne pourra pas devenir membre. 
+> - Que vous ne cherchez pas à créer de multiples comptes membres
+> - Que les certifications sont émises vers un compte qui est en votre possession !
 
 #### J'ai perdu la clé associée à mon compte de membre, que puis-je faire ?
 
 > **Vous devez révoquer le compte perdu, recréer un compte et redémarrer le processus de certifications.**
-Si le compte dont vous avez perdu les identifiants était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. Ainsi, vous assurez :  
+Si le compte dont vous avez perdu les identifiants était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. En effet, si ce compte recevait suffisamment de certifications et devenait membre, vous n'auriez alors pas le droit de créer un nouveau compte ! Vous seriez dans l'obligation d'attendre l'expiration de celui-ci.
 
-> - Que ce compte, aux identifiants perdus, ne pourra pas devenir membre. Vous n'auriez alors pas le droit de créer un nouveau compte et seriez dans l'obligation d'attendre l'expiration de celui-ci.
-> - Que vous ne cherchez pas à créer de multiples comptes membres
-> - Que les certifications sont émises vers un compte qui est en votre possession !
+#### Je souhaite changer de pseudonyme, que puis-je faire ?
+
+> **Vous devez révoquer le compte précédent, recréer un compte et redémarrer le processus de certifications.**
+Si le compte dont vous souhaitez changer le pseudonyme était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. En effet, si ce compte recevait suffisamment de certifications et devenait membre, vous n'auriez alors pas le droit de créer un nouveau compte ! Vous seriez dans l'obligation d'attendre l'expiration de celui-ci.
+
+#### Je souhaite changer de clé associée à mon compte membre, que puis-je faire ?
+
+> **Vous devez révoquer le compte précédent, recréer un compte et redémarrer le processus de certifications.**
+Si le compte dont vous avez perdu les identifiants était en cours d'adhésion à la toile de confiance, vous devez aussi le révoquer. En effet, si ce compte recevait suffisamment de certifications et devenait membre, vous n'auriez alors pas le droit de créer un nouveau compte ! Vous seriez dans l'obligation d'attendre l'expiration de celui-ci.
+
+
 
 # La toile de confiance
 
