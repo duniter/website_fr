@@ -61,3 +61,4 @@ Installation de nœud Duniter, accès et modification code source, techniques cr
 ## Articles
 
 * *[Oh les cons, ils ont doublé Hamon !](http://blog.spyou.org/wordpress-mu/2017/03/14/oh-les-cons-ils-ont-double-hamon/)* par Spyou
+* *[Une monnaie libre existe !](http://nayya.org/)* par Nay4
