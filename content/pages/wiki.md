@@ -3,7 +3,7 @@ Order: 3
 Date: 2017-03-27
 Tags: wiki, blockchain, trm, yunohost
 Slug: wiki
-Authors: cgeek
+Authors: cgeek, matiou
 
 Cette page regroupe des informations importantes concernant Duniter à des fins d'indexation. Elle sert également de base de connaissances pour ses contributeurs.
 
@@ -57,6 +57,8 @@ Installation de nœud Duniter, accès et modification code source, techniques cr
 * Vidéo *[Le paradigme TRM et le RdB](https://www.youtube.com/watch?v=PdSEpQ8ZtY4)* par Stéphane Laborde
 * Vidéo *[Révolution monétaire : débat entre Etienne Chouard, Stéphane Laborde et Jean-Baptiste Bersac](https://www.youtube.com/watch?v=kvjstlFaxUw)* par Le 4ème singe
 * *[Duniter, Théorie relative de la monnaie et projets autour des monnaies libres](https://moul.re/blog/index.php?article3/duniter)* par Moul
+* *[« Monnaie de singe et Monnaie Libre » sur RADIOM ](https://www.radiom.fr/podcast/71-passeurs-de-bougnettes/3453-monnaie-de-singe-et-monnaie-libre.html)* par matiou et nadou
+* *[« La Monnaie Libre au coeur des débats »](https://www.radiom.fr/podcast/71-passeurs-de-bougnettes/3621-la-monnaie-libre-au-coeur-des-debats.html)* par matiou et nadou
 
 ## Articles
 
