@@ -17,6 +17,7 @@ Page concernant spécifiquement le logiciel Duniter.
 * [Lancer Duniter automatiquement au démarrage de la machine](https://diaspora-fr.org/posts/2703333)
 * [Duniter en ligne de Commande](./commandes)
 * [Les modules (plugins)](./modules)
+* [Liste des modules (plugins)](./liste-modules)
 
 ## Développement
 

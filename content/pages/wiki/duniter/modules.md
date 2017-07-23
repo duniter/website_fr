@@ -8,6 +8,8 @@ Duniter embarque un système de chargement de *modules*. Ce système permet d'é
 
 Cela permet au cœur de ne contenir que l'essentiel, et donne la liberté à chacun d'avoir le nœud qui lui correspond.
 
+Une liste des modules existants est disponible sur le [wiki](./liste-modules).
+
 ## Avertissement !
 
 Les modules *sont des programmes*, et en tant que tels ils peuvent contenir n'importe quel type de code. **Nous ne pouvons pas vous garantir qu'ils sont exempts de bugs ou de virus**.
