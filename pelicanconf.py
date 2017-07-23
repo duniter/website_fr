@@ -16,6 +16,7 @@ TIMEZONE = 'Europe/Paris'
 FAVICON = 'images/duniter-logo.png'
 SITELOGO = 'images/duniter-logo.png'
 THUMBNAIL_DEFAULT = '/images/duniter-logo-bw.png'
+SEARCH_URL = '/fr/search.html'
 # BANNER = 'images/duniter-logo.png'
 # BANNER_SUBTITLE = 'This is my subtitle'
 SITELOGO_SIZE = 36
