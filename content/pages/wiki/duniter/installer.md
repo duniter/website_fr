@@ -138,7 +138,7 @@ Duniter peut être compilé sur la majorité des machines Linux (32 bits ou 64 b
 
 ### Docker
 
-Un [guide d'installation Docker](https://github.com/duniter/duniter/blob/master/docker/README.md) est disponible.
+Non disponible.
 
 ## Windows
 
