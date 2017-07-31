@@ -92,6 +92,12 @@ Lorsque la toile arrive a sa dimension maximum, certifier vers l'intérieur va l
 
 # Théorie monétaire
 
+#### Où est décrite la théorie monétaire derrière Duniter et la Ğ1 ?
+
+> Duniter et la Ğ1 reposent sur la [Théorie Relative de la Monnaie (TRM)](http://trm.creationmonetaire.info/), librement disponible sur Internet.
+
+> Cette théorie définit la notion de monnaie libre.
+
 #### Si tout le monde crée la monnaie, y a-t-il quand même une limite ?
 
 > Oui : la création monétaire se fait *à part égale* entre tous les individus, à la fois dans l'espace (tous les individus « maintenant ») et dans le temps (tous les individus « à venir »). Ce qui signifie que cette part est **bornée**.
