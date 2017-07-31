@@ -90,4 +90,27 @@ Lorsque la toile arrive a sa dimension maximum, certifier vers l'intérieur va l
 
 > Quelle que soit le type de certification, externe ou interne, le procédé inscrit dans la licence Ğ1 reste valide, il convient donc toujours de s'assurer que sa responsabilité est correctement engagée du fait que l'on connaisse bien la personne certifiée, et de s'assurer par tous moyens que la clé publique que l'on envisage de certifier est bien contrôlée par la personne connue.
 
+# Théorie monétaire
+
+#### Si tout le monde crée la monnaie, y a-t-il quand même une limite ?
+
+> Oui : la création monétaire se fait *à part égale* entre tous les individus, à la fois dans l'espace (tous les individus « maintenant ») et dans le temps (tous les individus « à venir »). Ce qui signifie que cette part est **bornée**.
+
+> Lorsque les individus produisent de la monnaie, par exemple chaque jour vers 13h pour la monnaie Ğ1, tous les individus produisent le même montant. Ni plus, ni moins. La démonstration est donnée [dans cette vidéo](https://www.youtube.com/watch?v=0d0EKlD7q9w).
+
+#### Si tous les individus créent perpétuellement de la monnaie, n'y aura-t-il pas d'inflation ?
+
+> Avant toute chose, nous vous invitons à réfléchir à ce que signifie le mot « inflation », et à vous interroger sérieusement en quoi l'inflation pourrait poser un problème dans quelque monnaie que ce soit.
+
+> En effet trop souvent le mot « inflation » est brandi sans compréhension, répété parce qu'on nous aurait enseigné : « l'inflation c'est mal ».
+
+> Or, cette dernière proposition n'est pas forcément vraie. Interrogez-vous donc sur les cas où celle-ci est problématique, pour qui, et les cas où celle-ci ne l'est pas ou même est bénéfique et pour qui.
+
+> Ensuite, nous vous invitons à étudier deux argumentations : 
+
+> 1. La vidéo sur la monnaie libre [« Le quantitatif et le relatif »](https://www.youtube.com/watch?v=na4ZtiSECog)
+
+> 2. [Ce commentaire à propos de l'inflation](https://forum.duniter.org/t/flyer-monnaie-libre/2901/2)
+
+> Puis à positionner la monnaie libre dans cette réflexion.
 
