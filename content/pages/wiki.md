@@ -59,7 +59,7 @@ Installation de nœud Duniter, accès et modification code source, techniques cr
 * Vidéo *[Révolution monétaire : débat entre Etienne Chouard, Stéphane Laborde et Jean-Baptiste Bersac](https://www.youtube.com/watch?v=kvjstlFaxUw)* par Le 4ème singe
 * *[Duniter, Théorie relative de la monnaie et projets autour des monnaies libres](https://moul.re/blog/index.php?article3/duniter)* par Moul
 * *[« Monnaie de singe et Monnaie Libre » sur RADIOM ](https://www.radiom.fr/podcast/71-passeurs-de-bougnettes/3453-monnaie-de-singe-et-monnaie-libre.html)* par matiou et nadou
-* *[« La Monnaie Libre au coeur des débats »](https://www.radiom.fr/podcast/71-passeurs-de-bougnettes/3621-la-monnaie-libre-au-coeur-des-debats.html)* par matiou et nadou
+* *[« La Monnaie Libre au coeur des débats » sur RADIOM ](https://www.radiom.fr/podcast/71-passeurs-de-bougnettes/3621-la-monnaie-libre-au-coeur-des-debats.html)* par matiou et nadou
 
 ## Articles
 
