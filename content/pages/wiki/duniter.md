@@ -24,7 +24,7 @@ Page concernant spécifiquement le logiciel Duniter.
 * [Tutoriel de développement](https://github.com/duniter/duniter/blob/master/doc/contribute-french.md)
 * [Fuites mémoire](./fuites-memoire)
 * [Les modules C/C++](./les-modules-c-cpp)
-* [Guide de validateur](https://github.com/duniter/duniter/blob/dev/doc/validator-guide.md)
+* [Guide du validateur](https://github.com/duniter/duniter/blob/dev/doc/validator-guide.md)
 * [Livraisons](./livraisons)
 
 ## Concepts
