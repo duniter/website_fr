@@ -96,7 +96,7 @@ Pour les utilisateurs les plus avancés, une version serveur vous permet d'avoir
 
 Vous pourrez contrôler votre instance à l'aide d'outils en ligne de commande, mais vous aurez également accès à l'interface graphique via un navigateur web.
 
-> Lorsque vous en aurez fini avec l'installation, vous pourrez consulter [la documentation des commandes Duniter](../commandes).
+> Lorsque vous en aurez fini avec l'installation, vous pourrez consulter [la documentation des commandes Duniter](https://duniter.org/fr/wiki/duniter/commandes/).
 
 ## GNU/Linux
 
@@ -112,7 +112,7 @@ Vous pourrez contrôler votre instance à l'aide d'outils en ligne de commande, 
 
         duniter start
         
-4. Consultez [les commandes Duniter](../commandes) pour manipuler votre nœud.
+4. Consultez [les commandes Duniter](https://duniter.org/fr/wiki/duniter/commandes/) pour manipuler votre nœud.
 
 ### YunoHost
 
@@ -132,7 +132,7 @@ Duniter peut être compilé sur la majorité des machines Linux (32 bits ou 64 b
         cd duniter
         npm install
         
-4. Utilisez [les commandes Duniter](../commandes) en préfixant `duniter` par `bin/`. Exemple : 
+4. Utilisez [les commandes Duniter](https://duniter.org/fr/wiki/duniter/commandes/) en préfixant `duniter` par `bin/`. Exemple : 
 
         bin/duniter --version
 
