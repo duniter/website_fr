@@ -21,7 +21,7 @@ Cœur du réseau Duniter, application P2P qui synchronise et modifie la blockcha
 
 ### Clients
 
-Logiciels qui se ne font que se connecter au réseau Duniter pour l'utiliser. Les clients ne font pas le travail d'un nœud, mais réalisent des opérations sur la blockchain : créer un porte-monnaie, transférer de la monnaie entre deux porte-monnaie,  créer une identité dans la toile de confiance, etc.
+Logiciels qui ne font que se connecter au réseau Duniter pour l'utiliser. Les clients ne font pas le travail d'un nœud, mais réalisent des opérations sur la blockchain : créer un porte-monnaie, transférer de la monnaie entre deux porte-monnaie,  créer une identité dans la toile de confiance, etc.
 
 * [Préconisations](./preconisations-client-duniter) pour développer un client Duniter.
 * [Sakia](http://sakia-wallet.org/), application de bureau [[tutoriel de développement](https://github.com/duniter/sakia/blob/master/doc/install_for_developers.md)]
