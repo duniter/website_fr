@@ -17,7 +17,7 @@ Cette page regroupe des informations importantes concernant Duniter à des fins 
 
 compatible avec les crypto-monnaies Duniter comme la Ğ1 (connexion blockchain)
 
-* [ḡannonce](https://gannonce.duniter.org/), site web
+* [ğannonce](https://gannonce.duniter.org/), site web
 * [ğchange](https://www.gchange.fr/), application de place de marché (web et mobile)
 
 Simple groupe d'annonces sur le réseau privateur Facebook
