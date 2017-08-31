@@ -18,7 +18,7 @@ Une autre solution possible **est d'utiliser les réseaux sociaux tels [Diaspora
 
 ## En produire
 
-Mais si vous êtes un individu ne produisant pas encore d'unités Ğ1, sachez que *vous pourriez en produire vous-même*. C'est une propriété fondamentale de Ğ1 : tout individu peut produire sa part de monnaie sous réserve de de devenir membre de la toile de confiance Ğ1.
+Mais si vous êtes un individu ne produisant pas encore d'unités Ğ1, sachez que *vous pourriez en produire vous-même*. C'est une propriété fondamentale de Ğ1 : tout individu peut produire sa part de monnaie sous réserve de devenir membre de la toile de confiance Ğ1.
 
 Devenir membre n'est ni anodin ni instantané. Cette étape fait intervenir des humains et s'effectue donc à temps humain : devenir membre consiste à être reconnu par des personnes déjà membres de la toile, c'est ce que l'on appele « être certifié ». Si vous recevez suffisamment de certifications (cinq minimum) et en bonne qualité (notion de distance), alors ces certifications seront agrégées à toutes celles déjà existantes et viendront augmenter la toile de confiance.
 
