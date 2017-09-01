@@ -93,7 +93,7 @@ Un groupe d'individus membres pourrait s'entendre pour créer des identités fic
 
 * Les membres ayant émis suffisamment de certifications sont utilisés comme    « points de contrôle » (*membres référents*).
 
-Le nombre de certifications qu'il faut émettre **et** recevoir dépend du nombre de membres en cours.  N est le nombre de membres, Y(N) est le nombre de certifications qu'il faut émettre **et** recevoir pour que le membre soit considéré « référent » et `stepMax` est 
+Le nombre de certifications qu'il faut émettre **et** recevoir dépend du nombre de membres en cours.  N est le nombre de membres, Y(N) est le nombre de certifications qu'il faut émettre **et** recevoir pour que le membre soit considéré « référent ».
 
 Pour qu'une identité devienne membre, il faut qu'il existe un chemin de *stepMax* pas ou moins de *xpercent* % des membres référents vers l'identité considérée.
 
