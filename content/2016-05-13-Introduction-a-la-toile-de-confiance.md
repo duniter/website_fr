@@ -1,9 +1,9 @@
-Title: Introduction à la gestion des membres
+Title: Fonctionnement de la toile de confiance
 Date: 2016-05-13
 Category: Toile de confiance
 Tags: wot, toile de confiance
 Slug: introduction-a-la-toile-de-confiance
-Authors: greyzlii
+Authors: greyzlii, elois
 Thumbnail: /images/network.svg
 
 Duniter est un logiciel permettant de créer une monnaie libre au sens décrit dans la TRM (Théorie Relative de la Monnaie).  Cette théorie implique que les unités monétaires sont co-produites par chacun des membres d'une même communauté.  Il est donc essentiel que les membres de la communauté soient bien identifiés et (re)connus.
@@ -91,22 +91,29 @@ Un groupe d'individus membres pourrait s'entendre pour créer des identités fic
 
  Lorsqu'un individu est susceptible de devenir membre (c'est-à-dire qu'il a obtenu suffisamment de certifications), Duniter déroule le protocole de vérification suivant :     
 
-* Les membres ayant émis suffisamment de certifications sont utilisés comme    « points de contrôle » (*sentries*).
+* Les membres ayant émis suffisamment de certifications sont utilisés comme    « points de contrôle » (*membres référents*).
 
-Le nombre de certifications émises requises dépend du nombre de membres en cours.  N est le nombre de membres, Y(N) est le nombre de certifications émises requises pour que le membre soit considéré « point de contrôle ».
+Le nombre de certifications qu'il faut émettre **et** recevoir dépend du nombre de membres en cours.  N est le nombre de membres, Y(N) est le nombre de certifications qu'il faut émettre **et** recevoir pour que le membre soit considéré « référent » et `stepMax` est 
+
+Pour qu'une identité devienne membre, il faut qu'il existe un chemin de *stepMax* pas ou moins de *xpercent* % des membres référents vers l'identité considérée.
+
+Dans le cas de la monnaie Ğ1 *stepMax*=`5` et *xpercent*=`0.8` (80%)
+
+Y(N) = CEIL(N^(1/stepMax))
 
 ```
-Avec maxsteps = 5
+Avec stepMax = 5
 N         Y(N)
-20        1
-200       2
-2000      4
-20000     7
-200000    11
-2000000   18
+1         1
+2         2
+33        3
+244       4
+1025      5
+3126      6
+7777      7
 ```
 
-Pour devenir membre, l'identité doit pouvoir joindre un certain pourcentage *xpercent* (Percent of distance) des points de contrôle avec un nombre de pas maximum nommé *maxsteps* (Max distance).
+
 
  **Limiter les pouvoirs**
 
