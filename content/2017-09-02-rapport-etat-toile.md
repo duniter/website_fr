@@ -1,4 +1,4 @@
-Title: État de la toile de confiance Ğ1 au 1er Septembre 2017
+Title: Rapport toile de confiance Ğ1 au 1er Septembre 2017
 Date: 2017-09-02
 Category: Toile de confiance
 Tags: wot, toile de confiance
@@ -6,13 +6,17 @@ Slug: rapport-etat-wot
 Authors: elois
 Thumbnail: /images/network.svg
 
-Depuis le [4 juillet 2017](https://forum.duniter.org/t/currency-monit-monitoring-dune-monnaie-et-de-sa-toile-de-confiance/2770/17?u=elois) je tiens des statistiques détaillés sur l'état de la toile de confiance que vous pouvez visualiser sur [g1-monit.elois.org](https://g1-monit.elois.org).
+Depuis le [4 juillet 2017](https://forum.duniter.org/t/currency-monit-monitoring-dune-monnaie-et-de-sa-toile-de-confiance/2770/17?u=elois) je tiens des statistiques détaillées sur l'état de la toile de confiance que vous pouvez visualiser sur [g1-monit.elois.org](https://g1-monit.elois.org).
 *Ces statistiques sont produites par le [module duniter](https://duniter.org/fr/wiki/duniter/liste-modules/) `duniter-currency-monit` qui se sert directement dans la blockchain locale du noeud duniter sur lequel il est installé.*
 
-J'ai décider de profiter de ces statistiques pour publier régulièrement un rapport sur l'état global de la toile de confiance Ğ1.
+J'ai décider de profiter de ces statistiques pour publier régulièrement un court rapport sur l'état global de la toile de confiance Ğ1.
+
+## L'Esprit de ces courts rapports réguliers
+
+L'Objectif de ces courts rapport réguliers n'est pas d'être exaustif mais au contraire de mettre en avant certains indicateurs qui me semblent pertinents à un moment donné pour visualiser un phénomène donné. Il n'y a pas de fréquence défini, je publierai un rapport chaque fois qu'il que j'aurais un peu de temps pour et qu'il y aura quelque chose à décrire (hé oui des fois il ne se passe rien de particulier). Si vous lisez régulièrement mes rapports, que vous consultez très régulièrement *g1-monit* et qu'il vous viens l'envie de rédiger vous aussi des rapports vous pouvez [me contacter](https://librelois.fr/contact/) pour qu'on en discute :)
 
 # Prérequis
-Avant de lire ce rapport, il est vivement recommendé d'étudier la [licence Ğ1](https://duniter.org/fr/files/licence_g1.txt) et de lire toutes les pages suivantes :
+Avant de lire ces rapport, il est vivement recommandé d'étudier la [licence Ğ1](https://duniter.org/fr/files/licence_g1.txt) et de lire toutes les pages suivantes :
 * [Devenir membre de la toile de confiance Ğ1](../devenir-membre)
 * [Certifier de nouveaux membres](../certifier-de-nouveaux-membres)
 * [Question Fréquentes sur la toile de confiance](../faq)
@@ -36,9 +40,9 @@ Ainsi, un membre ayant une qualité supérieure un égale à 1, pourrait faire r
 
 Lorsque la qualité moyenne est supérieure à 1 c'est que la règle de distance n'est pas contraignante, lorsque la qualité moyenne s'approche de 1, la règle de distance va devenir contraignantes pour quelques cas minoritaires, et lorsque la qualité moyenne devient inférieure à 1, alors la règle de distance devient contraignante pour la majorité des identités (par identités j'entend nouveaux+membres souhaitant ce renouveller!)
 
-Actuellement la qualité moyenne est de **1.06**, ce qui signifie que la règle de distance n'est pas contraignante, donc la toile n'est pas "trop" tendue, mais 1.06 c'est proche de 1, donc si tout les membres ne certifient que vers l'extérieur a partir de maintenant alors la règle de distance pourrais redevenir contraignante rapidement (ce qui peut être une situation souhaitable et voulue dans certains cas, c'est aussi une liberté des membres que de tendre ou détendre la toile).
+Actuellement la qualité moyenne est de **1.04**, ce qui signifie que la règle de distance n'est pas contraignante, donc la toile n'est pas "trop" tendue, mais 1.04 c'est proche de 1, donc si tout les membres ne certifient que vers l'extérieur a partir de maintenant alors la règle de distance pourrais devenir contraignante rapidement (ce qui peut être une situation souhaitable et voulue dans certains cas, c'est aussi une liberté des membres que de tendre ou détendre la toile).
 
-# Raport toile Ğ1 au 2 septembre 2017
+# Rapport toile Ğ1 au 2 septembre 2017
 
 ## Observations
 
@@ -51,7 +55,7 @@ l'effet de densification du palier s'est déjà dissipé, la toile de confiance 
 * La proportion de membre ayant une qualité >=1 à chuté à **82%** soit environ le même niveau, qu'avant le palier (83%)
 * De plus, une dizaine de membres commencent a chuter a des niveau de qualité très faibles (inférieurs à 0.9), ce qui veut dire qu'ils commencent a être trop distants des membres référents :  https://g1-monit.elois.org/gaussianWotQuality?lg=fr
 * D'ailleurs sur les 79 futurs membres ayant reçu au moins 1 certifications, 7 d'entre eux ne respectent pas la règle de distance, 3 ont été certifiés par le même membre mais cela fait quand même **4 cas différents de non-respect de la règle de distance.**
-* Un autre indicateur nous montre bien la tension de la toile, **l'augmentation de la longueur moyenne du plus court chemin entre deux membres :** désormais 4,13, cette valeur a continuellement augmentée même lors du passage du palier car elle est indépendante de la notion de membre référent, elle montre l'état de tension de la toile entière là ou la qualité ne montre que l'état de tension d'un sous ensemble de la toile (le sous-ensemble des liens référent->membre).
+* Un autre indicateur nous montre bien la tension de la toile, **l'augmentation de la longueur moyenne du plus court chemin entre deux membres :** désormais à **4.13**, cette valeur a continuellement augmentée même lors du passage du palier car elle est indépendante de la notion de membre référent, elle montre l'état de tension de la toile entière là ou la qualité ne montre que l'état de tension d'un sous ensemble de la toile (le sous-ensemble des liens référent->membre).
 * Enfin le nombre de membres référents est quand a lui est repassé au dessus de sa valeur d'avant le palier (153) : 
 <img src="https://librelois.fr/public/fin-effet-palier-yn-4.png" width="690" height="339">
 
