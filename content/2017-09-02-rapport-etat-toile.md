@@ -13,7 +13,8 @@ J'ai décider de profiter de ces statistiques pour publier régulièrement un co
 
 ## L'Esprit de ces courts rapports réguliers
 
-L'Objectif de ces courts rapport réguliers n'est pas d'être exaustif mais au contraire de mettre en avant certains indicateurs qui me semblent pertinents à un moment donné pour visualiser un phénomène donné. Il n'y a pas de fréquence défini, je publierai un rapport chaque fois qu'il que j'aurais un peu de temps pour et qu'il y aura quelque chose à décrire (hé oui des fois il ne se passe rien de particulier). Si vous lisez régulièrement mes rapports, que vous consultez très régulièrement *g1-monit* et qu'il vous viens l'envie de rédiger vous aussi des rapports vous pouvez [me contacter](https://librelois.fr/contact/) pour qu'on en discute :)
+L'Objectif de ces courts rapport réguliers n'est pas d'être exaustif mais au contraire de mettre en avant certains indicateurs qui me semblent pertinents à un moment donné pour visualiser un phénomène donné. Il n'y a pas de fréquence défini, je publierai un rapport chaque fois qu'il me semblera y avoir quelque chose de pertinent à décrire et que j'aurais le temps pour.
+Si vous lisez régulièrement mes rapports, que vous consultez très régulièrement *g1-monit* et qu'il vous viens l'envie de rédiger vous aussi des rapports vous pouvez [me contacter](https://librelois.fr/contact/) pour qu'on en discute :)
 
 # Prérequis
 Avant de lire ces rapport, il est vivement recommandé d'étudier la [licence Ğ1](https://duniter.org/fr/files/licence_g1.txt) et de lire toutes les pages suivantes :
@@ -53,7 +54,8 @@ Nous sommes deux semaines après le passage du palier Y[n]=4, rappel sur l'effet
 l'effet de densification du palier s'est déjà dissipé, la toile de confiance est de nouveau aussi tendue qu'avant le passage du palier, voir même légèrement davantage : 
 
 * La proportion de membre ayant une qualité >=1 à chuté à **82%** soit environ le même niveau, qu'avant le palier (83%)
-* De plus, une dizaine de membres commencent a chuter a des niveau de qualité très faibles (inférieurs à 0.9), ce qui veut dire qu'ils commencent a être trop distants des membres référents :  https://g1-monit.elois.org/gaussianWotQuality?lg=fr
+* De plus, une dizaine de membres commencent a chuter a des niveau de qualité très faibles (inférieurs à 0.9), ce qui veut dire qu'ils commencent a être trop distants des membres référents, zones en noir sur ce graphique de la page [qualité toile]( https://g1-monit.elois.org/gaussianWotQuality?lg=fr) : 
+<img src="https://librelois.fr/public/qualite-toile-020917.png" width="690" height="339">
 * D'ailleurs sur les 79 futurs membres ayant reçu au moins 1 certifications, 7 d'entre eux ne respectent pas la règle de distance, 3 ont été certifiés par le même membre mais cela fait quand même **4 cas différents de non-respect de la règle de distance.**
 * Un autre indicateur nous montre bien la tension de la toile, **l'augmentation de la longueur moyenne du plus court chemin entre deux membres :** désormais à **4.13**, cette valeur a continuellement augmentée même lors du passage du palier car elle est indépendante de la notion de membre référent, elle montre l'état de tension de la toile entière là ou la qualité ne montre que l'état de tension d'un sous ensemble de la toile (le sous-ensemble des liens référent->membre).
 * Enfin le nombre de membres référents est quand a lui est repassé au dessus de sa valeur d'avant le palier (153) : 
@@ -71,9 +73,7 @@ La encore c'est un phénomène normal en début de monnaie en même souhaitable 
   *Aparté : je rapelle qu'il est impossible d'empecher les petites fraude, il y en aura forcément, peut être même qu'il y en a déjà, la seule chose que l'on peut et que l'on doit faire c'est contraindre ces petites fraudes a rester marginales pour que la globalité de la toile reste de confiance et c'est précisement le rôle de la règle de distance.*
 
   Voila pourquoi il est important d'insister auprès des autres membres de la Ğ1 que vous rencontrez sur le fait qu'il doivent certifier les membres qu'il connaissent personnellement même s'il sont déjà membres et qu'il doivent le faire sans attendre.
-Ce point là n'est pas toujours bien expliqué et encore moins compris, et c'est bien compréhensible vu la quantité de nouveaux concepts a intégré par ailleurs, masi si nous n'insistons pas sufisamment sur l'importance des certifications interne alors il y aura propablement beaucoups d'incompréhensions lorsque la règle de distance deviendra bloquante, et cette incompréhension provoquera de la méfiance et freinera la popularité de la Ğ1.
-
-  Ce phénomène me semble presque inévitable, en revanche l'ampleur qu'il prendra dépend de notre comportement a chaque rencontre Ğ1, donc insistez sur l'importance de certifier les membres déjà membres que l'on connait bien personnellement, quitte a passer pour le type chiant.
+Ce point là n'est pas toujours bien expliqué et encore moins compris, et c'est bien compréhensible vu la quantité de nouveaux concepts a intégré par ailleurs, masi si nous n'insistons pas sufisamment sur l'importance des certifications interne alors il y aura peut-être beaucoups d'incompréhensions lorsque la règle de distance deviendra bloquante, et cette incompréhension pourrait provoquer de la méfiance et freiner la popularité de la Ğ1.
 
   Il conviens de nuancer ce propos global en précisant que la toile se régionalise, ainsi la règle de distance ne deviendra contraignantes que dans certaines régions et pas du tout dans d'autres, il suffit pour anticiper cela de surveiller les membres à la qualité la plus faible, et s'il commence a s'en concentrer beaucoup dans une même région, nous pouvons très bien contacter directement les groupes locaux de cette région, et par la même occassion leur apprendre a utiliser g1-monit pour surveiller eux-mêmes leur propre situation a l'avenir.
   
