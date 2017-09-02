@@ -61,10 +61,10 @@ l'effet de densification du palier s'est déjà dissipé, la toile de confiance 
 * Enfin le nombre de membres référents est quand a lui est repassé au dessus de sa valeur d'avant le palier (153) : 
 <img src="https://librelois.fr/public/fin-effet-palier-yn-4.png" width="690" height="339">
 
-La situation est encore loin d'être bloquante, mais la toile n'a jamais été aussi tendue depuis que je tiens des statistiques très détaillés sur son état, c'est à dire depuis le 4 juillet 2017.
-
 ## Interprétations
 
+  La règle de distance est encore très loin d'être bloquante, mais la toile n'a jamais été aussi tendue depuis que je tiens des statistiques très détaillés sur son état, c'est à dire depuis le 4 juillet 2017.
+  
   La toile de confiance Ğ1 est en train de se tendre car le flux de nouveaux entrants va plus vite que la reconnaissance interne entre les membres déjà membres. Ce phénomène est parfaitement normal en début de monnaie et vas d'autant s'accéléré que la Ğ1 gagnera en popularité. La toile va donc très probablement continuée a se tendre jusqu'a ce que la règle de distance devienne bloquante.
 
   A ce moment là le flux d'entrée de nouveaux va ralentir et les membres qui était alors très actifs vers l'extérieur devrons se mettrent a certifier vers l'intérieur pour densifier un peu la toile afin que celle-ci puisse de nouveau acceuillir.
