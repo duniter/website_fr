@@ -2,7 +2,7 @@ Title: Rapport toile de confiance Ğ1 au 2 Septembre 2017
 Date: 2017-09-02
 Category: Toile de confiance
 Tags: wot, toile de confiance
-Slug: rapport-etat-wot
+Slug: rapport-etat-toile
 Authors: elois
 Thumbnail: /images/network.svg
 
