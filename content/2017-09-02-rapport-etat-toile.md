@@ -18,10 +18,10 @@ Si vous lisez régulièrement mes rapports, que vous consultez très régulière
 
 # Prérequis
 Avant de lire ces rapports, il est vivement recommandé d'étudier la [licence Ğ1](https://duniter.org/fr/files/licence_g1.txt) et de lire toutes les pages suivantes :
-* [Devenir membre de la toile de confiance Ğ1](../devenir-membre)
-* [Certifier de nouveaux membres](../certifier-de-nouveaux-membres)
-* [Question Fréquentes sur la toile de confiance](../faq)
-* [**Fonctionnement de la toile de confiance**](https://duniter.org/fr/introduction-a-la-toile-de-confiance/)
+* [Devenir membre de la toile de confiance Ğ1](../devenir-membre) <br>
+* [Certifier de nouveaux membres](../certifier-de-nouveaux-membres) <br>
+* [Question Fréquentes sur la toile de confiance](../faq) <br>
+* [**Fonctionnement de la toile de confiance**](https://duniter.org/fr/introduction-a-la-toile-de-confiance/) <br>
 
 En particulier la lecture de l'article [**Fonctionnement de la toile de confiance**](https://duniter.org/fr/introduction-a-la-toile-de-confiance/) est indispensable pour bien connaitre le fonctionnement de chacune des règles de la toile.
 
