@@ -18,10 +18,10 @@ Si vous lisez régulièrement mes rapports, que vous consultez très régulière
 
 # Prérequis
 Avant de lire ces rapports, il est vivement recommandé d'étudier la [licence Ğ1](https://duniter.org/fr/files/licence_g1.txt) et de lire toutes les pages suivantes :
-* [Devenir membre de la toile de confiance Ğ1](../devenir-membre) <br>
-* [Certifier de nouveaux membres](../certifier-de-nouveaux-membres) <br>
-* [Question Fréquentes sur la toile de confiance](../faq) <br>
-* [**Fonctionnement de la toile de confiance**](https://duniter.org/fr/introduction-a-la-toile-de-confiance/) <br>
+* [Devenir membre de la toile de confiance Ğ1](../devenir-membre)  
+* [Certifier de nouveaux membres](../certifier-de-nouveaux-membres)  
+* [Question Fréquentes sur la toile de confiance](../faq)  
+* [**Fonctionnement de la toile de confiance**](https://duniter.org/fr/introduction-a-la-toile-de-confiance/)  
 
 En particulier la lecture de l'article [**Fonctionnement de la toile de confiance**](https://duniter.org/fr/introduction-a-la-toile-de-confiance/) est indispensable pour bien connaitre le fonctionnement de chacune des règles de la toile.
 
@@ -64,22 +64,22 @@ L'effet de densification du palier s'est déjà dissipé, la toile de confiance 
 
 ## Interprétations
 
-  La règle de distance est encore très loin d'être bloquante, mais la toile n'a jamais été aussi tendue depuis que je tiens des statistiques très détaillés sur son état, c'est-à-dire depuis le 4 juillet 2017.
-  
-  La toile de confiance Ğ1 est en train de se tendre car le flux de nouveaux entrants va plus vite que la reconnaissance interne entre les membres déjà membres. Ce phénomène est parfaitement normal en début de monnaie et va d'autant s'accélérer que la Ğ1 gagnera en popularité. La toile va donc très probablement continuer à se tendre jusqu'à ce que la règle de distance devienne bloquante.
+La règle de distance est encore très loin d'être bloquante, mais la toile n'a jamais été aussi tendue depuis que je tiens des statistiques très détaillés sur son état, c'est-à-dire depuis le 4 juillet 2017.
 
-  À ce moment-là, le flux d'entrée de nouveaux va ralentir et les membres qui étaient alors très actifs vers l'extérieur devront se mettre à certifier vers l'intérieur pour densifier un peu la toile afin que celle-ci puisse de nouveau acceuillir.
+La toile de confiance Ğ1 est en train de se tendre car le flux de nouveaux entrants va plus vite que la reconnaissance interne entre les membres déjà membres. Ce phénomène est parfaitement normal en début de monnaie et va d'autant s'accélérer que la Ğ1 gagnera en popularité. La toile va donc très probablement continuer à se tendre jusqu'à ce que la règle de distance devienne bloquante.
+
+À ce moment-là, le flux d'entrée de nouveaux va ralentir et les membres qui étaient alors très actifs vers l'extérieur devront se mettre à certifier vers l'intérieur pour densifier un peu la toile afin que celle-ci puisse de nouveau acceuillir.
 Là encore c'est un phénomène normal en début de monnaie et même souhaitable car cette contrainte sur les entrées limitera également les éventuelles micro-attaques sybil en cours (les petites fraudes) de sorte qu'elles restent microscopiques par rapport à la taille de la toile.
 
-  *Aparté : je rapelle qu'il est impossible d'empêcher les petites fraudes, il y en aura forcément, peut-être même qu'il y en a déjà, la seule chose que l'on peut et que l'on doit faire c'est contraindre ces petites fraudes à rester marginales pour que la globalité de la toile reste de confiance et c'est précisement le rôle de la règle de distance.*
+*Aparté : je rapelle qu'il est impossible d'empêcher les petites fraudes, il y en aura forcément, peut-être même qu'il y en a déjà, la seule chose que l'on peut et que l'on doit faire c'est contraindre ces petites fraudes à rester marginales pour que la globalité de la toile reste de confiance et c'est précisement le rôle de la règle de distance.*
 
-  Voila pourquoi il est important d'insister auprès des autres membres de la Ğ1 que vous rencontrez sur le fait qu'il doivent certifier les membres qu'ils connaissent personnellement même s'ils sont déjà membres et qu'il doivent le faire sans attendre.
+Voila pourquoi il est important d'insister auprès des autres membres de la Ğ1 que vous rencontrez sur le fait qu'il doivent certifier les membres qu'ils connaissent personnellement même s'ils sont déjà membres et qu'il doivent le faire sans attendre.
 Ce point-là n'est pas toujours bien expliqué et encore moins compris, et c'est bien compréhensible vu la quantité de nouveaux concepts à intégrer par ailleurs, mais si nous n'insistons pas suffisamment sur l'importance des certifications internes alors il y aura peut-être beaucoups d'incompréhensions lorsque la règle de distance deviendra bloquante, et cette incompréhension pourrait provoquer de la méfiance et freiner la popularité de la Ğ1.
 
-  Il convient de nuancer ce propos global en précisant que la toile se régionalise, ainsi la règle de distance ne deviendra contraignantes que dans certaines régions et pas du tout dans d'autres, il suffit pour anticiper cela de surveiller les membres à la qualité la plus faible, et s'il commence à s'en concentrer beaucoup dans une même région, nous pouvons très bien contacter directement les groupes locaux de cette région, et par la même occassion leur apprendre à utiliser g1-monit pour surveiller eux-mêmes leur propre situation à l'avenir.
-  
+Il convient de nuancer ce propos global en précisant que la toile se régionalise, ainsi la règle de distance ne deviendra contraignantes que dans certaines régions et pas du tout dans d'autres, il suffit pour anticiper cela de surveiller les membres à la qualité la plus faible, et s'il commence à s'en concentrer beaucoup dans une même région, nous pouvons très bien contacter directement les groupes locaux de cette région, et par la même occassion leur apprendre à utiliser g1-monit pour surveiller eux-mêmes leur propre situation à l'avenir.
+
 ## Conclusion
 
-  Les différents indicateurs de l'état de tension de la toile nous permettront de voir venir de loin, et c'est tout l'objectif du développement de g1-monit et de la rédaction de ces rapports : éveiller votre vigilance afin que vous surveilliez vous-même votre toile de confiance, après tout c'est un bien commun :)
+Les différents indicateurs de l'état de tension de la toile nous permettront de voir venir de loin, et c'est tout l'objectif du développement de g1-monit et de la rédaction de ces rapports : éveiller votre vigilance afin que vous surveilliez vous-même votre toile de confiance, après tout c'est un bien commun :)
 
-  Certains sont d'avis que la règle de distance est trop contraignante et qu'il faudra l'assouplir, d'autres que les règles actuelles conviennent parfaitement et que les membres de la Ğ1 sont capables de réguler d'eux-mêmes l'équilibre entre leurs  certifications internes et externes. Les membres de la Ğ1 seront-ils suffisamment vigilants pour réguler la toile d'eux-mêmes ? J'espère que la réponse est oui, le suivi des statistiques détaillés de la toile nous le dira :)
+Certains sont d'avis que la règle de distance est trop contraignante et qu'il faudra l'assouplir, d'autres que les règles actuelles conviennent parfaitement et que les membres de la Ğ1 sont capables de réguler d'eux-mêmes l'équilibre entre leurs  certifications internes et externes. Les membres de la Ğ1 seront-ils suffisamment vigilants pour réguler la toile d'eux-mêmes ? J'espère que la réponse est oui, le suivi des statistiques détaillés de la toile nous le dira :)
