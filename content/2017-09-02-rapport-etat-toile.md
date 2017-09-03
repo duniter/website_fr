@@ -32,9 +32,9 @@ Enfin, vous devez connaitre une grandeur spécifique aux toiles de confiance dun
 ## Qualité d'un membre
 Ce que je nomme qualité d'un membre est le rapport entre le taux de membres référents rendus atteignables par une certification de ce membre et le taux de membres référents qu'il faut atteindre pour respecter la règle de distance.
 
-Je vais donner un exemple pour que ce soit plus clair : prenons une toile avec 10 membres référents et xpercent=0.8.<br>
-Et bien la qualité d'un membre dans une telle toile est le rapport du nombre de membres référents qu'il permet de joindre en moins de 5 pas (numérateur) sur le nombre 8 (dénominateur).<br>
-Donc si un membre Bob permet de joindre 4 référents il aura une qualité de 0.5.<br>
+Je vais donner un exemple pour que ce soit plus clair : prenons une toile avec 10 membres référents et xpercent=0.8.  
+Et bien la qualité d'un membre dans une telle toile est le rapport du nombre de membres référents qu'il permet de joindre en moins de 5 pas (numérateur) sur le nombre 8 (dénominateur).  
+Donc si un membre Bob permet de joindre 4 référents il aura une qualité de 0.5.  
 Et si Bob permet de joindre 10 référents il aura une qualité de 10/8=1.25.
 
 Qu'entends-je par "permet de joindre" ? Quand je dis que Bob permet de joindre x membres référents j'entends que si Bob certifie une nouvelle identité (qui n'est certifiée que par Bob) alors il y aura x membres référents pour lequels il existera un chemin de moins de 5 pas de eux vers la nouvelle identité.
