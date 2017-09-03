@@ -1,4 +1,4 @@
-Title: Rapport toile de confiance Ğ1 au 1er Septembre 2017
+Title: Rapport toile de confiance Ğ1 au 2 Septembre 2017
 Date: 2017-09-02
 Category: Toile de confiance
 Tags: wot, toile de confiance
