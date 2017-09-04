@@ -136,5 +136,7 @@ Ensuite on prend le logarithme népérien de ce rapport pour éviter que l'handi
 Si l'on veut que la handicap s'applique dés la médiane il faudrait ensuite diviser par `LN(1)`, le problème c'est qu'on a déjà niveller la rapport a 1 avec la fonctione max, donc si l'on divisait par `LN(1)` tout les membres calculants aurait un handicap >= `1`, qui plus est est il bien juste de donner un handicap a un membre qui est tout juste a la médiane ?
 C'est pourquoi au lieu de prendre `1` on prend `1.189`, ce qui veut dire qu'il faut `18,9 %` au dessus de la médiane pour subir un handicap (si l'on néglige le +1 dans la formule qui devient effectivement négligeable pour un grand nombre de calculateurs).
 
-Mais pourquoi `18,9%` me direz-vous ? Honnetêment je ne suis pas l'auteur de cette formule et je ne sais pas s'il y a une raison particulière derrière cette valeur ou si c'est juste une valeur empirique qui vas bien.
-Mais qu'importe, ce qu'il faut retenir c'est l'idée d'indexer le handicap sur le logarithme du rapport a la médiane, et ne de l'apppliquer que pour les membres au dessus de la médiane, ensuite ce `18,9%` est simplement un paramètre libre que l'on pourra ajuster a l'expérience afin que le handicap soit suffisamment fort mais pas trop.
+Mais pourquoi `18,9%` me direz-vous ? 
+C'est 16^(1/16), le facteur de difficulté entre 2 niveaux de la preuve de travail dont le hash est en hexadécimal.
+
+En conclusion, ce qu'il faut retenir c'est l'idée d'indexer le handicap sur le logarithme du rapport a la médiane, et ne de l'apppliquer que pour les membres dont le rapport a la médiane dépasse le rapport entre 2 niveaux de difficulté de la preuve de travail.
