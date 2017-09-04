@@ -4,7 +4,7 @@ Date: 2017-05-02
 Slug: preuve-de-travail
 Authors: cgeek, elois
 
-## A quoi ça sert ?
+## À quoi ça sert ?
 
 La preuve de travail permet de synchroniser un réseau pair à pair (p2p) de machines devant partager une base de données commune.
 Dans duniter, cette base de données commune est notre grand livre de comptes commun qui consigne toutes les transactions de la monnaie ainsi que les actes de la toile de confiance (certifications, adhésions, renouvellements, révocations, etc). Elle est inscrite dans une « blockchain ».
