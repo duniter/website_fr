@@ -116,7 +116,7 @@ La fonction FLOOR est une simple troncature, ainsi pour que `exFact` soit exclua
 À l'inverse, si le membre considéré est l'auteur du dernier bloc alors `nbBlocksSince=0` et le facteur d'exclusion vaut donc `0.67 * nbPreviousIssuers`, c'est d'autant plus grand que le nombre de calculateurs est élevé. Je vous laisse imaginer la difficulté vertigineuse que vous atteindrez en trouvant un bloc s'il y a des centaines de membres calculant !  
 Vous atteindrez une difficulté telle que même le plus grand des supercalcuteurs serait bloqué, et c'est bien le but du facteur d'exclusion : empecher les supercalculateurs et fermes de calcul de prendre le contrôle de la blockchain et donc de la monnaie.
 
-En revanche, a tout instant t les deux tiers des membres calculant non exclus ont tous un facteur d'exclusion égal à 1, mais tous n'ont pas la même puissance de calcul, et donc si la difficulté personnalisée se limitait au facteur d'exclusion c'est toujours le tiers des membres calculant les plus puissants qui écriraient des blocs et deux tiers restants seraient presque toujours exclus, en particulier les machines très modestes type raspberry n'auraient aucune chance.
+En revanche, a tout instant t les deux tiers des membres calculant non exclus ont tous un facteur d'exclusion égal à `1`, mais tous n'ont pas la même puissance de calcul, et donc si la difficulté personnalisée se limitait au facteur d'exclusion c'est toujours le tiers des membres calculant les plus puissants qui écriraient des blocs et deux tiers restants seraient presque toujours exclus, en particulier les machines très modestes type raspberry n'auraient aucune chance.
 
 #### Le handicap
 
