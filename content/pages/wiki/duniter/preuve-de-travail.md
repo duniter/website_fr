@@ -136,7 +136,7 @@ On s'assure via la fonction MAX que ce rapport vaut au moins `1`.
 Ensuite on prend le logarithme népérien de ce rapport pour éviter que le handicap devienne excluant lorsque la fenêtre courante devient très grande, c'est ce qui fait la subtilité du handicap, son rôle n'est pas d'exclure mais de niveler la difficulté de chacun en fonction de sa puissance pour que tout le monde ait a peu près les mêmes chances de calculer.
 
 Si l'on veut que le handicap s'applique dés la médiane il faudrait ensuite diviser par `LN(1)`, le problème c'est qu'on a déjà nivellé la rapport à `1` avec la fonction MAX, donc si l'on divisait par `LN(1)` tous les membres calculant auraient un handicap >= `1`, qui plus est, est-il bien juste de donner un handicap à un membre qui est tout juste à la médiane ?  
-C'est pourquoi, au lieu de prendre `1`, on prend `1.189`, ce qui veut dire qu'il faut `18,9 %` au-dessus de la médiane pour subir un handicap (si l'on néglige le +1 dans la formule qui devient effectivement négligeable pour un grand nombre de calculateurs).
+C'est pourquoi, au lieu de prendre `1`, on prend `1.189`, ce qui veut dire qu'il faut être `18,9 %` au-dessus de la médiane pour subir un handicap (si l'on néglige le +1 dans la formule qui devient effectivement négligeable pour un grand nombre de calculateurs).
 
 Mais pourquoi `18,9%` me direz-vous ?  
 C'est 16^(1/16), le facteur de difficulté entre 2 niveaux de la preuve de travail dont le hash est en hexadécimal.
