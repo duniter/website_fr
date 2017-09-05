@@ -86,7 +86,7 @@ Soient `powMin` la difficulté commune, `exFact` le facteur d'exclusion d'un mem
 
 #### Le facteur d'exclusion `exFact` d'un membre
 
-Les membres qui n'ont jamais écrit de bloc ou qui n'ont pas écrit de bloc depuis longtemps ont un facteur d'exclusion de 1. Leur difficulté personnalisée sera donc égale à la somme `powMin + handicap`.  
+Les membres qui n'ont jamais écrit de bloc ou qui n'ont pas écrit de bloc depuis longtemps ont un facteur d'exclusion de `1`. Leur difficulté personnalisée sera donc égale à la somme `powMin + handicap`.  
 Avant de lire la formule donnée plus bas vous devez comprendre le rôle de ce facteur d'exclusion : lorsqu'un membre ajoute un bloc à la blockchain, son facteur d'exclusion saute subitement de 1 vers une valeur très élevée afin de faire grimper exponentiellement sa difficulté et l'exclure ainsi du calcul des prochains blocs et donc l'empêcher de prendre le contrôle de la blockchain.  
 Le facteur d'exclusion du membre va ensuite chuter rapidement à chaque nouveau bloc dont il n'est pas l'auteur puis retomber à 1 au bout d'un nombre de blocs qui est en fait une proportion du nombre de membres calculant (un tiers dans le cas de la Ğ1, ce qui signifie que s'il y a 15 membres calculant vous êtes exclus pendant 5 blocs).
 
@@ -106,13 +106,13 @@ Techniquement ce calcul est formalisé par les règles [BR_G05](https://github.c
 
 > Revenons à notre difficulté personnalisée !
 
-Nous avons dit que le facteur d'exclusion `exFact` augmente brutalement dès que le membre considéré trouve un bloc puis qu'il diminue rapidement pour retomber à 1 au bout d'un nombre de blocs égal au tiers des calculateurs. Et bien, c'est parti voici comment est calculé `exFact` :
+Nous avons dit que le facteur d'exclusion `exFact` augmente brutalement dès que le membre considéré trouve un bloc puis qu'il diminue rapidement pour retomber à `1` au bout d'un nombre de blocs égal au tiers des calculateurs. Et bien, c'est parti voici comment est calculé `exFact` :
 
 Soient `nbPreviousIssuers` la valeur du champ `issuersCount` du dernier bloc trouvé par le membre et `nbBlocksSince` le nombre de blocs trouvés par le reste du réseau depuis que le membre considéré a trouvé son dernier bloc.
 
     exFact = MAX [ 1 ; FLOOR (0.67 * nbPreviousIssuers / (1 + nbBlocksSince)) ]
 
-La fonction FLOOR est une simple troncature, ainsi pour que exfact soit excluant il faut que le rapport `(0.67 * nbPreviousIssuers / (1 + nbBlocksSince))` soit supérieur ou égal à 2. On voit bien que si `nbBlocksSince` est supérieur au tiers des calculateurs = `0.33*nbPreviousIssuers` alors le rapport sera inférieur à 2 et donc le membre ne sera pas exclu du calcul du prochain bloc.  
+La fonction FLOOR est une simple troncature, ainsi pour que `exFact` soit excluant il faut que le rapport `(0.67 * nbPreviousIssuers / (1 + nbBlocksSince))` soit supérieur ou égal à 2. On voit bien que si `nbBlocksSince` est supérieur au tiers des calculateurs = `0.33*nbPreviousIssuers` alors le rapport sera inférieur à 2 et donc le membre ne sera pas exclu du calcul du prochain bloc.  
 À l'inverse, si le membre considéré est l'auteur du dernier bloc alors `nbBlocksSince=0` et le facteur d'exclusion vaut donc `0.67 * nbPreviousIssuers`, c'est d'autant plus grand que le nombre de calculateurs est élevé. Je vous laisse imaginer la difficulté vertigineuse que vous atteindrez en trouvant un bloc s'il y a des centaines de membres calculant !  
 Vous atteindrez une difficulté telle que même le plus grand des supercalcuteurs serait bloqué, et c'est bien le but du facteur d'exclusion : empecher les supercalculateurs et fermes de calcul de prendre le contrôle de la blockchain et donc de la monnaie.
 
