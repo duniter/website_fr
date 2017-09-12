@@ -29,3 +29,14 @@ Authors: cgeek, galuel
 > Il faudra 5 certifications pour que votre inscription puisse être inscrite dans la blockchain Ğ1. Toutefois à cause des règles de temps (1 signature par personne tous les 5 jours), et de calcul (calculs des blocs par le réseau Duniter Ğ1) cette opération finale pourra prendre du temps (plusieurs jours, voire plusieurs semaines selon les cas). Si votre opération n'est pas validée au bout de 2 mois il faudra la recommencer.
 
 > Note : Duniter vous permet de générer autant de comptes non-membres que voulu. Un conseil de gestion est donc de faire de petits virements sur ces comptes d'appoint (ou portes-monnaie), possédant leur propre clé privée, ce qui limitera les risques d'utilisation à la quantité de monnaie Ğ1 qui s'y trouvera. Vous pourrez ainsi utiliser ce porte monnaie sur des applications online en lesquelles vous avez confiance tout en limitant les risques associés à la connexion.
+
+## Suivi de l'inscription
+
+Une fois le processus d'inscription démarré, il est possible de suivre son avancement via deux outils :
+
+* [g1-monit](https://g1-monit.elois.org/willMembers?lg=fr) : visualisation de l'état des inscriptions en attente
+* [WotWizard](https://forum.duniter.org/t/les-previsions-de-wotwizard/3004) : prévisions des dates d'entrée de chaque inscription
+
+La combinaison des ces deux outils suffit à savoir si votre dossier d'inscription est complet et valide, ainsi que de connaître votre date d'entrée probable dans la toile de confiance.
+
+À noter que seuls les dossiers complets sont répertoriés par WotWizard.
