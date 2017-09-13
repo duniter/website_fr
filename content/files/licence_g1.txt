@@ -2,7 +2,7 @@ Licence Ğ1 - v0.2.3
 ===================
 
 :date: 2017-04-04 12:59
-:modified: 2017-09-13 19:10
+:modified: 2017-09-13 10:16
 
 **Licence de la monnaie Ğ1 et engagement de responsabilité.**
 
