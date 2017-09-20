@@ -38,7 +38,7 @@ N'importe qui peut réaliser la livraison de Duniter, c'est-à-dire produire et 
 
 Pour créer la release GitHub et téléverser les livrables, les scripts de livraison s'attendent à trouver un jeton d'authentification dans le répertoire `~/.config/duniter/.github`.
 
-Pour obtenir un tel jeton, rendez-vous à l'adresse https://github.com/settings/tokens puis générez un nouveau jeton en cochant la case « public_repo ».
+Pour obtenir un tel jeton, rendez-vous à l'adresse [https://github.com/settings/tokens](https://github.com/settings/tokens) puis générez un nouveau jeton en cochant la case « public_repo ».
 
 Copiez alors le jeton généré, par exemple `b23ab3cbe624a8552545900d781a1779b928aa90`, puis enregistrez ce jeton :
 
