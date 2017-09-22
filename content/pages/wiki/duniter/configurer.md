@@ -22,10 +22,10 @@ Ce document est un petit tutoriel pour configurer votre nœud Duniter fraichemen
 
 Tout les nœuds duniter ont un trousseau de clés, qu'ils utilisent pour signer les informations qu'il transmettent sur le réseau. Il y a deux types de nœuds duniter :
 
-1. les nœud membres : Si le trousseau de clé du nœud correspond a une identité membre, alors le nœud est de type "membre", et 
+**1. les nœuds membre :** Si le trousseau de clé du nœud correspond a une identité membre, alors le nœud est de type "membre", et 
 va automatiquement prendre part au calcul des blocs.
 
-2. Si le trousseau de clé du nœud ne correspond pas à une identité membre, alors le nœud est de type "miroir", il ne pourra pas écrire de bloc, mais sera quand même utile pour la résilience du réseau ainsi que pour répondre aux requêtes des clients.
+**2. les nœuds miroir :** Si le trousseau de clé du nœud ne correspond pas à une identité membre, alors le nœud est de type "miroir", il ne pourra pas écrire de bloc, mais sera quand même utile pour la résilience du réseau ainsi que pour répondre aux requêtes des clients.
 
 Par défaut ce trousseau est aléatoire, et le nœud duniter est donc un nœud miroir. Vous pouvez modifier le trousseau de clés du noeud avec cette commande :
 
