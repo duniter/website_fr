@@ -14,7 +14,7 @@ Page concernant spécifiquement le logiciel Duniter.
 
 ## Configuration
 
- * [Configurer son nœud duniter fraichement installé](./configurer)
+ * [Configurer son nœud Duniter fraichement installé](./configurer)
 
 ## Utilisation
 
