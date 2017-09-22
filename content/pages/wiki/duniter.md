@@ -12,6 +12,10 @@ Page concernant spécifiquement le logiciel Duniter.
 * [Mettre à jour son nœud Duniter](./mettre-a-jour)
 * [Mettre à jour Duniter sur YunoHost en ligne de commande](https://forum.duniter.org/t/full-https-support-for-duniter-package-for-yunohost/1892/18)
 
+## Configuration
+
+ * [Configurer son nœud duniter fraichement installé](./configurer)
+
 ## Utilisation
 
 * [Lancer Duniter automatiquement au démarrage de la machine](https://diaspora-fr.org/posts/2703333)
