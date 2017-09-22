@@ -128,7 +128,7 @@ un outil vous permet d'installer la version de Node.js que vous souhaitez, en ch
 
 Vous pouvez installer nvm avec la commande suivante :
 
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
     
 Fermez puis rouvrez votre terminal, comme indiqué. Puis, installez Node.js (choisissez la version 6) :
 
@@ -138,6 +138,7 @@ Vous aurez alors la dernière version de la branche 6.x de Node.js prête à l'e
 
 **2. Installation de  [yarn](https://yarnpkg.com/)**
 
+Yarn est un gestionnaire de dépendances plus rapide et plus fiable que celui intégré de base dans npm, cela vous évitera des erreurs dues a des conflits de version par exemple.
 le plus propre est d'ajouter leur dépôt puis d'installer le paquet `yarn` :
 
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
