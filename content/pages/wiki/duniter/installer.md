@@ -120,19 +120,41 @@ Un [paquet YunoHost](https://github.com/duniter/duniter_ynh) est disponible.
 
 ### Compilation manuelle
 
-Duniter peut être compilé sur la majorité des machines Linux (32 bits ou 64 bits) en quelques étapes :
+Duniter peut être compilé sur la majorité des machines Linux (32 bits ou 64 bits) en cinq étapes (les deux premières ne sont à réaliser qu'une seule fois) :
 
-1. Installez [Node.js version 6 ou supérieure](https://nodejs.org)
+**1. Installation de  Node.js**
 
-2. Allez sur la [page de la dernière version publiée](https://github.com/duniter/duniter/releases/latest) et téléchargez le fichier `Source code (tar.gz)`.
+un outil vous permet d'installer la version de Node.js que vous souhaitez, en changer quand vous voulez et sans conflit avec une version précédente : il s'agit de [nvm](https://github.com/creationix/nvm).
 
-3. Lancez l'installation depuis le dossier décompressé `duniter/` :
+Vous pouvez installer nvm avec la commande suivante :
+
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+    
+Fermez puis rouvrez votre terminal, comme indiqué. Puis, installez Node.js (choisissez la version 6) :
+
+    nvm install 6
+
+Vous aurez alors la dernière version de la branche 6.x de Node.js prête à l'emploi.
+
+**2. Installation de  [yarn](https://yarnpkg.com/)**
+
+le plus propre est d'ajouter leur dépôt puis d'installer le paquet `yarn` :
+
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    sudo apt-get update && sudo apt-get install yarn
+
+**3. Téléchargement de  Duniter**
+
+Allez sur la [page de la dernière version publiée](https://github.com/duniter/duniter/releases/latest) et téléchargez le fichier `Source code (tar.gz)`.
+
+**4. Lancer l'installation depuis le dossier décompressé `duniter/` :**
   > N.B. : **ne lancez pas ces commandes en tant que `root`.** [Cela ne fonctionnera pas, nous le savons](https://github.com/duniter/duniter/issues/412).
 
         cd duniter
-        npm install
-        
-4. Utilisez [les commandes Duniter](https://duniter.org/fr/wiki/duniter/commandes/) en préfixant `duniter` par `bin/`. Exemple : 
+        yarn 
+
+**5. Utiliser [les commandes Duniter](https://duniter.org/fr/wiki/duniter/commandes/)** en préfixant `duniter` par `bin/`. Exemple : 
 
         bin/duniter --version
 
