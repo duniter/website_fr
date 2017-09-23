@@ -36,54 +36,31 @@ Pour éviter cela vous pouvez choisir de ne renseigner le trousseau de clés a u
     
 ### Configurer le réseau
 
-#### BMA (facultatif)
 
-    duniter config --bma # Activation de BMA
-    duniter wizard network # Configuration du réseau BMA
+|                        les API                       |            BMA           |                                                                                                                                                    WS2P Privé                                                                                                                                                    |                     WS2P Public                     |
+|:----------------------------------------------------:|:------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------:|
+|                     Par défaut ?                     |         Désactivé        |                                                                                                                                                      Activé                                                                                                                                                      |                      Désactivé                      |
+|                         Rôle                         |        API Client        |                                                                                                              API inter-nœuds privée (votre nœuds n'est joignable que par les nœuds que vous invitez)                                                                                                             |                API inter-nœuds public               |
+|                    Config minimale                   |    Automatique si upnp   |                                                                                                                    Automatique si upnp (*et également sans upnp si vous n'invitez aucun nœud*)                                                                                                                   |                 Automatique si upnp                 |
+|                      Activation                      |  `duniter config --bma`  |                                                                                                                                                         -                                                                                                                                                        |            `duniter config --ws2p-public`           |
+|                     Désactivation                    | `duniter config --nobma` |                                                                                                                                                         ?                                                                                                                                                        |                          ?                          |
+|       Configurer votre point d'accès sans upnp       | `duniter wizard network` | `duniter config --ws2p-noupnp --ws2p-port PORT --ws2p-host HOST --ws2p-remote-port REMOTE_PORT  --ws2p-remote-host REMOTE_HOST` (*Les options “remote” correspondent par exemple à une box qui ferait un NAT vers votre machine, ou à un nginx/apache qui ferait un reverse proxy vers votre instance Duniter.*) | Les deux modes WS2P utilisent le même point d'accès |
+| Nœuds autorisés a se connecter à votre point d'accès |           tous           | Uniquement ceux dont le trousseau de clé est dans votre liste `privileged` (=invités). Ajouter une clé  : `duniter config --ws2p-privileged-add ` Supprimer une clé : `duniter config --ws2p-privileged-rm ` Voir la liste de vos invités : `duniter ws2p list-privileged`                                       |                         tous                        |
+|    Nœuds auquels vous vous connecterez en priorité   |             -            | Ceux dont le trousseau de clé est dans votre liste `prefered` (=préférés). Ajouter une clé: `duniter config --ws2p-prefered-add ` Supprimer une clé : `duniter config --ws2p-prefered-rm ` Voir la liste de vos invités : `duniter ws2p list-prefered`                                                           |                          -                          |
+|             Vérifier votre configuration             |             ?            |                                                                                                                                             `duniter ws2p show-conf``                                                                                                                                            |              `duniter ws2p show-conf``              |
 
-#### WS2P privé
-    
-Choisir la liste des nœuds préférés et des nœuds invités.
-    
-Ajouter des noeuds préférés (via leur clé publique) :
-    
-    duniter config --ws2p-prefered-add <pubkey> 
-    
-Supprimer des noeuds de la liste des préférés : 
-    
-    duniter config --ws2p-prefered-rm  <pubkey>
-    
-Ajouter des noeuds à la liste des invités (via leur clé publique) :
-    
-    duniter config --ws2p-privileged-add <pubkey> 
-    
-Supprimer des noeuds de la liste des invités: 
-    
-    duniter config --ws2p-privileged-rm <pubkey>
-    
-Voir les listes : 
 
-    duniter ws2p list-nodes
-    duniter ws2p list-prefered
-    duniter ws2p list-privileged
+#### Qu'est ce que l'UPnP ?
+
+L’Universal Plug and Play (UPnP) est un protocole qui, s'il est activé sur votre box internet, permet aux programmes que vous utilisez de configurer eux même le réseau en "commandant" votre box.  
+L'UPnP à l'avantage d'être pratique car il vous évite d'avoir a configurer vous même le réseau, mais en contrepartie vous devez faire confiance aux programmes que vous utilisez car un programme malveillant peut utiliser l'UPnP pour ouvrir votre réseau de manière non désirée.  
+Si vous n'avez pas peur de la ligne de commande et que vous êtes exigeant sur la sécurité de votre réseau local, nous vous recommendons de désactiver l'UPnP.  
+Si vous installez duniter sur un VPS ou un serveur dédié vous devrez de toute façon faire sans UPnP.
+
+#### Note sur le WS2P public (recommandé)
     
-#### WS2P public (recommandé)
-    
-Vous pouvez rendre l'accès a votre API WS2p public, plus il y a de nœuds avec ws2p public et plus le réseau est décentralisé.
-
-##### Avec upnp
-
-    duniter config --ws2p-public
-
-#### Sans upnp
-    
-    duniter config --ws2p-public --ws2p-noupnp --ws2p-port 7778 --ws2p-host 37.187.192.109 --ws2p-remote-port 7778  --ws2p-remote-host 37.187.192.109
-
-Les options “remote” correspondent par exemple à une box qui ferait un NAT vers votre machine, ou à un nginx/apache qui ferait un reverse proxy vers votre instance Duniter.
-
-Vérifiez que la configuration ws2p correspond bien a ce que vous voulez :
-
-    duniter ws2p show-conf
+Il faut nécessairement des nœuds avec ws2p public pour que le réseau duniter fonctionne, et plus il y a de nœuds avec ws2p public, plus le réseau est décentralisé.  
+Ce mode est facultatif ne serait-ce parce que techniquement il est parfois dificile voir impossible d'être accessible par l'extérieur (nœud derrière un routeur 4G par exemple).
 
 ### Synchroniser votre nœud
 
