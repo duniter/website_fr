@@ -108,7 +108,11 @@ De plus les commandes `direct_start` et `direct_webstart` acceptent l'option `--
 
 ### Suivre les log
 
-    tail -f .config/duniter/duniter-default/duniter.log
+    duniter logs
+
+Équivaut à :
+
+    tail -f ~/.config/duniter/duniter-default/duniter.log
 
 ### Aller plus loin
 
