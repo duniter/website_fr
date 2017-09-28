@@ -62,6 +62,18 @@ Si vous installez duniter sur un VPS ou un serveur dédié vous devrez de toute 
 Il faut nécessairement des nœuds avec ws2p public pour que le réseau duniter fonctionne, et plus il y a de nœuds avec ws2p public, plus le réseau est décentralisé.  
 Ce mode est facultatif ne serait-ce parce que techniquement il est parfois dificile voir impossible d'être accessible par l'extérieur (nœud derrière un routeur 4G par exemple).
 
+### Checker votre configuration
+
+Pour vérifier que votre configuration ne comporte pas d'erreur logique vous pouvez utiliser la commande `check-config` :
+
+    $ duniter check-config
+    2017-09-28T23:24:19+02:00 - debug: Plugging file system...
+    2017-09-28T23:24:19+02:00 - debug: Loading conf...
+    2017-09-28T23:24:19+02:00 - debug: Configuration saved.
+    2017-09-28T23:24:19+02:00 - warn: Configuration seems correct.
+
+SI vous obtenez le résultat **Configuration seems correct** c'est que votre configuration semble correcte.
+
 ### Synchroniser votre nœud
 
 Pour rejoindre le réseau d'une monnaie vous devez vous synchroniser avec un nœud déjà sur ce réseau :
