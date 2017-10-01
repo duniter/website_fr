@@ -33,7 +33,25 @@ Par défaut ce trousseau est aléatoire, et le nœud duniter est donc un nœud m
 
 Attention le trousseau de clés renseigner via cette commande sera stocké en clair sur le disque !
 Pour éviter cela vous pouvez choisir de ne renseigner le trousseau de clés a utiliser qu'au lancement du nœud afin que votre trousseau de clés reste seulement en mémoire vive, pour cela ajoutez l'option `--keyprompt` a la commande de lancement du nœud.
-    
+
+#### Avoir plusieurs nœuds avec le même trousseau de clés cryptographiques
+
+  Il est possible d'avoir plusieurs nœuds membre avec votre trousseau de clés membre mais dans ce cas vous devez attribuer un identifiant unique a chacun de vos nœuds, cet identifiant unique est nommé **préfixe** car sont unique rôle est de préfixer le nonce des blocs que vous calculez afin d'éviter que deux de vos nœuds ne calculent la même preuve.
+  
+Sur votre 1er nœud : Vous n'avez rien a faire, le préfixe vaut `1` par défaut.
+
+Sur votre 2ème nœud : 
+
+    duniter config --prefix 2
+
+Sur votre 3ème nœud :
+
+    duniter config --prefix 3
+
+etc
+
+Le préfixe doit être un entier compris entre `1` et `899`.
+
 ### Configurer le réseau
 
 
