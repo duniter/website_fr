@@ -78,7 +78,9 @@ SOCIAL = (('Forum', 'https://forum.duniter.org', 'comment'),
           ('Twitter', 'https://twitter.com/duniter'),
           ('GitHub', 'https://github.com/duniter'),
           ('Diaspora', 'https://framasphere.org/people/1949ee70f6bc0134e6b32a0000053625', 'asterisk'),
-          ('RSS', '/feeds/all.atom.xml'),)
+          ('RSS', '/feeds/all.atom.xml'),
+          ('ğchange', 'https://www.gchange.fr', 'balance-scale'),
+          ('ğannonce', 'https://gannonce.duniter.org', 'bullhorn'),)
 
 DEFAULT_PAGINATION = 10
 
