@@ -25,7 +25,7 @@ SITELOGO_SIZE = 36
 DEFAULT_LANG = u'fr'
 
 PLUGIN_PATHS = ['pelican-plugins/']
-PLUGINS = ['i18n_subsites', 'tipue_search', 'pelican-page-hierarchy']
+PLUGINS = ['i18n_subsites', 'tipue_search', 'pelican-page-hierarchy', 'plantuml']
 
 MARKDOWN = {
   'extension_configs': {

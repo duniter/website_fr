@@ -17,6 +17,11 @@ Install python stuff
     source bin/activate
     pip install pelican pelican-youtube markdown beautifulsoup4
 
+Install system dependencies for plantuml plugin (plantuml and GraphViz utilities) :
+
+ * Install plantuml : use your package manager or http://plantuml.com/starting
+ * Install GraphViz : use your package manager or http://www.graphviz.org/Download..php
+
 Generate the site
 
     pelican
@@ -53,3 +58,9 @@ You may want to change the production parameters, like the domain name: just edi
 For example if you want to host the site at `https://my.website.org`, set:
 
     SITEURL = u'https://my.website.org'
+
+## Plantuml plugin documentation
+
+ * Plantuml plugin documentation : https://github.com/Scheirle/pelican-plugins/tree/master/plantuml
+ * Plantuml documentation: http://plantuml.com
+ * Plantuml support DOT language of GraphViz: http://www.graphviz.org/Gallery.php
