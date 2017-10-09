@@ -32,7 +32,8 @@ MARKDOWN = {
     'markdown.extensions.codehilite': { 'css_class': 'highlight' },
     'markdown.extensions.fenced_code': {},
     'markdown.extensions.extra': {},
-    'markdown.extensions.toc': {}
+    'markdown.extensions.toc': {},
+    #'plantuml.plantuml_md': {'siteurl': '/fr'} DOES NOT WORK, NEED A PATCH ON THE PLUGIN PLANTUML, USE SITEURL BY DEFAULT
   }
 }
 
