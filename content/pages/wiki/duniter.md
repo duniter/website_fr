@@ -34,3 +34,4 @@ Page concernant spécifiquement le logiciel Duniter.
 ## Concepts
 
 * [Preuve de travail](./preuve-de-travail)
+* [Architecture](./architecture)
