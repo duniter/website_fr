@@ -8,7 +8,7 @@ Authors: vit
 
 Voici un aperçu de l'architecture de Duniter entre les clients et un serveur.
 
-::uml:: [format="svg"] [alt="architecture clients"]
+::uml:: format="svg" alt="architecture clients"
 
 @startuml
 
