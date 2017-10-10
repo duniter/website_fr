@@ -67,6 +67,8 @@ Poussez les modifications sur le dépôt :
 
 A ce stade, le code source de Duniter est monté en version, et un nouveau tag a été ajouté au dépôt. GitHub est au courant, et reflète une entrée dans les releases à cette occasion. Toutefois la release n'existe pas encore.
 
+> **N.B**: Si la version doit se faire sur la branche `dev`, positionnez-vous sur cette branche et remplacez les `master` par `dev`.
+
 ### 3. Créer la pré-release
 
 Cette fois, nous allons créer la release avec le status *pre-release*. Ce statut permet de produire la release sans que celle-ci soit visible officiellement jusqu'au moment où l'on décidera que « tout est bon ».
