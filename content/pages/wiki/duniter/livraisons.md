@@ -60,6 +60,7 @@ Cette opération se réalise sur n'importe quel branche, selon le besoin :
 * Pour une release, utiliser la branche `master`
 * Pour une pre-release, utiliser la branche `dev`
 
+
     git checkout master
 
 Une fois positionné sur la bonne branche, lancez le script de changement de version, par exemple pour passer en version `1.2.3` :
