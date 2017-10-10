@@ -55,7 +55,10 @@ Copiez alors le jeton généré, par exemple `b23ab3cbe624a8552545900d781a1779b9
 
 ### 2. Créer une nouvelle version
 
-Cette opération se réalise sur n'importe quel branche, selon le besoin. Mais il est important de merger *ensuite* ces changements sur la branche `master`, notamment car l'installation via le script `install.sh` pointe sur cette branche. Il faut donc qu'elle soit à jour.
+Cette opération se réalise sur n'importe quel branche, selon le besoin : 
+
+* Pour une release, utiliser la branche `master`
+* Pour une pre-release, utiliser la branche `dev`
 
 Considérons le cas le plus simple où la nouvelle version se fait sur la branche `master`. Lancez le script de changement de version, par exemple pour passer en version `1.2.3` :
 
