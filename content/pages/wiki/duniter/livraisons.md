@@ -60,7 +60,9 @@ Cette opération se réalise sur n'importe quel branche, selon le besoin :
 * Pour une release, utiliser la branche `master`
 * Pour une pre-release, utiliser la branche `dev`
 
-Considérons le cas le plus simple où la nouvelle version se fait sur la branche `master`. Lancez le script de changement de version, par exemple pour passer en version `1.2.3` :
+    git checkout master
+
+Une fois positionné sur la bonne branche, lancez le script de changement de version, par exemple pour passer en version `1.2.3` :
 
     ./release/new_version.sh 1.2.3
 
@@ -70,7 +72,7 @@ Poussez les modifications sur le dépôt :
 
 A ce stade, le code source de Duniter est monté en version, et un nouveau tag a été ajouté au dépôt. GitHub est au courant, et reflète une entrée dans les releases à cette occasion. Toutefois la release n'existe pas encore.
 
-> **N.B**: Si la version doit se faire sur la branche `dev`, positionnez-vous sur cette branche et remplacez les `master` par `dev`.
+> **N.B**: Si la version doit se faire sur la branche `dev`, remplacez simplement `master` par `dev` dans les commandes ci-dessus.
 
 ### 3. Créer la pré-release
 
