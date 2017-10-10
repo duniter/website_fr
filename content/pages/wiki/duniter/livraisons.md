@@ -33,6 +33,7 @@ N'importe qui peut réaliser la livraison de Duniter, c'est-à-dire produire et 
     * VirtualBox
     * Vagrant
     * Git
+    * Yarn
 
 ### Création d'un token GitHub
 
@@ -50,7 +51,7 @@ Copiez alors le jeton généré, par exemple `b23ab3cbe624a8552545900d781a1779b9
 
     git clone git@github.com:duniter/duniter.git
     cd duniter
-    npm install
+    yarn
 
 ### 2. Créer une nouvelle version
 
