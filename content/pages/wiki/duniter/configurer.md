@@ -151,11 +151,11 @@ Pour ajouter un clé a votre liste de clés privilégiées  :
 
 Pour supprimer une clé de votre liste de clés privilégiées :
 
-    duniter config --ws2p-privileged-rm <pubkey>
+    duniter config --ws2p-privileged-rm <pubkey>
 
 Pour consulter la liste de vos clés privilégiées :
 
-    duniter ws2p list-privileged
+    duniter ws2p list-privileged
     
 ##### Checker votre configuration WS2p
 
