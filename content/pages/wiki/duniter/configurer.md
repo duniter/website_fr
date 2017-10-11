@@ -139,7 +139,7 @@ Si votre nœud duniter est connecté a internet par l'intermédiaire d'une box, 
 
 Pour modifier le nombre maximal de connexions WS2p entrantes :
 
-    duniter config --ws2p-max-private <count>
+    duniter config --ws2p-max-public <count>
 
 ###### Liste des clés invitées/privilégiées 
 
@@ -147,7 +147,7 @@ De la même façon que vous pouvez définir des clés préférés pour vos conne
 
 Pour ajouter un clé a votre liste de clés privilégiées  :
 
-    duniter config --ws2p-privileged-add <pubkey>
+    duniter config --ws2p-privileged-add <pubkey>
 
 Pour supprimer une clé de votre liste de clés privilégiées :
 
