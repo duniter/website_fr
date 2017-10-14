@@ -1,7 +1,4 @@
----
-redirect_from: "/fr/wiki/devenir-membre/"
----
-Title: Devenir membre de la toile de confiance Ğ1
+Title: Licence Ğ1
 Order: 9
 Date: 2017-10-04
 Slug: Licence Ğ1
