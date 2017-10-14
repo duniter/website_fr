@@ -37,5 +37,5 @@ def replace(original_file, placeholder_start, placeholder_end,
         my_target_file.write(new_content)
 
 print("Will start replace")
-replace('content/pages/wiki/devenir-membre.md', '\[//\]: # \(BeginLicense\)', '\[//\]: # \(EndLicense\)', 'content/files/licence_g1.txt')
+replace('content/pages/wiki/licence-g1.md', '\[//\]: # \(BeginLicense\)', '\[//\]: # \(EndLicense\)', 'content/files/licence_g1.txt')
 print("Replace completed")
