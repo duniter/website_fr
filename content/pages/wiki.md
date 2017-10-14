@@ -9,7 +9,7 @@ Cette page regroupe des informations importantes concernant Duniter à des fins 
 
 ## Monnaie
 
-* [Devenir membre de la toile de confiance Ğ1](./devenir-membre)
+* [Licence Ğ1](./licence-g1) (devenir membre Ğ1 + règles de la monnaie + règles de la Toile de Confiance)
 * [Certifier de nouveaux membres](./certifier-de-nouveaux-membres)
 * [Rémunération des calculateurs](./remuneration)
 
