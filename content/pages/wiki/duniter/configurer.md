@@ -160,6 +160,16 @@ Pour consulter la liste de vos clés privilégiées :
 ##### Checker votre configuration WS2p
 
     duniter ws2p show-conf
+    
+##### Optionnel : définir un patch pour votre poitn d'accès ws2p
+
+Cela peut vous permettre de rajouter un chemin d'accès pour votre point d'accès ws2p public.
+
+    duniter config --ws2p-remote-path <path>
+    
+Votre point d'accès ws2p sera alors : `ws://host:port/patch`
+
+Notez que ws:// est a remplacé par wws:// si vous réglez le remote port sur 443.
 
 #### Configurer BMA
 
