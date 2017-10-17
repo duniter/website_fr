@@ -17,6 +17,7 @@ Ce document est un petit tutoriel pour configurer votre nœud Duniter fraichemen
                 * [Configurer WS2P](#configurer-ws2p)
                     * [WS2P privé](#ws2p-privé)
                     * [WS2P public](#ws2p-public)
+                      * [Définir un patch pour votre point d'accès ws2p](#définir-un-patch-pour-votre-point-daccès-ws2p)
                 * [Configurer BMA](#configurer-bma)
                 * [Qu'est ce que l'UPnP ?](#quest-ce-que-lupnp-)
                 * [Note sur le WS2P public (recommandé)](#note-sur-le-ws2p-public-recommandé)
@@ -161,12 +162,12 @@ Pour consulter la liste de vos clés privilégiées :
 
     duniter ws2p show-conf
     
-##### Optionnel : définir un patch pour votre poitn d'accès ws2p
-
-Cela peut vous permettre de rajouter un chemin d'accès pour votre point d'accès ws2p public.
+##### Définir un patch pour votre point d'accès ws2p
 
     duniter config --ws2p-remote-path <path>
     
+A n'utiliser que si vous souhaitez placer votre noeud duniter derrière un reverse proxy.
+Cette option vous permet de rajouter un chemin pour votre point d'accès ws2p public.
 Votre point d'accès ws2p sera alors : `ws://host:port/patch`
 
 Notez que ws:// est a remplacé par wws:// si vous réglez le remote port sur 443.
