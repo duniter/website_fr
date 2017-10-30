@@ -35,7 +35,7 @@ Authors: cgeek, galuel
 Une fois le processus d'inscription démarré, il est possible de suivre son avancement via deux outils :
 
 * [g1-monit](https://g1-monit.elois.org/willMembers?lg=fr) : visualisation de l'état des inscriptions en attente
-* [WotWizard](https://forum.duniter.org/t/les-previsions-de-wotwizard/3004) : prévisions des dates d'entrée de chaque inscription
+* [WotWizard](https://wot-wizard.duniter.org) : prévisions des dates d'entrée de chaque inscription
 
 La combinaison des ces deux outils suffit à savoir si votre dossier d'inscription est complet et valide, ainsi que de connaître votre date d'entrée probable dans la toile de confiance.
 
