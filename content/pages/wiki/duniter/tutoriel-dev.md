@@ -12,7 +12,7 @@ L'apprentissage est découpé en plusieurs chapitres progressifs, chacun d'entre
 
 ### Aide
 
-En cas de difficultés, rendez-vous sur le forum technique Duniter : https://forum.duniter.org. Posez votre question, décrivez votre problème et des contributeurs tenteront de vous aider.
+En cas de difficultés, rendez-vous sur [le forum technique Duniter](https://forum.duniter.org). Posez votre question, décrivez votre problème et des contributeurs tenteront de vous aider.
 
 ### Le tutoriel
 
@@ -23,6 +23,7 @@ Place aux chapitres !
 * [III. Récupération du code source](./chapitre-3-source)
 * [IV. Connection au réseau Ğ1](./chapitre-4-connexion)
 * [V. Architecture de Duniter](./chapitre-5-architecture)
+* [VI. Éléments de code](./chapitre-6-code)
 
 À placer :
 
