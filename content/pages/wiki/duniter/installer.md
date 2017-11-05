@@ -122,6 +122,12 @@ Un [paquet YunoHost](https://github.com/duniter/duniter_ynh) est disponible.
 
 Duniter peut être compilé sur la majorité des machines Linux (32 bits ou 64 bits) en cinq étapes (les deux premières ne sont à réaliser qu'une seule fois) :
 
+** Prérequis **
+
+Vous devez disposer a minima de `git` et `build-essential`, pour les installez :
+
+    sudo apt-get update && sudo apt-get install git build-essential
+
 **1. Installation de  Node.js**
 
 un outil vous permet d'installer la version de Node.js que vous souhaitez, en changer quand vous voulez et sans conflit avec une version précédente : il s'agit de [nvm](https://github.com/creationix/nvm).
