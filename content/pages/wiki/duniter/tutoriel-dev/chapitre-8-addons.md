@@ -4,6 +4,6 @@ Date: 2017-10-31
 Slug: chapitre-8-addons
 Authors: cgeek
 
-> <span class="icon">![](/images/icons/warning.png)</span> Page en cours de rédaction !
+> <span class="icon">![](/fr/images/icons/warning.png)</span> Page en cours de rédaction !
 >
 > Ce chapitre est à paraître courant Novembre 2017.

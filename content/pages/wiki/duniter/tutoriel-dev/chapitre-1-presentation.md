@@ -63,7 +63,7 @@ Duniter est un logiciel libre sous licence AGPL, écrit à 97% en TypeScript, qu
 
 Le réseau Duniter Ğ1 fonctionne sur la base de *nœuds* en pair-à-pair, donc sans entité centrale. Il est possible d'interagir avec ces nœuds via des programmes *clients* tels Sakia, Cesium ou Silkaj :
 
-![image|690x467](/images/tuto-dev/topologie.png)
+![image|690x467](/fr/images/tuto-dev/topologie.png)
 
 ### Sécurité
 

@@ -41,11 +41,11 @@ Le débogage nécessite une configuration de VSCode pour le projet. Afin de faci
 
 À partir de là, à l'aide de la combinaison de touches Ctrl+Shift+D, vous pouvez sélectionne la configuration de débogage souhaitée :
 
-![](/images/tuto-dev/debug_selection.png)
+![](/fr/images/tuto-dev/debug_selection.png)
 
 Vous pouvez sélectionner la configuration `MOCHA ALL TESTS` dans un premier temps, puis appuyer sur la touche `F5`. VSCode devrait alors lancer les tests automatisés de Duniter, ce qui peut durer plusieurs minutes :
 
-![](/images/tuto-dev/debug_tests_done.png)
+![](/fr/images/tuto-dev/debug_tests_done.png)
 
 ### Point d'arrêt
 
@@ -53,15 +53,15 @@ Vous pouvez sélectionner la configuration `MOCHA ALL TESTS` dans un premier tem
 
 Par exemple, plaçons un point d'arrêt dans le fichier `app/modules/daemon.ts` :
 
-![](/images/tuto-dev/debug_direct_start.png)
+![](/fr/images/tuto-dev/debug_direct_start.png)
 
 Puis lançons le débogage sur `direct_start` :
 
-![](/images/tuto-dev/debug_direct_start_launcher.png)
+![](/fr/images/tuto-dev/debug_direct_start_launcher.png)
 
 Alors, VSCode lance `node bin/duniter direct_start` en mode debug, et nous permet d'atterir dans le code dont l'exécution est suspendue au point d'arrêt :
 
-![](/images/tuto-dev/debug_point_suspendu.png)
+![](/fr/images/tuto-dev/debug_point_suspendu.png)
 
 Nous avons ici une foule d'informations disponibles ! Nous pouvons placer le curseur de la souris sur une variable pour avoir son contenu, nous déplacer dans la pile des appels, ajouter des espions, etc. Ce sont là des informations extrêmement précieuses, notamment quand le code devient plus complexe.
 

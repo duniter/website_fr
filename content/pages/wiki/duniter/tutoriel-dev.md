@@ -4,7 +4,7 @@ Date: 2017-10-31
 Slug: tutoriel-dev
 Authors: cgeek
 
-> <span class="icon">![](/images/icons/warning.png)</span> Tutoriel en cours de rédaction ! (06/11/2017)
+> <span class="icon">![](/fr/images/icons/warning.png)</span> Tutoriel en cours de rédaction ! (06/11/2017)
 
 Vous souhaitez manipuler le code de Duniter, comprendre ses rouages par curiosité ou même contribuer à son développement ? Ce tutoriel tentera de vous y aider !
 
