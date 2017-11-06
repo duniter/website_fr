@@ -49,7 +49,7 @@ Copiez alors le jeton généré, par exemple `b23ab3cbe624a8552545900d781a1779b9
 
 ### 1. Cloner Duniter et installer ses modules
 
-    git clone https://github.com/duniter/duniter.git
+    git clone git@github.com:duniter/duniter.git
     cd duniter
     yarn
 
