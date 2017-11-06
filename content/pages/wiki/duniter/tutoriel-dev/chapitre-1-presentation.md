@@ -50,7 +50,7 @@ Il est tout à fait possible de réaliser une monnaie libre papier. Toutefois si
 
 ### La toile de confiance
 
-Une monnaie libre suppose de pouvoir identifier les producteurs de la monnaie, et surtout de s'assurer 1 producteur = 1 individu unique et vivant. À cette fin, Duniter implémente un mécanisme d'identification des individus souhaitant produire la monnaie.
+Une monnaie libre suppose de pouvoir identifier les producteurs de la monnaie, et surtout de s'assurer 1 producteur = 1 **humain** unique et vivant. À cette fin, Duniter implémente un mécanisme d'identification des individus souhaitant produire la monnaie.
 
 Ce mécanisme est appelé *toile de confiance*, concept largement inspiré par [OpenPGP](https://fr.wikipedia.org/wiki/OpenPGP). Il s'agit d'un système d'identification décentralisé semblable à un système de cooptation pourvu de nombreuses règles pour éviter les abus. Cette mécanique est la partie la plus complexe du projet Duniter, car c'est aussi sur elle que repose entièrement sa sécurité.
 
