@@ -22,7 +22,7 @@ Duniter repose sur plusieurs bibliothèques de code tierces, ou *dépendances*. 
 
     yarn
 
-> <span class="icon">![](/images/icons/warning.png)</span> Attention pour les habitués de NodeJS : **ne remplacez pas `yarn` par `npm`**, car ce dernier ne permet pas d'avoir rigoureusement les mêmes version des dépendances d'un poste à l'autre, or sans cette assurance nous ne pouvons pas garantir que le code fonctionnera comme attendu sur votre poste.
+> <span class="icon">![](/fr/images/icons/warning.png)</span> Attention pour les habitués de NodeJS : **ne remplacez pas `yarn` par `npm`**, car ce dernier ne permet pas d'avoir rigoureusement les mêmes version des dépendances d'un poste à l'autre, or sans cette assurance nous ne pouvons pas garantir que le code fonctionnera comme attendu sur votre poste.
 
 ## Exécuter les tests automatisés
 
@@ -44,6 +44,6 @@ La commande que nous venons d'exécuter a créé un dossier `coverage`, qui cont
 
 Vous pouvez visualiser et étudier la couverture du code est ouvrant le fichier `coverage/index.html` dans votre navigateur :
 
-![](/images/tuto-dev/coverage.png)
+![](/fr/images/tuto-dev/coverage.png)
 
 > Passer à la suite du tutoriel : [Chapitre 4. Démarrage](../chapitre-4-demarrage).

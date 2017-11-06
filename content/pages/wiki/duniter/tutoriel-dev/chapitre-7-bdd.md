@@ -4,7 +4,7 @@ Date: 2017-10-31
 Slug: chapitre-7-bdd
 Authors: cgeek
 
-> <span class="icon">![](/images/icons/warning.png)</span> Page en cours de rédaction !
+> <span class="icon">![](/fr/images/icons/warning.png)</span> Page en cours de rédaction !
 >
 > Ce chapitre sera complété courant Novembre 2017.
 
