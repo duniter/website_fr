@@ -38,4 +38,12 @@ Patientez, les tests peuvent prendre jusqu'à 2-3 minutes. Finalement, vous obte
 
 Il se peut que quelques tests échouent en fonction des performances de votre machine, certains tests y étant sensibles. S'il n'y en a qu'une dizaine ou moins qui échouent, vous pouvez considérer que Duniter fonctionne sur votre machine et que le code source est correctement récupéré.
 
-Une fois cette étape passée avec succès, vous pouvez accéder à la suite : [Chapitre IV. Connexion au réseau Ğ1](../chapitre-4-connexion).
+### Couverture du code
+
+La commande que nous venons d'exécuter a créé un dossier `coverage`, qui contient des informations très importantes : celles de la *couverture du code*, c'est-à-dire une information sur les lignes qui ont été exécutées durant les tests automatisés. Ainsi une ligne est dite *couverte* si au moins une exécution a été réalisée par l'un des tests automatisés. Cela permet d'être un peu plus confiant dans le fait que cette ligne de code s'exécute correctement.
+
+Vous pouvez visualiser et étudier la couverture du code est ouvrant le fichier `coverage/index.html` dans votre navigateur :
+
+![](/images/tuto-dev/coverage.png)
+
+> Passer à la suite du tutoriel : [Chapitre 4. Démarrage](../chapitre-4-demarrage).

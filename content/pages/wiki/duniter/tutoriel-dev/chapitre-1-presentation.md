@@ -90,4 +90,4 @@ Bien sûr, Duniter n'est pas une application centralisée et opère sur une bloc
 
 Avec un peu d'investissement personnel, il n'y a rien d'insurmontable. De plus, les développeurs répondent toujours présents sur le [Forum Duniter](https://forum.duniter.org), section Dev, pour vous aider.
 
-Voilà pour cette conclusion, vous pouvez passer à la suite : [Chapitre II. Installation des outils](../chapitre-2-outils).
+> Passer à la suite du tutoriel : [Chapitre 2. Installation des outils](../chapitre-2-outils).

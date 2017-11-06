@@ -49,4 +49,4 @@ Cette commande peut durer 1h ou plus en fonction des composants déjà installé
 
 Pour terminer correctement l'installation, nous vous conseillons de *fermer vos terminaux et relancer VSCode* si vous l'aviez ouvert. En effet certaines variables d'environnement ont été mises à jour par les installations précédentes, et ne seront disponbiles qu'après redémarrage des logiciels.
 
-Vous pouvez ensuite passer au chapitre suivant : [Chapitre III. Récupération du code source](../chapitre-3-source).
+> Passer à la suite du tutoriel : [Chapitre 3. Récupération du code source](../chapitre-3-source).
