@@ -50,3 +50,4 @@ database "\nBase de donnees Duniter (SQLite)" {
 ::end-uml::
 
 
+> Passer à la suite du tutoriel : [Chapitre 8 : Addons C/C++](../chapitre-8-addons).

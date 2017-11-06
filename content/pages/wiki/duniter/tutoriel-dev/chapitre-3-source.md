@@ -14,7 +14,7 @@ L'objectif de ce chapitre est de récupérer ce code afin de pouvoir l'exécuter
 
     git clone https://github.com/duniter/duniter.git -b dev
 
-En effet pour développer, nous utilisons plutôt la branche `dev`. La branche `master` constitue plutôt la branche stable sur laquelle sont basées les versions de production du logiciel.
+Comme vous pouvez le remarquer, nous utilisons ici la branche `dev`. En effet la branche `master` constitue plutôt la branche stable sur laquelle sont basées les versions de production du logiciel, tandis que la branche `dev` est utilisée pour les développements en cours.
 
 ## Installation des dépendances
 
@@ -22,7 +22,7 @@ Duniter repose sur plusieurs bibliothèques de code tierces, ou *dépendances*. 
 
     yarn
 
-> <span class="icon">![](/images/icons/warning.png)</span> Attention pour les habitués de NodeJS : **ne remplacez pas `yarn` par `npm`**, car ce dernier ne permet pas d'avoir rigoureusement les mêmes version des dépendances d'un poste à l'autre, or sans cette assurance nous ne pouvons pas garantir que le code fonctionnera comme attendu.
+> <span class="icon">![](/images/icons/warning.png)</span> Attention pour les habitués de NodeJS : **ne remplacez pas `yarn` par `npm`**, car ce dernier ne permet pas d'avoir rigoureusement les mêmes version des dépendances d'un poste à l'autre, or sans cette assurance nous ne pouvons pas garantir que le code fonctionnera comme attendu sur votre poste.
 
 ## Exécuter les tests automatisés
 

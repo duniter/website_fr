@@ -143,10 +143,12 @@ BlockchainContext - DuniterBlockchain
 
 ::end-uml::
 
-L'objet `DuniterBlockchain` est celui qui implémente *in-fine* le protocole, en s'assurant du respect des règles lorsqu'il reçoit un nouveau bloc mais aussi en générant les données exploitables (les INDEX) lors de l'analyse, puis de l'ajout du bloc au sein de la blockchain complète.
+L'objet `DuniterBlockchain` est celui qui implémente *in-fine* le [protocole Duniter](https://github.com/duniter/duniter/blob/master/doc/Protocol.md), en s'assurant du respect des règles lorsqu'il reçoit un nouveau bloc mais aussi en générant les données exploitables (les INDEX) lors de l'analyse, puis de l'ajout du bloc au sein de la blockchain complète.
 
 ### Les autres fichier de service
 
 Les fichiers `IdentityService.ts`, `MembershipService.ts`, `TransactionService.ts` et `PeeringService.ts` servent pour leur part à vérifier et accepter en piscine les nouveaux documents respectivement d'identité et certification, d'adhésion, de transaction et de fiches de pair.
 
 Aucun de ces services n'écrit dans la blockchain directement, mais en piscine : c'est une zone temporaire pour les données en attente d'être inscrites officiellement dans un bloc.
+
+> Passer à la suite du tutoriel : [Chapitre 7 : Base de données](../chapitre-7-bdd).

@@ -14,7 +14,7 @@ Ce chapitre a pour but de visualiser l'architecture de Duniter sous différents 
 
 Nous ferons également le lien avec les fichiers concernés.
 
-> Ce chapitre est plutôt théorique. Toutefois, des exemples de code sont données et nous vons encourageons à les reproduire en modifiant le fichier `app/modules/reset.ts`, quitte à en retirer le contenu pour vos essais.
+> Ce chapitre est plutôt théorique. Toutefois, des exemples de code sont donnés et nous vons encourageons à les reproduire en modifiant le fichier `app/modules/reset.ts`, quitte à en retirer le contenu pour vos essais.
 
 ### Cycle d'exécution
 
@@ -458,5 +458,7 @@ Alors, Duniter passe par les phases décrites plus tôt :
     * Démarrage du service `prover` : 
         * Si le nœud n'est pas exclu de la preuve de travail, il commence la preuve d'un nouveau bloc
         * Sinon, le nœud attend qu'un bloc arrive par BMA ou WS2P
+
+Voilà donc comment on obtient un nœud Duniter fonctionnel à ce jour.
 
 > Passer à la suite du tutoriel : [Chapitre 6 : Code](../chapitre-6-code).

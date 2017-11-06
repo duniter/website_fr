@@ -9,9 +9,9 @@ Maintenant que les sources de Duniter sont installées, nous allons exécuter qu
 * initialiser les données en se synchronisant sur le réseau Ğ1
 * démarrer le nœud
 
-Notez qu'il n'y a aucun danger à connecter votre nœud de développement sur le réseau Ğ1, vous ne perturberez en rien le réseau si vous faites de mauvaises manipulations avec votre nœud suite à une modification du code par exemple. Le réseau est robuste et, en cas d'anomalie avec votre nœud, les communications seront simplement coupées avec vous.
+Notez qu'il n'y a aucun danger à connecter votre nœud de développement sur le réseau Ğ1, vous ne perturberez en rien le réseau si vous faites de mauvaises manipulations avec votre nœud suite à une modification du code par exemple. Le réseau est robuste et, en cas d'anomalie avec votre nœud, les communications seront simplement coupées avec lui.
 
-Ensuite, nous expérimenterons le démarrage du nœud dans l'éditeur VSCode en mode debug afin de voir le lien avec le code source, puis explorerons quelques exécutions intéressantes dans VSCode comme les tests automatisés et d'autres commandes simples de Duniter.
+Ensuite, nous expérimenterons le démarrage du nœud dans l'éditeur VSCode en mode debug afin de voir le lien avec le code source.
 
 ## Synchronisation
 
@@ -31,11 +31,11 @@ Nous initions ici le téléchargement de la blockchain depuis le nœud `g1.dunit
 
 Pour arrêter Duniter, terminez le processus (Ctrl+C).
 
-Vous avez désormais un nœud prêt à fonctionner, et que vous pouvez même modifier ! Soit pour changer un comportement existant, ou ajouter une nouvelle fonctionnalité. Mais avant cela, voyons comment « déboguer » le code source avant de le modifier.
+Vous avez désormais un nœud prêt à fonctionner, et que vous pouvez même modifier ! Soit pour changer un comportement existant, ou ajouter une nouvelle fonctionnalité. Mais avant cela, voyons comment « déboguer » le code source.
 
 ## Débogage dans VSCode
 
-Le débogage nécessite une configuration de VSCode pour le projet. Afin de faciliter la prise en main initiale, un dossier « de base » a été initié que vous pouvez copier pour votre utilisation : 
+Le débogage nécessite une configuration de VSCode pour le projet. Afin de faciliter la prise en main initiale, un dossier « de base » a été initié, que vous pouvez copier pour votre utilisation : 
 
     cp -r doc/.vscode .vscode
 
@@ -78,7 +78,7 @@ La façon manuelle de le faire dans Duniter est avec yarn :
 
 `tsc` est la commande « TypeScript Compiler », c'est notre transpilation. Quand la commande est terminée, `tsc` nous indique si l'opération s'est bien passée ou si des erreurs de transpilation sont apparues.
 
-Toutefois cette opération est fastidieuse à la longue. Nous disposons d'une commande de « surveillance » des fichiers TypeScript et qui lance automatiquement la transpilation pour ce fichier précis :
+Toutefois cette opération est fastidieuse à la longue. Nous disposons d'une commande de « surveillance » des fichiers TypeScript et qui lance automatiquement la transpilation pour tout fichier `.ts` modifié :
 
     yarn tscw
 

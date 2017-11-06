@@ -4,14 +4,14 @@ Date: 2017-10-31
 Slug: chapitre-2-outils
 Authors: cgeek
 
-Nous n'utiliserons ici que des logiciels libres afin que n'importe qui puisse réaliser librement ce tutoriel :
+Nous n'utiliserons ici que des logiciels libres afin que n'importe qui puisse réaliser ce tutoriel sans contraintes :
 
 * [Git](https://git-scm.com/)
 * [NodeJS v6 ou supérieur](https://nodejs.org)
 * [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 * [VSCode](https://code.visualstudio.com/)
 
-Voilà, c'est tout. Nous vous laissons le soin d'installer ces logiciels par vous-même.
+Voilà, c'est tout. Nous vous laissons le soin d'installer ces logiciels par vous-même en suivant les liens.
 
 > Si vous utilisez un Linux/Mac, nous vous conseillons d'installer NodeJS via [NVM](https://github.com/creationix/nvm#installation).
 
