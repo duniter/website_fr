@@ -1,4 +1,4 @@
-Title: II. Installation des outils
+Title: 2. Installation des outils
 Order: 1
 Date: 2017-10-31
 Slug: chapitre-2-outils

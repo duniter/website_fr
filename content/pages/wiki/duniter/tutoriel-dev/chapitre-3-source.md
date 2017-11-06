@@ -1,4 +1,4 @@
-Title: III. Récupération du code source
+Title: 3. Récupération du code source
 Order: 1
 Date: 2017-10-31
 Slug: chapitre-3-source
