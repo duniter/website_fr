@@ -119,4 +119,4 @@ Une bonne pratique est donc de démarrer les étapes 1., 2. et 3. sur un poste L
 
 * s'assurer que le package zip est installé (il ne l'est pas par défaut)
 * avoir mis correctement le fichier correspondant à votre jeton github dans .config/duniter/.github (voir « création d'un token github » plus haut)
-* avoir installé votre authentification ssh pour github, voir par exemple https://help.github.com/articles/connecting-to-github-with-ssh/. Typiquement, il vous suffira de copier le contenu du répertoire .ssh de votre profile dans le profile du raspberry. Attention, in faut faire un chmod 400 sur id_rsa.pub sinon github se plaint.
+* avoir installé votre authentification ssh pour github, voir par exemple https://help.github.com/articles/connecting-to-github-with-ssh/. Typiquement, il vous suffira de copier le contenu du répertoire .ssh de votre profile dans le profile du raspberry. Attention, in faut faire un chmod 400 sur id_rsa sinon github se plaint.
