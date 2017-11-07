@@ -24,5 +24,5 @@ Place aux chapitres !
 * [4. Démarrage](./chapitre-4-demarrage)
 * [5. Architecture de Duniter](./chapitre-5-architecture)
 * [6. Éléments de code](./chapitre-6-code)
-* [7. La base de données](./chapitre-7-bdd) (en cours)
+* [7. La base de données](./chapitre-7-bdd)
 * [8. Les addons C/C++](./chapitre-8-addons) (en cours)
