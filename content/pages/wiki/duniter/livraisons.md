@@ -107,3 +107,16 @@ La *pre-release* passera alors en *release*, et les utilisateurs seront alertés
 Il suffit de réaliser les opérations 1. et 3. sur ARM. Le livrable sera alors produit et uploadé avec les autres versions.
 
 Une bonne pratique est donc de démarrer les étapes 1., 2. et 3. sur un poste Linux 64bits, *puis* de lancer les étapes 1. et 3. sur ARM en parallèle. Il existera alors 2 machines apportant leur concurrence à la construction de la release.
+
+Étapes à suivre avec une raspbian:
+
+* utiliser une release « jessie » pour garantir que ceux qui sont sous cette version peuvent installer le package
+* installer yarn, voir la page https://yarnpkg.com/lang/en/docs/install/ :
+> curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list && sudo apt-get update && sudo apt-get install yarn
+
+* attention, yarn désinstalle automatiquement le nodejs préinstallé avec raspbian parce qu'il n'est pas compatible, il faut donc installer node :
+> sudo apt-get install curl && curl -sL https://deb.nodesource.com/setup | bash - && sudo apt-get install -y nodejs
+
+* s'assurer que le package zip est installé (il ne l'est pas par défaut)
+* avoir mis correctement le fichier correspondant à votre jeton github dans .config/duniter/.github (voir « création d'un token github » plus haut)
+* avoir installé votre authentification ssh pour github, voir par exemple https://help.github.com/articles/connecting-to-github-with-ssh/. Typiquement, il vous suffira de copier le contenu du répertoire .ssh de votre profile dans le profile du raspberry. Attention, in faut faire un chmod 400 sur id_rsa.pub sinon github se plaint.
