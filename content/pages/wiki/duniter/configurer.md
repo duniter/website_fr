@@ -16,6 +16,7 @@ Ce document est un petit tutoriel pour configurer votre nœud Duniter fraichemen
             * [Les API](#les-api)
                 * [Configurer WS2P](#configurer-ws2p)
                     * [WS2P privé](#ws2p-privé)
+                      * [WS2PTOR](#ws2ptor-privé)
                     * [WS2P public](#ws2p-public)
                       * [Définir un patch pour votre point d'accès ws2p](#définir-un-patch-pour-votre-point-daccès-ws2p)
                 * [Configurer BMA](#configurer-bma)
@@ -115,6 +116,38 @@ Pour consulter la liste de vos clés préférés :
     
     duniter ws2p list-prefered
 
+Si vous le souhaitez vous pouvez transformer cette liste de clés préférés en liste de clés autorisés, et ainsi interdire a votre noeud de se connecter à un autre noeud dont la clé ne se trouverai pas dans votre liste, il suffit pour cela d'activer l'option `--ws2p-prefered-only` :
+
+    duniter config --ws2p-prefered-only
+
+Il n'existe pas encore de commande pour désactiver cette option, il vous faudra modifier manuellement votre fichier de configuration et remplacer `true` par `false` dans la ligne `"ws2pPreferedOnly": true`
+
+###### WS2PTOR Privé
+
+Pour demander a votre noeud duniter de passer par Tor dans les connexions privés qu'il établi avec d'autres noeuds il vous suffit de définir un proxy tor et de choisir la politique a adopter vis à vis des points d'accès ws2p normaux (option `--reachnig-clear-ep`) :
+
+    duniter config --tor-proxy localhost:9050 --reachnig-clear-ep tor
+
+Vous devrez en plus installer le *Tor Browser* ou *Tor Standalone* sur la même machine. Par défaut Tor écoute sur localhost sur le port 9050, si vous changez votre configuration de tor vous devrez évidemment mofidier la configuration de Duniter en conséquence.
+
+Vous pouvez également opter pour un neoud mixte, qui contactera en clair les points d'accès classiques et qui ne se servira donc de Tor que pour contacter les point d'accès en .onion : 
+
+    duniter config --tor-proxy localhost:9050 --reachnig-clear-ep clear
+
+Enfin 3ème choix, vous pouvez décider de ne contacter que les points d'accès en .onion, les points d'accès en clair ne seront jamais contacter :
+
+    duniter config --tor-proxy localhost:9050 --reachnig-clear-ep none
+
+/!\ Chaque fois que vous modifiez l'une de ses 2 options vous devez répéter l'autre en même temps sinon elle est réinitialisée !
+
+Enfin pour réinitialiser votre config Tor et revenir a un noeud parfaitement classique : 
+
+    duniter --rm-proxies
+
+Vous pouvez aussi décider d'encapsuler Duniter dans une VM Tor comme whonix, dans ce cas vous devez informer duniter qu'il sera capable de contacter les points d'accès en .onion en activant l'option `--force-tor` :
+
+    duniter config --force-tor --reachnig-clear-ep tor|none
+
 ##### WS2P Public
 
 Ce mode est désactivé par défaut, pour qu'il fonctionne vous devez configurer un point d'accès que les autres nœuds duniter pourront utilisé pour vous joindre.
@@ -135,6 +168,10 @@ Pour que le WS2P Public fonctionne vous devez configurer un point d'accès que l
     
 *Les options “remote” correspondent par exemple à une box qui ferait un NAT vers votre machine, ou à un nginx/apache qui ferait un reverse proxy vers votre instance Duniter.*
 Si votre nœud duniter est connecté a internet par l'intermédiaire d'une box, vous devrez configurer une redirection de port sur votre box en redirigeant le port de votre choix vers la machine qui éxécute votre nœud duniter. De plus, afin que l'ip locale de cette machine ne change pas, vous devez demander a votre box de lui attribuée un bail DHCP permanent.
+
+###### Point d'Accès WS2PTOR
+
+il vous suffit d'indiquer l'adresse .onion de votre hidden service dans l'option `--ws2p-remote-port` et Duniter ce configurera automatiquement en mode WS2PTOR.
 
 ###### Nombre maximal de connexions WS2p Publiques
 
@@ -157,6 +194,12 @@ Pour supprimer une clé de votre liste de clés privilégiées :
 Pour consulter la liste de vos clés privilégiées :
 
     duniter ws2p list-privileged
+
+Si vous le souhaitez vous pouvez transformer cette liste de clés privilégiées en liste de clés autorisés, et ainsi refuser toute connexion d'un autre noeud dont la clé ne se trouverai pas dans votre liste, il suffit pour cela d'activer l'option `--ws2p-privileged-only` :
+
+    duniter config --ws2p-privileged-only
+
+Il n'existe pas encore de commande pour désactiver cette option, il vous faudra modifier manuellement votre fichier de configuration et remplacer `true` par `false` dans la ligne `"ws2pPrivilegedOnly": true`.
     
 ##### Checker votre configuration WS2p
 
