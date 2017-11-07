@@ -130,7 +130,7 @@ Pour demander a votre noeud duniter de passer par Tor dans les connexions privé
 
 Vous devrez en plus installer le *Tor Browser* ou *Tor Standalone* sur la même machine. Par défaut Tor écoute sur localhost sur le port 9050, si vous changez votre configuration de tor vous devrez évidemment mofidier la configuration de Duniter en conséquence.
 
-Vous pouvez également opter pour un neoud mixte, qui contactera en clair les points d'accès classiques et qui ne se servira donc de Tor que pour contacter les point d'accès en .onion : 
+Vous pouvez également opter pour un noeud mixte, qui contactera en clair les points d'accès classiques et qui ne se servira donc de Tor que pour contacter les point d'accès en .onion : 
 
     duniter config --tor-proxy localhost:9050 --reaching-clear-ep clear
 
@@ -144,7 +144,7 @@ Enfin pour réinitialiser votre config Tor et revenir a un noeud parfaitement cl
 
     duniter --rm-proxies
 
-Vous pouvez aussi décider d'encapsuler Duniter dans une VM Tor comme whonix, dans ce cas vous devez informer duniter qu'il sera capable de contacter les points d'accès en .onion en activant l'option `--force-tor` :
+Vous pouvez aussi décider d'encapsuler Duniter dans une VM Tor comme whonix, dans ce cas vous devrez informer duniter qu'il sera capable de contacter les points d'accès en .onion en activant l'option `--force-tor` :
 
     duniter config --force-tor --reaching-clear-ep tor|none
 
