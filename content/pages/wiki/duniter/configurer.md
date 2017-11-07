@@ -124,19 +124,19 @@ Il n'existe pas encore de commande pour désactiver cette option, il vous faudra
 
 ###### WS2PTOR Privé
 
-Pour demander a votre noeud duniter de passer par Tor dans les connexions privés qu'il établi avec d'autres noeuds il vous suffit de définir un proxy tor et de choisir la politique a adopter vis à vis des points d'accès ws2p normaux (option `--reachnig-clear-ep`) :
+Pour demander a votre noeud duniter de passer par Tor dans les connexions privés qu'il établi avec d'autres noeuds il vous suffit de définir un proxy tor et de choisir la politique a adopter vis à vis des points d'accès ws2p normaux (option `--reaching-clear-ep`) :
 
-    duniter config --tor-proxy localhost:9050 --reachnig-clear-ep tor
+    duniter config --tor-proxy localhost:9050 --reaching-clear-ep tor
 
 Vous devrez en plus installer le *Tor Browser* ou *Tor Standalone* sur la même machine. Par défaut Tor écoute sur localhost sur le port 9050, si vous changez votre configuration de tor vous devrez évidemment mofidier la configuration de Duniter en conséquence.
 
 Vous pouvez également opter pour un neoud mixte, qui contactera en clair les points d'accès classiques et qui ne se servira donc de Tor que pour contacter les point d'accès en .onion : 
 
-    duniter config --tor-proxy localhost:9050 --reachnig-clear-ep clear
+    duniter config --tor-proxy localhost:9050 --reaching-clear-ep clear
 
 Enfin 3ème choix, vous pouvez décider de ne contacter que les points d'accès en .onion, les points d'accès en clair ne seront jamais contacter :
 
-    duniter config --tor-proxy localhost:9050 --reachnig-clear-ep none
+    duniter config --tor-proxy localhost:9050 --reaching-clear-ep none
 
 /!\ Chaque fois que vous modifiez l'une de ses 2 options vous devez répéter l'autre en même temps sinon elle est réinitialisée !
 
@@ -146,7 +146,7 @@ Enfin pour réinitialiser votre config Tor et revenir a un noeud parfaitement cl
 
 Vous pouvez aussi décider d'encapsuler Duniter dans une VM Tor comme whonix, dans ce cas vous devez informer duniter qu'il sera capable de contacter les points d'accès en .onion en activant l'option `--force-tor` :
 
-    duniter config --force-tor --reachnig-clear-ep tor|none
+    duniter config --force-tor --reaching-clear-ep tor|none
 
 ##### WS2P Public
 
