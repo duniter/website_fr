@@ -165,6 +165,11 @@ Allez sur la [page de la dernière version publiée](https://github.com/duniter/
 
         bin/duniter --version
 
+**6. Rajouter l'interface web** (non présente par défaut), qui ajoute les commandes `direct_webstart` et `webstart`:
+
+        bin/duniter plug duniter-ui@1.4.x
+        sed -i "s/duniter\//..\/..\/..\/..\//g" node_modules/duniter-ui/server/controller/webmin.js
+
 ### Docker
 
 Non disponible.
