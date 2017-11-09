@@ -26,6 +26,7 @@ Page concernant spécifiquement le logiciel Duniter.
 ## Développement
 
 * [Tutoriel de développement](./tutoriel-dev)
+* [Fonctionnement des branches du dépot git duniter](./git-branches)
 * [Fuites mémoire](./fuites-memoire)
 * [Les modules C/C++](./les-modules-c-cpp)
 * [Guide du validateur](https://github.com/duniter/duniter/blob/dev/doc/validator-guide.md)
