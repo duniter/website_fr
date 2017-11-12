@@ -34,9 +34,9 @@ title Cycle d'execution de Duniter
 
 == Initialisation ==
 
-"duniter <cmd>" -> onConfig: Charge les modules :\n- Ceux par defaut\n * duniter-ui\n * ws2p\n * bma\n * crawler\n * keypair\n * prover\n * ...\n- Ceux ajoutés par l'utilisateur
+"duniter <cmd>" -> onConfig: Charge les modules :\n- Ceux par defaut\n * duniter-ui\n * ws2p\n * bma\n * crawler\n * keypair\n * prover\n * ...\n- Ceux ajoutes par l'utilisateur
 
-onConfig -> Execution: Pour chaque module :\n- Charge sa configuration specifique,\navec acces aux options de la ligne\nde commande (--opt1 valeur1…).
+onConfig -> Execution: Pour chaque module :\n- Charge sa configuration specifique,\navec acces aux options de la ligne\nde commande (--opt1 valeur1...)
 
 == Execution de la commande ==
 
@@ -48,11 +48,11 @@ note left
   Le code specifique dispose d'un acces a plusieurs objets :
 
 
-  *<color #118888>server</color> : contient toute la logique du nœud, sa blockchain et un accès vers
+  *<color #118888>server</color> : contient toute la logique du noeud, sa blockchain et un acces vers
   sa base de donnees
   *<color #118888>conf</color> : contient toute configuration collectee dans la phase "onConfig"
   *<color #118888>program</color> : acces a la commande <cmd>, ses eventuelles
-    sous-commandes [sub] et les options passees (--opt1 <val1>…).
+    sous-commandes [sub] et les options passees (--opt1 <val1>...).
 
 
   Exemples de commandes :
@@ -60,7 +60,7 @@ note left
 
   *<color #FF8888>reset data</color> : reinitialise les donnees
   *<color #FF8888>sync</color> : synchroniser la blockchain G1
-  *<color #FF8888>direct_start</color> : demarrer le nœud
+  *<color #FF8888>direct_start</color> : demarrer le noeud
   *...
 
 
@@ -367,12 +367,12 @@ server <--> [**prover**\nProduit des nouveaux\nblocs et realise leur\npreuve de 
 
 package "BMA" {
   [**BMA server**\nServeur HTTP public qui recoit\net transmet les documents\nDuniter au serveur.] <---> server
-  [**BMA crawler**\nSollicite les autres nœuds BMA\npour recuperer des documents\nde facon active.] <---> server
+  [**BMA crawler**\nSollicite les autres noeuds BMA\npour recuperer des documents\nde facon active.] <---> server
   [**BMA router**\nTransmet les documents valides\ntraites par le serveur au reste du\nreseau via BMA.] <---> server
 }
 
 package "WS2P" {
-    [**WS2P**\nNouvelle couche reseau\nP2P visant à remplacer\nBMA pour la communication\ninter-noeuds.] <--> server
+    [**WS2P**\nNouvelle couche reseau\nP2P visant a remplacer\nBMA pour la communication\ninter-noeuds.] <--> server
 }
 
 @enduml
