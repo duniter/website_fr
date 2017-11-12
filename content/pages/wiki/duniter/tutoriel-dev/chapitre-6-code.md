@@ -64,7 +64,7 @@ package "Addon C++" {
 
 L'objet `server` est transmis à tout module, aussi bien pour une exécution de commande que pour un fonctionnement en mode service.
 
-Cet objet est donc disponible partout dans l'application, ainsi que les sous-objets portés par celui-ci (`dal`, `conf`, `BlockchainService`, ...).
+Cet objet est donc disponible partout dans l'application, ainsi que les sous-objets portés par celui-ci (`dal`, `conf`, `BlockchainService`…).
 
 ### Propriété `server.conf`
 
@@ -106,7 +106,7 @@ Par exemple la méthode `getMembers()` renvoie la liste des membres contenus dan
 
 ### Des objets pour un accès libre
 
-Mais afin de permettre à tout module (même encore inconnu) d'avoir accès à la base de données, la classe du fichier `fileDAL.ts` contient également des membres permettant d'exécuter directement des requêtes sur la base de données : 
+Mais afin de permettre à tout module (même encore inconnu) d'avoir accès à la base de données, la classe du fichier `fileDAL.ts` contient également des membres permettant d'exécuter directement des requêtes sur la base de données :
 
 * `bindexDAL` : accès à la table `b_index` (données blockchain)
 * `iindexDAL` : accès à la table `i_index` (données blockchain)
@@ -145,7 +145,7 @@ BlockchainContext - DuniterBlockchain
 
 L'objet `DuniterBlockchain` est celui qui implémente *in-fine* le [protocole Duniter](https://github.com/duniter/duniter/blob/master/doc/Protocol.md), en s'assurant du respect des règles lorsqu'il reçoit un nouveau bloc mais aussi en générant les données exploitables (les INDEX) lors de l'analyse, puis de l'ajout du bloc au sein de la blockchain complète.
 
-### Les autres fichier de service
+### Les autres fichiers de service
 
 Les fichiers `IdentityService.ts`, `MembershipService.ts`, `TransactionService.ts` et `PeeringService.ts` servent pour leur part à vérifier et accepter en piscine les nouveaux documents respectivement d'identité et certification, d'adhésion, de transaction et de fiches de pair.
 

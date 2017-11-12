@@ -6,7 +6,7 @@ Authors: cgeek
 
 ## Introduction
 
-Ce chapitre a pour but de visualiser l'architecture de Duniter sous différents angles, afin d'apporter une vue multidimensionnelle du code qui s'organise selon plusieurs axes principaux : 
+Ce chapitre a pour but de visualiser l'architecture de Duniter sous différents angles, afin d'apporter une vue multidimensionnelle du code qui s'organise selon plusieurs axes principaux :
 
 * le cycle d'exécution d'une commande
 * l'organisation en modules
@@ -34,9 +34,9 @@ title Cycle d'execution de Duniter
 
 == Initialisation ==
 
-"duniter <cmd>" -> onConfig: Charge les modules :\n- Ceux par defaut\n * duniter-ui\n * ws2p\n * bma\n * crawler\n * keypair\n * prover\n * ...\n- Ceux ajoutes par l'utilisateur
+"duniter <cmd>" -> onConfig: Charge les modules :\n- Ceux par defaut\n * duniter-ui\n * ws2p\n * bma\n * crawler\n * keypair\n * prover\n * ...\n- Ceux ajoutés par l'utilisateur
 
-onConfig -> Execution: Pour chaque module :\n- Charge sa configuration specifique,\navec acces aux options de la ligne\nde commande (--opt1 valeur1, ...).
+onConfig -> Execution: Pour chaque module :\n- Charge sa configuration specifique,\navec acces aux options de la ligne\nde commande (--opt1 valeur1…).
 
 == Execution de la commande ==
 
@@ -48,11 +48,11 @@ note left
   Le code specifique dispose d'un acces a plusieurs objets :
 
 
-  *<color #118888>server</color> : contient toute la logique du noeud, sa blockchain et un acces vers
+  *<color #118888>server</color> : contient toute la logique du nœud, sa blockchain et un accès vers
   sa base de donnees
   *<color #118888>conf</color> : contient toute configuration collectee dans la phase "onConfig"
   *<color #118888>program</color> : acces a la commande <cmd>, ses eventuelles
-    sous-commandes [sub] et les options passees (--opt1 <val1>, ...).
+    sous-commandes [sub] et les options passees (--opt1 <val1>…).
 
 
   Exemples de commandes :
@@ -60,7 +60,7 @@ note left
 
   *<color #FF8888>reset data</color> : reinitialise les donnees
   *<color #FF8888>sync</color> : synchroniser la blockchain G1
-  *<color #FF8888>direct_start</color> : demarrer le noeud
+  *<color #FF8888>direct_start</color> : demarrer le nœud
   *...
 
 
@@ -96,17 +96,17 @@ Si l'on avait appelé une autre commande, comme :
 
 Alors le code appelé aurait été celui de la commande de synchronisation présent dans le fichier `app/modules/crawler/index.ts`. On aurait pu penser qu'il s'agirait du fichier sync.ts, mais ici le module crawler gère plusieurs commandes dont celle qui permet la synchronisation au réseau : or il est possible de regrouper plusieurs commandes dans un même fichier, pourquoi pas nommé de façon générique `index.ts`.
 
-Enfin, la commande `node bin/duniter blabla` aurait retourné une erreur car cette commande n'existe pas.
+Enfin, la commande `node bin/duniter blabla` aurait retourné une erreur, car cette commande n'existe pas.
 
 ## Organisation en modules
 
 Afin d'isoler au mieux chaque logique spécifique du code et de permettre d'ajouter des fonctionnalités à Duniter, ce dernier a été pensé pour intégrer une logique de *modules*. Ainsi, toutes les commandes et options disponibles sur Duniter le sont via la définition d'un module.
 
-Un module peut agir à plusieurs niveaux : 
+Un module peut agir à plusieurs niveaux :
 
 * **Configuration** : le module peut charger des informations supplémentaires ou même redéfinir la configuration générale
 * **Commandes** : le module peut définir une ou plusieurs commandes exécutables
-* **Options** : le module peut définir de nouvelles options dans la ligne de commande (--option-m1, -O, ...)
+* **Options** : le module peut définir de nouvelles options dans la ligne de commande (--option-m1, -O…)
 * **Service** : le module peut définir un service, c'est-à-dire une portion de code utilisée quand une commande décide d'activer les services.
 
 Un module peut agir aussi bien n'agir à aucun comme à tous les niveaux à la fois : les champs `config`, `cliOptions`, `cli`, `services` sont tous facultatifs.
@@ -284,7 +284,7 @@ Exécution de la commande :
 
 #### Service
 
-Un module peut également fournir un *service*. C'est une entité qui fonctionne sans fin, et qui ne sera utilisé que si les services sont activés explicitement par une commande, comme par exemple la commande `direct_webstart` le fait :
+Un module peut également fournir un *service*. C'est une entité qui fonctionne sans fin, et qui ne sera utilisé que si les services sont activés explicitement par une commande, comme la commande `direct_webstart` le fait :
 
 ```ts
 {
@@ -367,12 +367,12 @@ server <--> [**prover**\nProduit des nouveaux\nblocs et realise leur\npreuve de 
 
 package "BMA" {
   [**BMA server**\nServeur HTTP public qui recoit\net transmet les documents\nDuniter au serveur.] <---> server
-  [**BMA crawler**\nSollicite les autres noeuds BMA\npour recuperer des documents\nde facon active.] <---> server
+  [**BMA crawler**\nSollicite les autres nœuds BMA\npour recuperer des documents\nde facon active.] <---> server
   [**BMA router**\nTransmet les documents valides\ntraites par le serveur au reste du\nreseau via BMA.] <---> server
 }
 
 package "WS2P" {
-    [**WS2P**\nNouvelle couche reseau\nP2P visant a remplacer\nBMA pour la communication\ninter-noeuds.] <--> server
+    [**WS2P**\nNouvelle couche reseau\nP2P visant à remplacer\nBMA pour la communication\ninter-noeuds.] <--> server
 }
 
 @enduml
@@ -383,7 +383,7 @@ Comme on peut le voir, l'élément central est `server`. En effet, tous ces modu
 
 Cela est tout à fait normal, puisqu'il s'agit de l'élément central qui contient toute la logique de la blockchain et l'accès aux données qu'elle contient (transactions, unités de monnaie, identités, certifications, ...).
 
-Exemple de flux observables dans Duniter : 
+Exemple de flux observables dans Duniter :
 
 *Réception, traitement puis retransmission d'un document via BMA* :
 
