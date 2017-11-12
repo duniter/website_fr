@@ -7,7 +7,7 @@ Authors: cgeek
 Nous n'utiliserons ici que des logiciels libres afin que n'importe qui puisse réaliser ce tutoriel sans contraintes :
 
 * [Git](https://git-scm.com/)
-* [NodeJS v6 ou supérieur](https://nodejs.org)
+* [NodeJS v6, v7 ou v8](https://nodejs.org)
 * [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 * [VSCode](https://code.visualstudio.com/)
 
