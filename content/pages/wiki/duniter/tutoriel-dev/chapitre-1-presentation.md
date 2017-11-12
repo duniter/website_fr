@@ -4,11 +4,11 @@ Date: 2017-10-31
 Slug: chapitre-1-presentation
 Authors: cgeek
 
-Duniter est *un logiciel*. Ce logiciel donne vie à la 1ère crypto-monnaie libre appelée **Ğ1**.
+Duniter est *un logiciel*. Ce logiciel donne vie à la première crypto-monnaie libre appelée **Ğ1**.
 
-La Ğ1 est une crypto-monnaie semblable au Bitcoin : elle utilise une blockchain que n'importe quel agent économique peut utiliser pour recevoir et envoyer des Ğ1 quand il le souhaite, sans demander d'autorisation à qui que soit et sans restriction sur le fait qu'il soit un individu, une association, une entreprise, un État ou autre chose. Par ailleurs les transferts de Ğ1 sont totalement gratuits contrairement au Bitcoin. Il n'y a pas on non plus de limite sur le nombre d'utilisateurs ou de comptes.
+La Ğ1 est une crypto-monnaie semblable au Bitcoin : elle utilise une blockchain que n'importe quel agent économique peut utiliser pour recevoir et envoyer des Ğ1 quand il le souhaite, sans demander d'autorisation à qui que soit et sans restriction sur le fait qu'il soit un individu, une association, une entreprise, un État ou autre chose. Par ailleurs, les transferts d’unités Ğ1 sont sant frais contrairement au Bitcoin. Il n'y a pas on non plus de limite sur le nombre d'utilisateurs ou de comptes.
 
-La Ğ1 a aussi la particularité d'être **une monnaie libre** : ses nouvelles unités sont émises par chaque individu membre du réseau Ğ1, à part égale, à la fois pour les membres actuels et les générations futures. La Ğ1 a été conçue de telle façon que chaque individu soit égal aux autres quant à son pouvoir de création monétaire en Ğ1, peu importe qu'il adopte la monnaie maintenant ou dans 20, 40, 80 ou 160 ans.
+La Ğ1 a aussi la particularité d'être **une monnaie libre** : ses nouvelles unités sont émises par chaque individu membre du réseau Ğ1, à parts égales, à la fois pour les membres actuels et les générations futures. La Ğ1 a été conçue de telle façon que chaque individu soit égal aux autres quant à son pouvoir de création monétaire en Ğ1, peu importe qu'il adopte la monnaie maintenant ou dans 20, 40, 80 ou 160 ans.
 
 ### Objectifs de Duniter Ğ1
 
@@ -30,15 +30,15 @@ Duniter est donc un Bitcoin qui améliore fortement la partie création monétai
 
 Duniter est capable de faire fonctionner d'autres monnaies que la Ğ1, et fait notamment tourner une monnaie de test appelée Ğ1-Test. Toutefois le projet Duniter, qui donne naissance au logiciel du même nom, n'a pas vocation à soutenir d'autres monnaies que la Ğ1 et la Ğ1-Test pour des raisons d'efficacité et de moyens. Pour ceux qui souhaiteraient créer leur propre monnaie libre sur la base du logiciel Duniter, il leur faudra forker le projet et trouver leurs propres développeurs, puis adapter le logiciel en fonction de leurs propres buts.
 
-> Toutefois la monnaie Ğ1 ayant à peine 8 mois d'existence (06/11/2017), nous ne vous conseillons pas de réaliser votre propre monnaie basée sur Duniter aujourd'hui. Le logiciel va fortement évoluer au cours des 2-3 prochaines années pour répondre aux faits expérimentaux qui valideront ou invalideront les décisions techniques prises pour ce projet.
+> Toutefois la monnaie Ğ1 ayant à peine huit mois d'existence (06/11/2017), nous ne vous conseillons pas de réaliser votre propre monnaie basée sur Duniter aujourd'hui. Le logiciel va fortement évoluer au cours des deux-trois prochaines années pour répondre aux faits expérimentaux qui valideront ou invalideront les décisions techniques prises pour ce projet.
 >
 > Attendre quelques années avant de lancer votre propre monnaie semble une sage décision.
 
 ### Taille maximale de la Ğ1
 
-* **Producteurs** : Duniter connaît aujourd'hui (2017) un maximum technique pour le nombre de *producteurs* simultanés d'unités Ğ1 d'environ 10 millions. Ce maximum volontaire repose sur des données empiriques de graphes sociaux et n'empêche pas que celui-ci soit augmenté dans le futur.
+* **Producteurs** : Duniter connaît aujourd'hui (2017) un maximum technique pour le nombre de *producteurs* simultanés d'unités Ğ1 d'environ dix millions. Ce maximum volontaire repose sur des données empiriques de graphes sociaux et n'empêche pas que celui-ci soit augmenté dans le futur.
 
-* **Utilisateurs** : le nombre maximum de producteurs est à différencier du nombre maximum d'*utilisateurs* de la monnaie (individus, entreprises, ...). Ce maximum n'est pour le moment pas connu, bien que très largement supérieur au nombre de membres, et dépend largement des évolutions techniques à venir.
+* **Utilisateurs** : le nombre maximum de producteurs est à différencier du nombre maximum d'*utilisateurs* de la monnaie (individus, entreprises…). Ce maximum n'est pour le moment pas connu, bien que très largement supérieur au nombre de membres, et dépend largement des évolutions techniques à venir.
 
 ## Particularités du projet
 
@@ -57,7 +57,7 @@ Ce mécanisme est appelé *toile de confiance*, concept largement inspiré par [
 ## Caractéristiques techniques
 
 ### Code
-Duniter est un logiciel libre sous licence AGPL, écrit à 97% en TypeScript, qui après transpilation en JavaScript est interprété par NodeJS.
+Duniter est un logiciel libre sous licence AGPL, écrit à 97 % en TypeScript, qui après transpilation en JavaScript est interprété par NodeJS.
 
 ### Topologie
 
@@ -82,7 +82,7 @@ La blockchain de Duniter repose sur deux principes :
 
 ### Performances
 
-Le JavaScript n'étant pas adapté aux fonctions gourmandes en puissance de calcul comme la signature numérique, la vérification de signature, le hachage ou les calculs de distance de la toile de confiance, Duniter réalise donc ces opération en C/C++.
+Le JavaScript n'étant pas adapté aux fonctions gourmandes en puissance de calcul comme la signature numérique, la vérification de signature, le hachage ou les calculs de distance de la toile de confiance, Duniter réalise donc ces opérations en C/C++.
 
 ## Un dernier mot
 

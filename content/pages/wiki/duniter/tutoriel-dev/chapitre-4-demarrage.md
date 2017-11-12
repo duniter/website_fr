@@ -4,7 +4,7 @@ Date: 2017-10-31
 Slug: chapitre-4-demarrage
 Authors: cgeek
 
-Maintenant que les sources de Duniter sont installées, nous allons exécuter quelques commandes afin de mettre votre nœud local de développement sur pied : 
+Maintenant que les sources de Duniter sont installées, nous allons exécuter quelques commandes afin de mettre votre nœud local de développement sur pied :
 
 * initialiser les données en se synchronisant sur le réseau Ğ1
 * démarrer le nœud
@@ -21,7 +21,7 @@ Pour initialiser votre nœud, il vous suffit de télécharger et d'appliquer la 
 
 Nous initions ici le téléchargement de la blockchain depuis le nœud `g1.duniter.org`, mais en réalité le téléchargement se fera en P2P depuis l'ensemble du réseau Ğ1 afin d'optimiser la procédure. Indiquer le nœud `g1.duniter.org` permet juste de donner un point d'entrée sur le réseau, mais aussi d'indiquer que l'on souhaite la blockchain dont le bloc courant est celui de `g1.duniter.org`, ce qui permet d'identifier l'intégralité du reste de la blockchain.
 
-> En effet, chaque bloc référençant sont précédent par une fonction de hachage, à partir d'un bloc donné on est capable de s'assurer du contenu de tous les blocs précédents. Ainsi il est possible de télécharger les blocs de la blockchain sur n'importe quel nœud du réseau tout en étant assuré de son contenu, une fois précisé le bloc le plus haut (aussi appelé `HEAD`) ! Ici, nous demandons à avoir le même `HEAD` que celui possédé par le nœud `g1.duniter.org`.
+> En effet, chaque bloc référençant son précédant par une fonction de hachage, à partir d'un bloc donné on est capable de s'assurer du contenu de tous les blocs précédents. Ainsi il est possible de télécharger les blocs de la blockchain sur n'importe quel nœud du réseau tout en étant assuré de son contenu, une fois précisé le bloc le plus haut (aussi appelé `HEAD`) ! Ici, nous demandons à avoir le même `HEAD` que celui possédé par le nœud `g1.duniter.org`.
 
 ## Lancez votre nœud
 
@@ -35,7 +35,7 @@ Vous avez désormais un nœud prêt à fonctionner, et que vous pouvez même mod
 
 ## Débogage dans VSCode
 
-Le débogage nécessite une configuration de VSCode pour le projet. Afin de faciliter la prise en main initiale, un dossier « de base » a été initié, que vous pouvez copier pour votre utilisation : 
+Le débogage nécessite une configuration de VSCode pour le projet. Afin de faciliter la prise en main initiale, un dossier « de base » a été initié, que vous pouvez copier pour votre utilisation :
 
     cp -r doc/.vscode .vscode
 
