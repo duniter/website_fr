@@ -36,3 +36,4 @@ Page concernant spécifiquement le logiciel Duniter.
 
 * [Preuve de travail](./preuve-de-travail)
 * [Architecture](./architecture)
+* [Archivage des réflexions techniques autour de Duniter et de sa philosophie](./archives)
