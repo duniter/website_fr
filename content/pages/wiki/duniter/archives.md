@@ -5,9 +5,7 @@ Slug: archives
 Authors: inso
 
 
-## Archives
-
-Cette page a pour objectif de référencer les différentes réflexions qui ont amené à l'état actuel de Duniter.
+Cette page a pour objectif de référencer les différentes réflexions techniques et philosophiques qui ont amené à l'état actuel de Duniter.
 
 ### Réflexion sur les grands nombres
 
