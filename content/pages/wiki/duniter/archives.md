@@ -36,3 +36,7 @@ Cette page a pour objectif de référencer les différentes réflexions techniqu
 
  * [Topic original](https://forum.duniter.org/t/block-issuance-distribution/1312)
  * **TLDR** : Duniter cherche à équilibrer entre les membres la répartition des blocs calculés, en distribuant des pénalités à ceux qui calculent trop vite. Différentes méthodes sont possibles, et elles n'ont pas toutes le même impact en terme de stabilité du réseau et d'équité entre membres.
+
+### Clé déléguée au calcul de blocs
+ * [Topic original](https://forum.duniter.org/t/idee-cle-deleguee-au-calcul-de-blocs/2698)
+ * **TLDR** : L’idée de la clé déléguée consiste à pouvoir déléguer le calcul des blocs à une sous-clé, afin de mettre le trousseau principal en sécurité. Mais si un membre est capable de créer une clé qui calcule sans risque pour son propre compte, alors il peux très bien la céder à uen Organisation qui s’occupera de calculer à ma place. Et cette même Organisation de réitérer l’opération avec plein d’autres membres (moyennant quelques UNL), qui dispose alors d’une armée de clés et de machines pour calculer tous les blocs, et donc prendre le contrôle de la blockchain Ğ1. Autant dire qu’il a pouvoir de vie ou de mort sur la monnaie. Pour éviter cela, une clé déléguée pourra révoquer le compte membre qui lui est associé.
