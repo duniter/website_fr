@@ -116,12 +116,6 @@ Pour consulter la liste de vos clés préférés :
     
     duniter ws2p list-prefered
 
-Si vous le souhaitez vous pouvez transformer cette liste de clés préférés en liste de clés autorisés, et ainsi interdire a votre noeud de se connecter à un autre noeud dont la clé ne se trouverai pas dans votre liste, il suffit pour cela d'activer l'option `--ws2p-prefered-only` :
-
-    duniter config --ws2p-prefered-only
-
-Il n'existe pas encore de commande pour désactiver cette option, il vous faudra modifier manuellement votre fichier de configuration et remplacer `true` par `false` dans la ligne `"ws2pPreferedOnly": true`
-
 ###### WS2PTOR Privé
 
 Pour demander a votre noeud duniter de passer par Tor dans les connexions privés qu'il établi avec d'autres noeuds il vous suffit de définir un proxy tor et de choisir la politique a adopter vis à vis des points d'accès ws2p normaux (option `--reaching-clear-ep`) :
@@ -194,12 +188,6 @@ Pour supprimer une clé de votre liste de clés privilégiées :
 Pour consulter la liste de vos clés privilégiées :
 
     duniter ws2p list-privileged
-
-Si vous le souhaitez vous pouvez transformer cette liste de clés privilégiées en liste de clés autorisés, et ainsi refuser toute connexion d'un autre noeud dont la clé ne se trouverai pas dans votre liste, il suffit pour cela d'activer l'option `--ws2p-privileged-only` :
-
-    duniter config --ws2p-privileged-only
-
-Il n'existe pas encore de commande pour désactiver cette option, il vous faudra modifier manuellement votre fichier de configuration et remplacer `true` par `false` dans la ligne `"ws2pPrivilegedOnly": true`.
     
 ##### Checker votre configuration WS2p
 
