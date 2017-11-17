@@ -317,7 +317,7 @@ Regénère la configuration réseau de façon automatique et génère une paire 
 
 Génère le prochain bloc à partir des données en piscine et du bloc courant, réalise la preuve de travail pour la difficulté demandée puis soumet le bloc résultant à un nœud.
 
-    duniter gen-next g1.duniter.org 10901 74
+    duniter gen-next --submit-host g1.duniter.org --submit-port 10901 74
     
 Cette commande génère le prochain bloc, l'envoie au nœud `g1.duniter.org:10901` sur le port `10901` et calcule la preuve de travail avec une difficulté de `74` (empreinte débutant par 4 zéros).
 
@@ -325,7 +325,7 @@ Cette commande génère le prochain bloc, l'envoie au nœud `g1.duniter.org:1090
 
 Affiche le bloc calculé *avant* la réalisation de la preuve de travail et la soumission au réseau. Permet de contrôler son contenu.
 
-    duniter gen-next g1.duniter.org 10901 74 --show
+    duniter gen-next --submit-host g1.duniter.org --submit-port 10901 74 --show
 
 #### Option `--check`
 
