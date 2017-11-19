@@ -8,7 +8,7 @@ Thumbnail: /images/light.svg
 
 Le Bitcoin a la réputation d'être « énergivore ». Or Duniter hérite de certaines propriétés du Bitcoin comme la preuve de travail et la blockchain. Dès lors, des individus se posent légitimement cette question : 
 
-> Duniter est-il aussi énergivore ?
+> Duniter est-il également énergivore ?
 
 ### Un peu de définitions
 
@@ -42,7 +42,7 @@ Est-ce que pour autant la consommation électrique des 2/3 restants est élevée
 
 ### Ça fait combien pour la Ğ1 ?
 
-Aujourd'hui la Ğ1 compte environ 30 nœuds membres qui calculent des blocs. Si l'on compte une moyenne de 55 W de consommation instantannée par nœud, alors on obtient `55*24 = 1,32 kWh` de consommation électrique par jour et par nœud, soit `1,32*30 = 39,6 kWh` de consommation totale par jour.
+Aujourd'hui la Ğ1 compte environ 30 nœuds membres qui calculent des blocs. Si l'on compte une moyenne de 55 W de consommation instantannée par nœud, alors on obtient `55*24 = 1,32 kWh` de consommation électrique par jour et par nœud, soit `1,32*30 = 39,6 kWh` de consommation totale du réseau par jour.
 
 Est-ce beaucoup ? Nous avons aujourd'hui environ 12 transactions par jour. Il peut paraître élevé d'avoir 30 ampoules de 55 W allumées en permanence juste pour réaliser 12 transactions par jour.
 
