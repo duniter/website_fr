@@ -193,7 +193,7 @@ Piscine des identités : table où les identités en attente d'inscription dans 
 
 ##### revoked (`BOOLEAN NOT NULL`)
 
-Indique si l'identité possède déjà une révocation attachée.
+> *Champ historique non utilisé*. Vaut toujours `0`.
 
 ##### currentMSN (`INTEGER NULL`)
 
