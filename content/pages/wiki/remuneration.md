@@ -8,6 +8,8 @@ Dans Duniter, à la différence des cryptomonnaies usuelles, le réseau n'intèg
 La raison est qu'il faut éviter de mélanger les sujets. Afin de rester simple, la base technique (la blockchain, 
 le réseau P2P) ne devrait pas intégrer les moyens de rémunérer ceux qui hébergent les noeuds.
 
+>Attention, seuls les noeuds associés à un compte membre peuvent calculer les blocs.
+
 ## Pourquoi devrais-je faire tourner un nœud ?
 
 Pour la même raison que vous partagez des fichiers torrents sans attendre de rémunération en retour ! Simplement
