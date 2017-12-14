@@ -75,10 +75,12 @@ ACCEPTED_MENUS = ['comprendre',
 
 SOCIAL = (('Forum', 'https://forum.duniter.org', 'comment'),
           ('Salon XMPP', 'https://chat.duniter.org', 'comments'),
-          ('Bugs', '/wiki/rapporter-un-bug', 'bug'),
+          ('Bugs', '/fr/wiki/rapporter-un-bug', 'bug'),
+          ('Mastodon', 'ihttps://mastodon.xyz/@duniter', 'globe'),
+          ('Gitlab', 'https://git.duniter.org/'),
           ('GitHub', 'https://github.com/duniter'),
           ('Diaspora', 'https://framasphere.org/people/1949ee70f6bc0134e6b32a0000053625', 'asterisk'),
-          ('RSS', '/fr/feeds/all.atom.xml'),
+          ('RSS', '/feeds/all.atom.xml'),
           ('ğchange', 'https://www.gchange.fr', 'balance-scale'),
           ('ğannonce', 'https://gannonce.duniter.org', 'bullhorn'),)
 
