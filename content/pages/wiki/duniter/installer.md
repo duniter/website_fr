@@ -15,12 +15,14 @@ Ce document est un petit guide pour installer et déployer votre propre instance
     * [GNU/Linux](#gnulinux)
         * [Ubuntu 64 bits](#ubuntu-64-bits)
         * [Debian 64 bits](#debian-64-bits)
+        * [Gentoo 64 bits](#gentoo-64-bits)
         * [Autres distributions](#autres-distributions)
     * [Windows](#windows)
     * [MacOS](#macos)
 * [Version Serveur](#version-serveur)
     * [GNU/Linux](#gnulinux_1)
         * [Ubuntu/Debian package (64 bits)](#ubuntudebian-package-64-bits)
+        * [Gentoo 64 bits](#gentoo-64-bits)
         * [YunoHost](#yunohost)
         * [Compilation manuelle](#compilation-manuelle)
         * [Docker](#docker)
@@ -183,3 +185,17 @@ Non disponible.
 ## Windows
 
 Il n'y a pas de version spécifique pour Serveur Windows. Utilisez simplement la version [Duniter pour Bureau Windows](#windows).
+
+# Gentoo 64 bits
+
+Pour installer _Duniter_ sur un système _Gentoo_, il existe un paquet dans la surcouche _Portage_ [sveyret-overlay](https://github.com/sveyret/sveyret-overlay). Un fichier _README_ se trouve dans cette surcouche pour vous aider à l'ajouter à _Portage_.
+
+Vous pourrez ensuite installer le paquet `net-p2p/duniter` :
+
+    emerge -av net-p2p/duniter
+
+Les `USE flags` suivants peuvent controller ce qui va être généré :
+
+* `desktop` : génère et installe la version _bureau_ au lieu de la version _serveur_
+
+* `gui` : ajoute une interface graphique (obligatoire pour la version _bureau_, ajoute l'interface web en version _serveur_)
