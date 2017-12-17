@@ -6,9 +6,9 @@ Authors: cgeek
 
 ## La création de monnaie
 
-Duniter est un *logiciel*. Son but est de permettre la production d'une nouvelle valeur numérique (ou électronique) ayant toutes les caractéristiques d'une « *monnaie libre*¹ ». Nom de code de cette nouvelle valeur : le **Ğ1**.
+Duniter est un *logiciel*. Son but est de permettre la production d'une nouvelle valeur numérique (ou électronique) ayant toutes les caractéristiques d'une « *monnaie libre*¹ ». Nom de code de cette nouvelle valeur : la **Ğ1**.
 
-Le Ğ1 est désormais bien réel : les toutes premières unités ont été créées le 8 mars 2017, et de nouvelles sont produites chaque jour par ses membres.
+La Ğ1 est désormais bien réelle : les toutes premières unités ont été créées le 8 mars 2017, et de nouvelles sont produites chaque jour par ses membres.
 
 ![De l'utilisateur à la création de monnaie]({filename}/images/comprendre/workflow.png)
 
