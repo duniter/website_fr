@@ -24,6 +24,7 @@ echo "Prégénération de la licence dans le wiki"
 python replace.py
 
 echo "Génération du site"
+rm
 pelican -s publishconf.py
 
 echo "Copie des fichiers..."
