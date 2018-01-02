@@ -15,7 +15,7 @@ Cette page regroupe des informations importantes concernant Duniter à des fins 
 
 ## Plateformes d'échange
 
-compatible avec les crypto-monnaies Duniter comme la Ğ1 (connexion blockchain)
+Exemple de plateformes d'échange compatible avec les crypto-monnaies Duniter comme la Ğ1 (connexion blockchain)
 
 * [ğannonce](https://gannonce.duniter.org/), site web
 * [ğchange](https://www.gchange.fr/), application de place de marché (web et mobile)
