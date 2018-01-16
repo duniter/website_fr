@@ -19,7 +19,7 @@ Si vous êtes inscrits sur Gitlab, allez simplement sur le bon dépôt :
 
 Puis mettez un titre, et un descriptif de l'erreur rencontrée :
 
-![]({filename}/images/contribuer/ticket_github.png)
+![]({filename}/images/contribuer/ticket_gitlab.png)
 
 > **/!\ N'oubliez pas de valider en cliquant sur le bouton « Submit issue » !**
 
