@@ -38,7 +38,7 @@ L'ensemble des données de la monnaie Ğ1 est enregistré au sein d'une *blockch
 
 ## Pour aller plus loin
 
-Vous pouvez directement accéder à la page [Théorie](../comprendre/theorie), ou bien suivre ces quelques supplémentaires :
+Vous pouvez directement accéder à la page [Théorie](../comprendre/theorie), ou bien consulter ces quelques ressources supplémentaires :
 
 * [Article récapitulatif de Moul](https://moul.re/blog/index.php?article3/duniter) sur Duniter, la TRM et les monnaies libres
 * [Une vidéo par Vincent Texier aux RML7](https://www.youtube.com/watch?v=pSaPjxIpJGA&list=PLr7acQJbh5rzgkXOrCws2bELR8TNRIuv0&index=9) abordant les raisons d'une monnaie libre, à Laval en juin 2015
