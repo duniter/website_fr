@@ -68,9 +68,11 @@ Installation de nœud Duniter, accès et modification code source, techniques cr
 * Vidéo *[Une monnaie libre avec OpenUDC/uCoin](https://www.youtube.com/watch?v=ljflI-JAsbc)* par Stéphane Laborde
 * Vidéo *[Le paradigme TRM et le RdB](https://www.youtube.com/watch?v=PdSEpQ8ZtY4)* par Stéphane Laborde
 * Vidéo *[Révolution monétaire : débat entre Etienne Chouard, Stéphane Laborde et Jean-Baptiste Bersac](https://www.youtube.com/watch?v=kvjstlFaxUw)* par Le 4ème singe
+* Vidéos *[Discussions sur la monnaie libre (Étienne Chouard / Stéphane Laborde)](https://www.youtube.com/playlist?list=PL9isKtkLy16dtuwbYGW_KXP99WRCo85pQ)* montées par Denis La Plume
 * *[Duniter, Théorie relative de la monnaie et projets autour des monnaies libres](https://moul.re/blog/index.php?article3/duniter)* par Moul
 * *[« Monnaie de singe et Monnaie Libre » sur RADIOM ](https://www.radiom.fr/podcast/71-passeurs-de-bougnettes/3453-monnaie-de-singe-et-monnaie-libre.html)* par matiou et nadou
 * *[« La Monnaie Libre au coeur des débats » sur RADIOM ](https://www.radiom.fr/podcast/71-passeurs-de-bougnettes/3621-la-monnaie-libre-au-coeur-des-debats.html)* par matiou et nadou
+* *[Le livre « La monnaie : ce qu'on ignore » de Denis La Plume](https://blog.denislaplume.fr/2017/09/29/le-livre-la-monnaie-ce-quon-ignore-est-sorti/)*
 
 ## Articles
 
