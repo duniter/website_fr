@@ -13,9 +13,10 @@ Tout a été migré : les issues, les dépôts Git, et même les comptes utilisa
 Il est par ailleurs possible de se connecter en utilisant ses logins Github. 
 
 Vous retrouverez notamment les dépôts suivant : 
-  - Le dépôt de [Duniter Typescript](https://git.duniter.org/nodes/typescript/)
-  - Le dépôt de [Duniter Rust](https://git.duniter.org/nodes/rust/)
-  - Le dépôt de [Cesium](https://git.duniter.org/clients/cesium)
+
+* Le dépôt de [Duniter Typescript](https://git.duniter.org/nodes/typescript/)
+* Le dépôt de [Duniter Rust](https://git.duniter.org/nodes/rust/)
+* Le dépôt de [Cesium](https://git.duniter.org/clients/cesium)
 
 Comme sur Github, si vous souhaitez contribuer, vous pouvez fourcher le projet, créer des issues, etc.
   
