@@ -4,7 +4,7 @@ Date: 2017-06-19
 Slug: installer
 Authors: cgeek
 
-Ce document est un petit guide pour installer et déployer votre propre instance Duniter-ts pour :
+Ce document est un petit guide pour installer et déployer votre propre instance Duniter pour :
 
 * soit participer à l'écriture de la blockchain (vous devez être membre)
 * soit avoir un nœud miroir, qui réplique la blockchain et en conserve une copie
@@ -28,13 +28,13 @@ Ce document est un petit guide pour installer et déployer votre propre instance
 
 # Bureau ou serveur
 
-Il existe deux versions de Duniter-ts. Choisissez celle qui vous convient le mieux.
+Il existe deux versions de Duniter. Choisissez celle qui vous convient le mieux.
 
 ## Version bureau
 
-Une machine de bureau vous facilitera la tâche pour gérer votre instance Duniter-ts grâce à son interface graphique.
+Une machine de bureau vous facilitera la tâche pour gérer votre instance Duniter grâce à son interface graphique.
 
-Votre instance fonctionnera tant que votre machine et que le logiciel ne sont pas éteints. Si vous fermez le logiciel ou éteignez votre machine, Duniter-ts sera en mesure de se resynchroniser avec le réseau une fois la machine et Duniter-ts redémarrés.
+Votre instance fonctionnera tant que votre machine et que le logiciel ne sont pas éteints. Si vous fermez le logiciel ou éteignez votre machine, Duniter sera en mesure de se resynchroniser avec le réseau une fois la machine et Duniter redémarrés.
 
 ## Version serveur
 
@@ -59,7 +59,7 @@ Choisissez le fichier qui vous concerne :
 
   <img src="../../../images/wiki/duniter/installer/ubuntu_file.png" width="500" height="106">
 
-### Installez Duniter-ts
+### Installez Duniter
 
 Pour procéder à l'installation :
 * si vous êtes avec Ubuntu, double-cliquez sur le fichier téléchargé ;
@@ -74,14 +74,14 @@ Pour procéder à l'installation :
 ### Démarrez l'application
 
 Pour démarrer la version _bureau_ :
-* avec Ubuntu, utilisez le Dash et cherchez _Duniter_, puis cliquez sur l'icône Duniter pour lancer le logiciel :
+* avec Ubuntu, utilisez le _Dash_ et cherchez _Duniter_, puis cliquez sur l'icône Duniter pour lancer le logiciel :
   <br>
   <img src="../../../images/wiki/duniter/installer/ubuntu_dash.png" width="536" height="246">
-* avec Debian, utilisez Gnome Shell et cherchez _Duniter_ puis cliquez sur son icône pour le lancer :
+* avec Debian, utilisez _Gnome Shell_ et cherchez _Duniter_ puis cliquez sur son icône pour le lancer :
   <br>
   <img src="../../../images/wiki/duniter/installer/deb_gnome.png" width="690" height="428">
 
-> Note : vous pouvez aussi lancer la version _bureau_ de Duniter-ts avec la commande `duniter-desktop`. Lancer via cette commande ou via l'icône est équivalent.
+> Note : vous pouvez aussi lancer la version _bureau_ de Duniter avec la commande `duniter-desktop`. Lancer via cette commande ou via l'icône est équivalent.
 
 Pour démarrer votre nœud en tâche de fond (version _serveur_), exécutez la commande :
 
@@ -89,9 +89,35 @@ Pour démarrer votre nœud en tâche de fond (version _serveur_), exécutez la c
         
 > Consultez [les commandes Duniter](https://duniter.org/fr/wiki/duniter/commandes/) pour manipuler votre nœud serveur.
 
+### Activez le démarrage automatique
+
+> Le démarrage automatique n'est disponible que sur les versions _serveur_ à partir de la 1.6.15.
+
+Pour que le nœud serveur se lance automatiquement au démarrage de la machine, tapez la commande :
+
+    systemctl enable duniter.service
+
+Par défaut, le serveur qui va démarrer ainsi le fera en tant qu'utilisateur `duniter` dans le répertoire `/var/lib/duniter`.
+
+Vous pouvez personnaliser le comportement du service en utilisant le principe de [drop-ins](https://coreos.com/os/docs/latest/using-systemd-drop-in-units.html). Par exemple, pour démarrer avec l'interface web, vous pouvez créer un fichier `/etc/systemd/system/duniter.service.d/10-web.conf` et y ajouter le contenu suivant :
+
+    [Service]
+    Environment="DUNITER_WEB=web"
+
+Les variables d'environnement que vous pouvez modifier pour le service sont :
+
+| Variable | Description |
+|----------|-------------|
+| `DUNITER_WEB` | Doit être vide pour un démarrage normal, ou _web_ pour démarrer l'interface web |
+| `DUNITER_HOME` | L'emplacement des fichiers du serveur, par défaut : `/var/lib/duniter` |
+| `DUNITER_DATA` | Le nom (emplacement) de la base de données, par défaut : `duniter_default` |
+| `DUNITER_OPTS` | Diverses autres options à passer à la ligne de commande lors du (re-)démarrage |
+
+Vous pouvez aussi vous inspirer de [ce mode d'emploi](https://duniter.org/fr/wiki/duniter/lancement-au-boot/) pour mieux contrôler le service Duniter.
+
 ## Gentoo 64 bits
 
-Pour installer Duniter-ts sur un système _Gentoo_, il existe un paquet dans la surcouche pour _Portage_ [sveyret-overlay](https://github.com/sveyret/sveyret-overlay). Un fichier _README_ se trouve dans cette surcouche pour vous aider à l'ajouter à l'arbre _Portage_.
+Pour installer Duniter sur Gentoo, il existe un paquet dans la surcouche [sveyret-overlay](https://github.com/sveyret/sveyret-overlay). Un fichier _README_ se trouve dans cette surcouche pour vous aider à l'ajouter à l'arbre _Portage_.
 
 Vous pourrez ensuite installer le paquet `net-p2p/duniter` :
 
@@ -116,7 +142,7 @@ Pour les autres distributions, il existe un fichier contenant la version _bureau
 
 2. Décompressez le fichier téléchargé, par exemple avec la commande : `tar zxvf duniter-*.tar.gz`
 
-3. **Placez-vous dans le répertoire décompressé**, puis lancez Duniter-ts avec la commande `./nw`.
+3. **Placez-vous dans le répertoire décompressé**, puis lancez Duniter avec la commande `./nw`.
 
 ## Docker
 
@@ -124,7 +150,7 @@ Non disponible pour le moment.
 
 ## Compilation manuelle
 
-La version _serveur_ de Duniter-ts peut être compilée sur la majorité des machines Linux (32 bits ou 64 bits) en cinq étapes (les deux premières ne sont à réaliser qu'une seule fois) :
+La version _serveur_ de Duniter peut être compilée sur la majorité des machines Linux (32 bits ou 64 bits) en cinq étapes (les deux premières ne sont à réaliser qu'une seule fois) :
 
 ** Prérequis **
 
@@ -136,7 +162,7 @@ Vous devez disposer a minima de `git` et `build-essential`, pour les installer 
 
 Un outil vous permet d'installer la version de Node.js que vous souhaitez, en changer quand vous voulez et sans conflit avec une version précédente : il s'agit de [nvm](https://github.com/creationix/nvm).
 
-Vous pouvez installer nvm avec la commande suivante :
+Vous pouvez installer nvm avec la commande suivante :
 
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
     
@@ -144,7 +170,7 @@ Fermez puis rouvrez votre terminal, comme indiqué. Puis, installez Node.js :
 
     nvm install 8.9.1
 
-> Note : pour les version antérieur à Duniter-ts 1.6, la version de Node.js à installer est la 6.
+> Note : pour les versions antérieures à Duniter 1.6, la version de Node.js à installer est la 6.
 
 **2. Installation de [yarn](https://yarnpkg.com/)**
 
@@ -154,7 +180,7 @@ Yarn est un gestionnaire de dépendances plus rapide et plus fiable que celui in
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     sudo apt-get update && sudo apt-get install yarn
 
-**3. Téléchargement de Duniter-ts**
+**3. Téléchargement de Duniter**
 
 Allez sur la [page des publications](https://git.duniter.org/nodes/typescript/duniter/wikis/Releases) pour obtenir le lien vers la dernière version stable et téléchargez le fichier `Source code (tar.gz)`.
 
@@ -173,7 +199,7 @@ Allez sur la [page des publications](https://git.duniter.org/nodes/typescript/du
 
     bin/duniter plug duniter-ui@1.6.x
 
-> Note : pour Duniter-ts **1.5.9** ou inférieur :
+> Note : pour Duniter **1.5.9** ou inférieur :
 
     bin/duniter plug duniter-ui@1.4.x
     sed -i "s/duniter\//..\/..\/..\/..\//g" node_modules/duniter-ui/server/controller/webmin.js
