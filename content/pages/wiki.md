@@ -46,6 +46,10 @@ Installation de nœud Duniter, accès et modification code source, techniques cr
 * [Rapporter un bug](./rapporter-un-bug)
 * [Ajouter/Retirer des interfaces spécifiques de pair](./interfaces-specifiques-de-pair)
 
+## Financement
+
+* [Décisions des affectations des dons aux différents développeurs](../financements)
+
 ### Auto-hébergement
 
 * [Duniter sur un VPN](https://forum.duniter.org/t/duniter-sur-un-vpn/2280/13)

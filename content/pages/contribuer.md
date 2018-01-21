@@ -37,3 +37,8 @@ N'hésitez surtout pas à le rapporter ! Cela permet aux logiciels d'évoluer et
 
 Instructions sur la page [Wiki > Rapporter un bug](../wiki/rapporter-un-bug).
 
+### Financer les développments
+
+Si vous disposez de quelques Ğ1, vous pouvez **[faire un don](../financements)** aux développeurs.
+
+Et si vous n'en avez pas, vous pouvez aussi [en obtenir](../obtenir-des-g1).
