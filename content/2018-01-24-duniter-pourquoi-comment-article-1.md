@@ -37,7 +37,7 @@ Nous aurons l’occasion d’aborder tout ceci plus en détail dans les épisode
 
 # Une « Toile de confiance » ?
 
-Afin d’identifier qui créé de la monnaie, est de s’assurer que chacun ne créé sa part qu’une seule fois, c’est une toile de confiance qui est mise en œuvre. Ce terme a été repris de [PGP](https://fr.wikipedia.org/wiki/Pretty_Good_Privacy), un logiciel de chiffrement cryptographique, mais est finalement très différent dans Duniter. La toile de confiance y atteste **de la correspondance entre une personne physique et un compte .**
+Afin d’identifier qui créé de la monnaie, et de s’assurer que chacun ne créé sa part qu’une seule fois, c’est une toile de confiance qui est mise en œuvre. Ce terme a été repris de [PGP](https://fr.wikipedia.org/wiki/Pretty_Good_Privacy), un logiciel de chiffrement cryptographique, mais est finalement très différent dans Duniter. La toile de confiance y atteste **de la correspondance entre une personne physique et un compte .**
 
 La toile de confiance de Duniter est construite par ses membres. A l’initialisation, elle a été construite à partir de 59 membres qui se sont reconnus entre eux. Puis, chaque membre a pu reconnaître de nouveaux individus à travers l’émission de « certifications ». Lorsqu’un nouveau membre « entre » dans la toile, il peut à son tour en faire entrer de nouveaux. 
 
