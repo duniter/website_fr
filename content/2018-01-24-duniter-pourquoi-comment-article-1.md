@@ -7,8 +7,8 @@ Authors: inso
 Thumbnail: /images/logos/duniter.png
 
 
-L’année 2017 a vu le projet Duniter démarrer sa première monnaie en production, la [ğ1](https://g1.duniter.fr/). Jusqu’à présent, les efforts étaient donc réalisés autour d’un objectif : la mise en production de la première cryptomonnaie libre 100%  P2P (pair à pair).  
-L’année s’est écoulée, et nous sommes passé de 59 membres à plus de 600 membres. Le réseau local de la ğ1 se développe, le projet commence à se faire connaître de plus en plus largement.  
+L’année 2017 a vu le projet Duniter démarrer sa première monnaie en production, la [ğ1](https://g1.duniter.fr/). Jusqu’à présent, les efforts étaient donc réalisés autour d’un objectif : la mise en production de la première cryptomonnaie libre 100% P2P (pair à pair).  
+L’année s’est écoulée, et nous sommes passés de 59 membres à plus de 600 membres. Des réseaux locaux de la ğ1 se développent, le projet commence à se faire connaître de plus en plus largement.  
 Durant l’année 2017, on entendait régulièrement la même conversation autour du projet : 
 
 > - « C’est quoi cette cryptomonnaie Duniter ? »  
@@ -20,24 +20,24 @@ Il est temps pour l’année 2018 d’expliquer en détail et plus largement le 
 
 # Une monnaie « libre » ?
 
-Duniter cherche donc à émettre une monnaie libre **au sens de [la théorie relative de la monnaie](https://trm.creationmonetaire.info)**. Elle est émise à travers un Dividende Universel (DU) quotidien, de manière symétrique entre ses membres, passés, présents et futurs.  
+Duniter cherche donc à émettre une monnaie libre **au sens de [la théorie relative de la monnaie](https://trm.creationmonetaire.info)**. Elle est émise par un Dividende Universel (DU) quotidien, de manière symétrique entre ses membres, passés, présents et futurs.  
 Concrètement, chacun co-crée le même pourcentage de la masse monétaire en un temps donné (40 ans dans la ğ1). Il existe plein d’arguments en faveur d’une telle forme d’émission monétaire :
 
-- La monnaie est co-créée par chacun, créant **une forme de revenu de base sans financement**  
-- L’émission monétaire ne privilégie personne, que ce soit à un instant t, ou entre des périodes séparées dans le temps  
+- La monnaie est co-créée par chacun, et est assimilable à **une forme de revenu de base financé par la création monétaire**
+- L’émission monétaire ne privilégie personne, que ce soit en différents endroits à un instant t, ou entre des périodes séparées dans le temps
 - L’outil monétaire étant co-créé, il permet de **mesurer les échanges à égalité** entre chaque individu, créant une véritable « monnaie commune »
 
 Ce type de monnaie a des propriétés très particulières du fait du Dividende Universel : 
 
 - La monnaie « tourne », celle **émise par les morts est remplacée petit à petit par la monnaie émise par les vivants**  
-- La masse monétaire converge (vers un nombre total d’environ 3800 DU pour la ğ1) par membre émettant de la monnaie
+- La masse monétaire converge (vers un nombre total d’environ 3800 DU pour la ğ1) pour chaque membre émettant de la monnaie
 
 Nous aurons l’occasion d’aborder tout ceci plus en détail dans les épisodes suivants.
 
 
 # Une « Toile de confiance » ?
 
-Afin d’identifier qui créé de la monnaie, et de s’assurer que chacun ne créé sa part qu’une seule fois, c’est une toile de confiance qui est mise en œuvre. Ce terme a été repris de [PGP](https://fr.wikipedia.org/wiki/Pretty_Good_Privacy), un logiciel de chiffrement cryptographique, mais est finalement très différent dans Duniter. La toile de confiance y atteste **de la correspondance entre une personne physique et un compte .**
+Afin d’identifier qui crée de la monnaie, et de s’assurer que chacun ne crée sa part qu’une seule fois, une toile de confiance est mise en œuvre. Ce terme a été repris de [PGP](https://fr.wikipedia.org/wiki/Pretty_Good_Privacy), un logiciel de chiffrement cryptographique, mais est finalement très différent dans Duniter. La toile de confiance y atteste **de la correspondance entre une personne physique et un compte**.
 
 La toile de confiance de Duniter est construite par ses membres. A l’initialisation, elle a été construite à partir de 59 membres qui se sont reconnus entre eux. Puis, chaque membre a pu reconnaître de nouveaux individus à travers l’émission de « certifications ». Lorsqu’un nouveau membre « entre » dans la toile, il peut à son tour en faire entrer de nouveaux. 
 
@@ -53,9 +53,9 @@ La blockchain de Duniter avance grâce aux nœuds mis à disposition par les mem
 
 Qu’un membre ait un nœud actif ou non, **il participe toujours à la co-création monétaire.** Les membres sont incités à faire tourner un nœud simplement pour sécuriser le réseau et faire fonctionner la monnaie créée par leur dividende, qui est leur moyen d’échange.
 
-Pour contribuer aux coûts, un service de redistribution a été développé. De la monnaie peut être envoyée à un [service](https://remuniter.cgeek.fr/), qui va automatiquement redistribuer de la monnaie aux membres calculant des blocs. Mais la monnaie est ici redistribuée, pas créée.
+Pour contribuer aux coûts, un service de redistribution a été développé. De la monnaie peut être envoyée à un [service](https://remuniter.cgeek.fr/), qui va automatiquement redistribuer de la monnaie aux membres calculant des blocs. Mais la monnaie est ici redistribuée, pas créée. De plus, ce service ne fait pas partie du cœur de la monnaie, et fonctionne uniquement par les dons.
 
-Plus il y a de membres calculant, plus la blockchain est robuste et difficile à corrompre. Il faut donc que le logiciel coûte **le moins cher en terme d’énergie** pour le faire fonctionner.  
+Plus il y a de membres calculant, plus la blockchain est robuste et difficile à corrompre. Il faut donc que le logiciel coûte **le moins cher possible en terme d’énergie** pour le faire fonctionner.  
 Pour limiter le coût énergétique du calcul, l’algorithme utilise un système de **personnalisation de la difficulté de calcul.** Ceux qui ont un ordinateur plus rapide que les autres sont ralentis. L’objectif étant que même un raspberry pi puisse participer au calcul de blocs.
 Nous aurons là encore l’occasion d’aborder plus en détail le fonctionnement de la blockchain dans un article ultérieur !
 
@@ -64,7 +64,7 @@ Nous aurons là encore l’occasion d’aborder plus en détail le fonctionnemen
 
 Vous l’aurez compris, **Duniter se différencie sur le plan humain.** La création monétaire est réalisée par les humains, et non pas par les machines, ni les entreprises. Ce sont les humains qui, en pair à pair, se reconnaissent et valident le droit de co-créer le DU. 
 
-La situation idéale en termes de répartition réseau serait une machine calculante par humain. Une telle répartition permettrait à chacun de participer au calcul de la blockchain et de faire valoir son droit sur comment doit évoluer le réseau.
+La situation idéale en termes de répartition réseau serait une machine calculante par humain. Une telle répartition permettrait à chacun de participer au calcul de la blockchain et de faire valoir son droit sur l'évolution du réseau.
 
 Vous noterez que la monnaie générée par Duniter ne s’appelle pas le Duniter, mais **la ğ1**. C’est pour différencier le protocole de la monnaie. **La technique et l’économie sont deux sujets distincts !**
 
