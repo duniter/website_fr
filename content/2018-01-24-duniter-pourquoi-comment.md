@@ -1,8 +1,8 @@
-Title: Duniter, pourquoi, comment ? - Article 1
+Title: Duniter, pourquoi, comment ?
 Date: 2018-01-24
 Category: duniter
 Tags: gitlab
-Slug: duniter-pourquoi-comment-article-1
+Slug: duniter-pourquoi-comment
 Authors: inso
 Thumbnail: /images/logos/duniter.png
 
