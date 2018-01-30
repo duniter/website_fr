@@ -255,6 +255,22 @@ f[stepAttackers](t) = {p=0, t
 
 ### 3. Une confiance éternelle ? (sigValidity, msValidity)
 
+Si toute certification restait valable at vitam eternam, cela serait problématique pour au moins 2 raisons :
+D'une part il est important que les membres qui décedent cessent de créer des DU
+D'autre part, il est important que les faux comptes détectet par la communauté puissent ne pas rester membre indéfiniment.
+
+Pour ce faire, il est nécessaire que les certifications est une durée de vie limités et qu'il faille donc renouveller sa confiance envers ses pairs régulièrement.
+D'un autre coté, il ne faut pas non plus que les membres passent leur vie a renouveller leurs certifications plutot qu'a effectuer des échanges économiques.
+De plus, des certifications a durée de vie trop courte rendrait l'acte de certification trop léger, il faut que l'acte de certification reste conséquent pour être pris au sérieux.
+Enfin, nous souhaitons également que la durée de vie d'une certification soit une durée vraiment très très simple a retenir pour que le plus rgand nombre l'est bien en tête.
+
+Une fois tout ces critères pris en compte, nous hésitions entre 1 an, 2 ans ou 3 ans.
+Historiquement, nous avons d'abord trancher sur les valeurs de sigPeriod et sigStock, ce qui impliquait qu'il fallait a minima 495 jours pour épuiser tout son stock de certifications, 1 an n'est donc pas possible.
+3 ans nous semblait trop long, nous avons donc choisi 2 ans.
+
+Mais considérer qu'un mort va continuer a créer des DU dont personne ne pourra bénéficier pendant une durée pouvant aller jusqu'a 2 ans, cela nous semblait trop. C'est pourquoi nous avons opter pour une durée de vie plus faible concernant le renouvellement de l'adhésion.
+Nous avons donc choisi 1 an mais nous aurions aussi pu choisir 6 mois, la valeur de **msValidity** est au final assez secondaire et pourrait facilement etre modifée dans le futur si la communauté le souhaite.
+
 ### 4. Éviter que les piscines ne deviennent des dépots sédimentaires (idtyWindow, sigWindow, msWindow)
 
 Il faut nettoyer régulièrement les piscines pour éviter qu'elles n'atteignent des tailles astronomiques et pour garantir que même les petites machines peu puissantes puissent éxécuter un noeud duniter.
