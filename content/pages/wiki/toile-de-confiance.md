@@ -8,7 +8,7 @@ L'Objet de cet article est de détailler le fonctionnement des différents param
 
 Aucune connaissance particulière n'est requise pour comprendre ce qui suit, car je vais à chaque fois bien définir toutes les notions abordés et tout les termes utilisés :)
 Cependant nous irons assez loin, nous rentrerons nottament dans le détail du protocole duniter (uniquement sur les parties toile de confiance bien sur) ainsi que dans des aspects de théorie des graphes car cela me semble essentiel pour vraiment comprendre tout les rouages d'une toile de confiance duniter.
-Rassurez vous, nous allons y aller progressivement, nous commencerons par une vision d'ensemble pusi nosu détaillerons graduellement :)
+Rassurez vous, nous allons y aller progressivement, nous commencerons par une vision d'ensemble puis nous détaillerons graduellement :)
 
 ## Prérequis
 Avant de lire cet article, il est vivement recommendé d'étudier la [licence Ğ1](https://duniter.org/fr/files/licence_g1.txt) et de lire les pages suivantes :
@@ -26,9 +26,9 @@ Nous avons besoin d'une toile de confiance pour répondre à 2 objectifs :
 
 Chaque monnaie duniter possède sa propre blockchain au sein de laquelle sont définis ses propres paramètres monétaires (dans le bloc zéro), il s'agit d'un ensemble de "curseurs" qu'il faut ajuster en fonction des objectifs visés. A l'heure ou j'écris ces lignes le protocole duniter (noté DUP) comporte 21 paramètres monétaires dont 10 concernent la toile de confiance !
 Nous décrirons en détail les 10 paramètres qui concernent la toile de confiance, nous n'aborderons pas les autres.
-Sachez simplement que dans le cas de la monnaie Ğ1 le DU est créer toutes les 24h (86400secondes) mais que cet intervalle de temps régit par le paramètre `dt` peut très bien etre fixée a d'autres valeurs d'autres monnaies.
+Sachez simplement que dans le cas de la monnaie Ğ1 le DU est créer toutes les 24h (86400secondes) mais que cet intervalle de temps régit par le paramètre `dt` peut très bien etre fixée a d'autres valeurs pour d'autres monnaies.
 
-Nous ne traiterons pas ici le 2ème objectif relatif a la preuve de travail car ce n'est pas l'objet de cet article, la seule chose a comprendre c'est que la toile de confiance nous permet **d'identifier** les membres qui calculent des blocks, et cette identification nous permet d'imposer une rotation des membres calculateurs, ce ne serait pas possible sans système d'identification. Cette rotation des membres calculateurs est essentielle, sans elle un membre très riche pourrait investir dans des fermes de calcul géante pour prendre le controle de la blockchain et paraliser toute la communauté !
+Nous ne traiterons pas ici le 2ème objectif relatif a la preuve de travail car ce n'est pas l'objet de cet article, la seule chose a comprendre c'est que la toile de confiance nous permet **d'identifier** les membres qui calculent des blocks, et cette identification nous permet d'imposer une rotation des membres calculateurs, ce ne serait pas possible sans système d'identification. Cette rotation des membres calculateurs est essentielle, sans elle un membre très riche pourrait investir dans des fermes de calcul géantes pour prendre le controle de la blockchain et paraliser toute la communauté !
 
 Revennons donc au 1er objectif, s'assurer que chaque humain n'est qu'un seul compte membre.
 En pratique, le risque zéro n'existe pas, notre objectif n'est donc pas de concevoir une toile de confiance au sein de laquelle la fraude serait impossible (ce qui est de toute manière impossible).
@@ -42,11 +42,11 @@ réagir.
 > **Attend, une attaque quoi ?**
 
 Une [**attaque sybil**](https://fr.wikipedia.org/wiki/Attaque_Sybil), c'est le nom que l'on donne à une attaque d'un système de réputation par la création de fausses identités.
-Une toile de confiance est en cas particulier de [**système de réputation**](https://en.wikipedia.org/wiki/Reputation_system).
+Une toile de confiance est un cas particulier de [**système de réputation**](https://en.wikipedia.org/wiki/Reputation_system).
 
 Il y a beaucoup de stratégies de scénarios d'attaques sybil possibles ainsi que de mobiles différents.
 Notre objectif est que la toile de confiance nous prémunisse des attaques sybil susceptibles de compromettre le bon fonctionnement de la monnaie ou/et du réseau informatique qui la porte.
-Ce qui veut dire que les micro attaques sybil orchestrés par un petit groupe dont l'objectif est seulement un petit enrichissement personnel ne nous intéressent pas ici, ce n'est pas a la toile de confaince de nous prémunir de ces micro attaques, mais a la justice de la communauté concernée, tout comme ce n'est pas a la commune de vous prémunir d'un cambriolage chez vous, mais la commune vas vous garantir le fonctionnement des réseaux d'eau, le nettoiement de la voirie, etc
+Ce qui veut dire que les micro attaques sybil orchestrés par un petit groupe dont l'objectif est seulement un petit enrichissement personnel ne nous intéressent pas ici, ce n'est pas a la toile de confiance de nous prémunir de ces micro attaques, mais a la justice de la communauté concernée, tout comme ce n'est pas a la commune de vous prémunir d'un cambriolage chez vous, mais la commune vas vous garantir le fonctionnement des réseaux d'eau, le nettoiement de la voirie, etc
 De la même façon, la toile de confiance duniter nous garantie collectivement le bon fonctionnement de notre monnaie et du réseau informatique qui la porte, et c'est déjà énorme !
 
 ## l'Importance de l'indépendance à tout autre systèmes d'identification
@@ -60,7 +60,7 @@ Il est essentiel pour nous de ne dépendre d'aucun état ni d'aucune institution
 
 ### un peu de vocabulaire
 
-graphe : Ensemble de point(nommé sommets) reliées entre eux par des flèches (nommés arcs).
+graphe : Ensemble de points (nommés sommets) reliées entre eux par des flèches (nommées arcs).
 
 graphe simple : graphe sans boucle (arc reliant un sommet a lui-même) et sans arcs superposés (plusieurs arcs reliant le même couple de sommets dans le même sens).
 
@@ -74,7 +74,7 @@ degré d'un sommet : nombre d'arc reliant ce somment (dans les deux sens).
 
 demi-degré extérieur d'un sommet A : nombre d'arc ayant pour extrémité initiale le sommet A
 
-demi-degré intérieur d'un sommet A : nombre d'arc ayant pour extrémité finale du sommet A
+demi-degré intérieur d'un sommet A : nombre d'arc ayant pour extrémité finale le sommet A
 
 chemin : trajet qu'il faut suivre pour se rendre d'un sommet A à un sommet B en respectant le sens des arcs. Le nombre d'arc traversés est la longueur du chemin. 
 
@@ -93,9 +93,9 @@ Pour finir sur cet histoire d'ancien membre, au bout d'un certain délai qui dé
 > Qu'entend tu par identité ?
 
 Une identité c'est un groupe de 3 informations : une clé publique, un nom, et un blockstamp*.
-Un blockstamp c'est une référence a un block précis d'une blockchain ce qui permet de dater le moment auquel l'identité a été créée, et de relier l'identité a une blockchain particulière, donc a une monnauie particulière (car chaque monnaie a sa propre blockchain).
+Un blockstamp c'est une référence a un block précis d'une blockchain ce qui permet de dater le moment auquel l'identité a été créée, et de relier l'identité a une blockchain particulière, donc a une monnaie particulière (car chaque monnaie a sa propre blockchain).
 
-Une identité peut etre dans 5 états différents : en attente*, membre, ancien membre, révoqué ou exclu.
+Une identité peut etre dans 5 états différents : en attente*, membre, ancien membre, révoquée ou exclue.
 Nous reviendrons plus en détail sur chacun de ses états.
 
 Résumons tout cela avec un exemple : 
@@ -133,7 +133,7 @@ Dans un toile aboutie, c'est à dire dans une toile ou chaque membre a certifier
 
 > **Quand s'applique la règle de distance ?**
 
-la vérification de la règle de distance étant couteuse en calcul, elle ne s'applique que lors de l'obtention et du renouvellement du statut de membre. (Voir partie "renouvellement du statut de membre").
+La vérification de la règle de distance étant couteuse en calcul, elle ne s'applique que lors de l'obtention et du renouvellement du statut de membre. (Voir partie "renouvellement du statut de membre").
 _Cas particulier : la règle de distance ne s'applique pas au block zéro (écriture de la toile initiale)._
 
 ### 2. Règle du nombre minimal de certifications reçus
@@ -141,16 +141,16 @@ _Cas particulier : la règle de distance ne s'applique pas au block zéro (écri
   paramètre : **sigQty**
 
 C'est la règle la plus simple, elle stipule que tout membre doit a tout moment (comprendre a tout bloc) être le destinataire d'au moins `sigQty` certifications actives.
-Si ne serait-ce que pour le temps d'un seul bloc, un membre A se retrouve avec moins de `sigQty` certifications actives reçus, alors il perd le statut de membre a ce bloc là, il doit alors publier une demande de renouvellement.
+Si ne serait-ce que pour le temps d'un seul bloc, un membre A se retrouve avec moins de `sigQty` certifications actives reçus, alors il perd le statut de membre a ce bloc là, il doit alors publier une demande de renouvellement de son adhésion.
 
-### 3. Règle de renouvellement
+### 3. Règle de renouvellement de l'adhésion
 
   paramètres : **msValidity**, **msPeriod** et **msWindow**
 
 L'obtention du statut de membre n'est pas un acquis pour la vie, mais pour une durée de `msValidity` secondes.
 
-Tout membre (ou ancien membre non révoqué et non exclu définitivement) peut a tout moment émettre une demande de renouvellement a condition que son dernier renouvellement date de plus de `msPeriod` secondes (Lorsque qu'un membre ne s'est jamais renouveller la date de dernier renouvellement correspond a la date d'obtention du statut de membre).
-Lorsqu'une demande de renouvellement est émise, elle est stockée en "piscine" pour une durée maximale de `msWindow` secondes, puis elle sera inscrite en blockchain dés que le membre en question respectera la règle de distance **et** la règle sigQty (s'il les respectent déjà, dés qu'un noeud ayant reçu la demande de renouvellement trouve un block).
+Tout membre (ou ancien membre non révoqué et non exclu définitivement) peut a tout moment émettre une demande de renouvellement de son adhésion a condition que son dernier renouvellement date de plus de `msPeriod` secondes (Lorsque qu'un membre ne s'est jamais renouveller la date de dernier renouvellement correspond a la date d'obtention du statut de membre).
+Lorsqu'une demande de renouvellement d'adhésion est émise, elle est stockée en "piscine" pour une durée maximale de `msWindow` secondes, puis elle sera inscrite en blockchain dés que le membre en question respectera la règle de distance **et** la règle sigQty (s'il les respectent déjà, dés qu'un noeud ayant reçu la demande de renouvellement trouve un block).
 
 Tout membre dont le dernier renouvellement date de plus de `msValidity` secondes perd le statut de membre au premier bloc ou cette durée est atteinte. Dans ce cas, l'ancien membre dispose a nouveau d'une durée de `msValidity` secondes pour redevenir membre par cette même procédure de renouvellement. Passé ce délai, donc `2*msValidity` après le dernier renouvellement, l'ancien membre est exclu définitivement et ne pourra plus jamais redevenir membre avec ce compte. S'il souhaite redevenir membre il devra se créer un nouveau compte à partir de zéro.
 
@@ -158,9 +158,9 @@ Tout membre dont le dernier renouvellement date de plus de `msValidity` secondes
 
   paramètre : **sigValidity**
 
-Toute certification inscrite en blockchain expire **sigValidity** secondes après son émission.
+Toute certification inscrite en blockchain expire **sigValidity** secondes après son **émission**.
 
-/!\ l'émission et l'écriture d'une certification sont des instants différents. Lorsque membre A émet une certifiation à un instant t1, elle est d'abord stockée en piscine à cet instant t1, puis sera écrite en blockchain a un instant t2, dés que les règles de la toile de permette, il peut y avoir plusieurs semaines d'écart entre t1 et t2 !!
+/!\ l'émission et l'écriture d'une certification sont des instants différents. Lorsque membre A émet une certifiation à un instant t1, elle est d'abord stockée en piscine à cet instant t1, puis sera écrite en blockchain a un instant t2, dés que les règles de la toile le permettent, il peut y avoir plusieurs semaines d'écart entre t1 et t2 !!
 
 ### 5. Règle du stock limité de certifications actives
 
@@ -197,8 +197,6 @@ Seules les règles 2 et 5 s'appliquent lors de l'écriture du block zéro.
 Dans la pratique, c'est l'humain qui génère le bloc zéro qui choisi manuellement qu'elles identités il écrira dans le block zéro, mais toutes les identités et certifications écrites dans le block zéro doivent respecter les règles 2 et 5 et de plus le block zéro doit être signé avec la clé privée d'une des identités écrites.
 Dés lors qu'un bloc zéro correct a été généré, toute identité inscrite dans ce block zéro peut soumettre le block suivant, de fait l'auteur du block zéro n'a donc plus la main.
 
-### 1. Règle de distance et Membres Référents
-
 ## Origine des règles et cas de la Ğ1
 
 ### 1. Distance et taille limite
@@ -208,7 +206,7 @@ La règle de distance à pour objectif de limiter la taille maximale d'une régi
 
 ![zone sybil]({filename}/images/wiki/toile-de-confiance/zone-sybil.png)
 
-Les régions sybil sont isolés du reste du graphe, car les comptes sybil ne recevrons de certifications que de la part d'autres comptes sybil ou de la part des auteurs de l'attaque. Ainsi, tout plus court chemins entre un membre légitime et un compte, sybil passe forcément par un auteur de l'attaque. La limite de la profondeur de la région sybil dépend donc de la distance max entre des auteurs de l'attaque et les xpercent% membres référents les plus proches, cette distance caractérisqtique est nommée `stepAttackers`.
+Les régions sybil sont isolés du reste du graphe, car les comptes sybil ne recevrons de certifications que de la part d'autres comptes sybil ou de la part des auteurs de l'attaque. Ainsi, tout plus court chemins entre un membre légitime et un compte sybil passe forcément par un auteur de l'attaque. La limite de la profondeur de la région sybil dépend donc de la distance max entre les auteurs de l'attaque et les xpercent% membres référents les plus proches, cette distance caractérisqtique est nommée `stepAttackers`.
 La taille maximale d'une région sybil crée par sigQty membres malveillants dépend du levier L=sigQty/sigStock :
 
     taille max région sybil = (sigStock-sigQty)*(1-L^(stepMax-stepAttackers))/(1-L)
@@ -233,9 +231,9 @@ stepMax = 5
 sigQty = 5
 sigStock >= 50
 
-la taille max d'une région sybil est donc : (sigStock-sigQty)*(1-(sigStock/5)^(5-stepAttackers))/(1-(sigStock/5))
+la taille max d'une région sybil est donc : `(sigStock-sigQty)*(1-(sigStock/5)^(5-stepAttackers))/(1-(sigStock/5))`
 
-avec sigStock = 50 cela fait une région sybil de :45*(1-10^(5-stepAttackers))/(-9)
+avec sigStock = 50 cela fait une région sybil de : `45*(1-10^(5-stepAttackers))/(-9)`
 
 Une bonne façon de nous protéger est donc de maximiser stepAttackers. C'est pour cela que nous avons fait en sorte que dans la toile initiale Ğ1 beaucoup de membres référents soit déjà à 4 de distance les un des autres.
 
@@ -261,18 +259,22 @@ f[stepAttackers](t) = {p=0, t
 
 Il faut nettoyer régulièrement les piscines pour éviter qu'elles n'atteignent des tailles astronomiques et pour garantir que même les petites machines peu puissantes puissent éxécuter un noeud duniter.
 Pour ce faire il faut que les identités et certifications en attentes restent le moins longtemps possible en piscine, elle doivent cependant y rester suffisamment longtemps pour avoir une chance raisonnable d'être inscrites en blockchain.
+Pour la Ğ1, nous avons estimer que 2 mois était un minimum pour que tout les certificateur potentiels d'une nouvelle identité aient le temps de se synchroniser. Nous voulions aussi que cette durée corresponde a un faible nombre d'unités d'une grandeur usuelle, afin d'être facilement intégrée et mémorisée par le plus grand nombre.
+Typiquement, choisir 7 semaines aurait été plus compliqué a intégrer et retenir, nous voulions que les durées a connaitre reste le plus facilement intégrables et mémorisables.
+1 mois nous semblait trop court, la valeur de 2 mois s'est donc imposée. Et par souci de simplicité, nous avons appliquer cette même valeur de 2 mois aux 3 paramètres idtyWindow, sigWindow et msWindow.
 
 ### 5. Éviter de limiter les membres connaissant beaucoup de monde (sigStock)
+
+De nombreuses études sociologiques montrent qu'un humain connait en moyenne 50 personnes, mais c'est une moyenne, certains humains en connaissent beaucoup plus, d'autres beaucoup moins.
+La encore, nous avons trancher par le critère "nombre facile a retenir".  
+Bien que l'impact de sigStock sur la taille max des régions sybil soit secondaire, il conviens tout de même de ne pas choisir un sigStock trop grand !
+150 nous semblait trop élevé, nous avons donc choisis 100.
 
 ### 6. Se prémunir des minorités de blocage (xpercent)
 
 ### 7. L'ajout de msPeriod, une protection anti-spam
 
-Ce paramètre un peu a part, rajouter après le bloc zéro, ne sert pas a réguler la toiel de confiance mais a proteger le réseau informatique qui porte la monnaie contre les atatque de type spam.
-En effet, des membres malveillants qui souhaitent nuire au bon fonctionnement de la monnaie pourrait demander leur renouvellement a chaque block (toute les 5 min), ou pire encore, envoyer des centaines de requete de renouvellement par minute pour déborder les noeuds duniter. En l'absence de limitation, les noeuds duniter sont sencés traiter toutes vos requetes de renouvellement, même si vous vous êts renouvellés il y a 5min !
+Ce paramètre un peu a part, rajouté après le bloc zéro, ne sert pas a réguler la toile de confiance mais a proteger le réseau informatique qui porte la monnaie contre les atatque de type spam.
+En effet, des membres malveillants qui souhaitent nuire au bon fonctionnement de la monnaie pourraient demander leur renouvellement a chaque block (toute les 5 min), ou pire encore, envoyer des centaines de requete de renouvellement par minute pour déborder les noeuds duniter. En l'absence de limitation, les noeuds duniter sont cencés traiter toutes vos requetes de renouvellement, même si vous vous êtes renouvellés il y a 5min !
 Pour nous prémunir de cette possibilité d'attaque nous avons ajouté le paramètre `msPeriod`.
 Par souci de simplicité, nous avons choisi de lui attribuer la même valeurs qu'aux paramètres idtyWindow, sigWindow et msWindow.
-
-## Mesure 
-
-* [Étude de l'évolution de la toile Ğ1](#) _(page encore inexistante)_
