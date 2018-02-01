@@ -35,20 +35,6 @@ database "Elastic Search" as ES {
     [Market Place Index]
 }
 
-package "Duniter Desktop" {
-
-    interface "client BMA" as client_duniter_desktop
-
-    client_duniter_desktop --- HTTP_duniter
-}
-
-package "Remuniter" {
-
-    interface "client BMA" as client_remuniter
-
-    client_remuniter --- HTTP_duniter
-}
-
 
 package "Cesium" {
 
