@@ -53,6 +53,7 @@ Vous pourrez contrôler votre instance à l'aide d'outils en ligne de commande, 
 Allez sur la [page des publications](https://git.duniter.org/nodes/typescript/duniter/wikis/Releases) pour obtenir le lien vers la dernière version stable.
 
 Choisissez le fichier qui vous concerne :
+
 * les fichiers pour Ubuntu et Debian sont ceux qui se terminent par l'extension `.deb` ;
 * pour la version _bureau_, choisissez un fichier contenant `desktop` dans son nom, pour la version _serveur_, choisissez `server` ;
 * le fichier dépend également de l'architecture (ARM ou x64) ; si vous ne savez pas de quoi il s'agit, vous avez probablement besoin de la version x64.
@@ -62,6 +63,7 @@ Choisissez le fichier qui vous concerne :
 ### Installez Duniter
 
 Pour procéder à l'installation :
+
 * si vous êtes avec Ubuntu, double-cliquez sur le fichier téléchargé ;
 * si vous êtes avec Debian, faites un clic droit sur le fichier téléchargé, option `GDebi`.
   <br>
@@ -74,6 +76,7 @@ Pour procéder à l'installation :
 ### Démarrez l'application
 
 Pour démarrer la version _bureau_ :
+
 * avec Ubuntu, utilisez le _Dash_ et cherchez _Duniter_, puis cliquez sur l'icône Duniter pour lancer le logiciel :
   <br>
   <img src="../../../images/wiki/duniter/installer/ubuntu_dash.png" width="536" height="246">
@@ -95,7 +98,7 @@ Pour démarrer votre nœud en tâche de fond (version _serveur_), exécutez la c
 
 Pour que le nœud serveur se lance automatiquement au démarrage de la machine, tapez la commande :
 
-    systemctl enable duniter.service
+    sudo systemctl enable duniter.service
 
 Par défaut, le serveur qui va démarrer ainsi le fera en tant qu'utilisateur `duniter` dans le répertoire `/var/lib/duniter`.
 
@@ -109,9 +112,11 @@ Les variables d'environnement que vous pouvez modifier pour le service sont :
 | Variable | Description |
 |----------|-------------|
 | `DUNITER_WEB` | Doit être vide pour un démarrage normal, ou _web_ pour démarrer l'interface web |
-| `DUNITER_HOME` | L'emplacement des fichiers du serveur, par défaut : `/var/lib/duniter` |
+| `DUNITER_HOME` | L'emplacement des fichiers du serveur, par défaut : `/var/lib/duniter/.config/duniter` |
 | `DUNITER_DATA` | Le nom (emplacement) de la base de données, par défaut : `duniter_default` |
 | `DUNITER_OPTS` | Diverses autres options à passer à la ligne de commande lors du (re-)démarrage |
+
+> Note : jusqu'à la version 1.6.17, `DUNITER_HOME` était par défaut égal à `/var/lib/duniter`.
 
 Vous pouvez aussi vous inspirer de [ce mode d'emploi](https://duniter.org/fr/wiki/duniter/lancement-au-boot/) pour mieux contrôler le service Duniter.
 
