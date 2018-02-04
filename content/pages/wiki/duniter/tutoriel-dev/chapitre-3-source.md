@@ -18,6 +18,8 @@ Comme vous pouvez le remarquer, nous utilisons ici la branche `dev`. En effet la
 
 ## Installation des dépendances
 
+/!\ **Assurez vous d'utiliser la bonne version de nodejs : 8.9.1**
+
 Duniter repose sur plusieurs bibliothèques de code tierces, ou *dépendances*. Pour que le code fonctionne il faut donc les installer :
 
     yarn
