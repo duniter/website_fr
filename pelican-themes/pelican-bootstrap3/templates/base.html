@@ -219,23 +219,23 @@
     });
 
     // Latest pre-release
-    $.get( "https://api.github.com/repos/duniter/duniter/releases", function( list ) {
-      var data = list[0]
+    $.get( "https://git.duniter.org/api/v4/projects/47/repository/tags", function( list ) {
+      var max_tag = list[0]
       for (var i = 1; i < list.length; i++) {
-        var release = list[i];
-        let tag_name = release.tag_name.match(/^v?([0-9]+)\.([0-9]+)\.([0-9]+)/)
-        let max_tag_name = data.tag_name.match(/^v?([0-9]+)\.([0-9]+)\.([0-9]+)/)
-        if ( parseInt(tag_name[1]) > parseInt(max_tag_name[1])
-        || ( parseInt(tag_name[1]) == parseInt(max_tag_name[1]) && parseInt(tag_name[2]) > parseInt(max_tag_name[2]) )
-        || ( parseInt(tag_name[1]) == parseInt(max_tag_name[1]) && parseInt(tag_name[2]) == parseInt(max_tag_name[2]) && parseInt(tag_name[3]) > parseInt(max_tag_name[3]) )
+        var current_tag = list[i];
+        let current_tag_name = current_tag.name.match(/^v?([0-9]+)\.([0-9]+)\.([0-9]+)/)
+        let max_tag_name = max_tag.name.match(/^v?([0-9]+)\.([0-9]+)\.([0-9]+)/)
+        if ( parseInt(current_tag_name[1]) > parseInt(max_tag_name[1])
+        || ( parseInt(current_tag_name[1]) == parseInt(max_tag_name[1]) && parseInt(current_tag_name[2]) > parseInt(max_tag_name[2]) )
+        || ( parseInt(current_tag_name[1]) == parseInt(max_tag_name[1]) && parseInt(current_tag_name[2]) == parseInt(max_tag_name[2]) && parseInt(current_tag_name[3]) > parseInt(max_tag_name[3]) )
         ) {
-          data = release;
+            max_tag = current_tag;
         }
       }
-      if (data && data.tag_name) {
-        console.log('Test_version:', data.tag_name);
-        btnPre.html(initialButtonText + ' ' + data.tag_name);
-        lnkPre.attr('href', lnkPre.attr('href') + data.tag_name);
+      if (max_tag && max_tag.name) {
+        console.log('Test_version:', max_tag.name);
+        btnPre.html(initialButtonText + ' ' + max_tag.name);
+        lnkPre.attr('href', lnkPre.attr('href') + max_tag.name);
       }
     });
   });
