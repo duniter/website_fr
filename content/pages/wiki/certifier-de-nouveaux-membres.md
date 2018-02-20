@@ -30,9 +30,9 @@ Cet outil, [accessible à cette adresse](https://g1-monit.elois.org/willMembers?
 
 En outre, l'outil permet de repérer d'éventuels doubles comptes.
 
-### Wotex
+### « wotex »
 
-L'outil [Wotex](https://wotex.cgeek.fr) permet de voir la distance des membres entre eux.
+L'outil [Wotex](https://g1-monit.librelois.fr/wotex?lg=fr) permet de voir la distance des membres entre eux.
 
 Pour le moment, la règle dite « de distance » n'a pas un impact très fort, la toile étant encore petite (moins de 3000 membres). Donc aujourd'hui les nouveaux venus ne se soucient que d'obtenir 5 certifications, peu importe qui leur donne la leur.
 
