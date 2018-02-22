@@ -87,7 +87,7 @@ Nous pouvons voir ici que tout appel à Duniter déclenche 3 procédures dans le
 Dans notre exemple :
 
     node bin/duniter reset data
-    
+
 Le code finalement exécuté est celui de la commande `reset data` présent dans le fichier `app/modules/reset.ts`. Ce code est en charge de supprimer toutes les données du nœud, afin de le remettre à neuf par exemple.
 
 Si l'on avait appelé une autre commande, comme :
@@ -175,7 +175,7 @@ module.exports = {
       beforeSave: async (conf:ConfDTO) => {
         // Remove old `keyring` name
         if (conf.keyring && conf.keypair) {
-          delete conf.keypair
+          delete conf.keyring
         }
       }
     }
@@ -225,7 +225,7 @@ title Moment d'execution d'un module
 onConfig -> onConfiguredExecute : onConfiguredExecute defini ?
 
 onConfiguredExecute -> onConfiguredExecute : execution de <cmd>
- 
+
 onConfiguredExecute -> onConfig
 
 onConfig -> onDatabaseExecute : onDatabaseExecute defini ?
@@ -312,7 +312,7 @@ Un module peut également fournir un *service*. C'est une entité qui fonctionne
 
 Ainsi **tous les services déclarés** par les modules seront démarrés simultanément lors de l'appel à `startServices()`.
 
-Exemple de service : 
+Exemple de service :
 
 ```ts
 import {ConfDTO} from "../lib/dto/ConfDTO"
@@ -354,7 +354,7 @@ Et l'on pourra alors constater si l'on lance `node bin/duniter direct_start` des
 
 ## Fonctionnement général
 
-Pour un nœud démarré par la commande `direct_start`, alors **tous les services de modules** fonctionnent de concert. Voici un petit aperçu : 
+Pour un nœud démarré par la commande `direct_start`, alors **tous les services de modules** fonctionnent de concert. Voici un petit aperçu :
 
 ::uml::
 
@@ -452,10 +452,10 @@ Alors, Duniter passe par les phases décrites plus tôt :
 
 * Chargement des modules
 * Chargement de la configuration
-* Sur connexion de la base de données (`onDatabaseExecute`), lancement des services : 
+* Sur connexion de la base de données (`onDatabaseExecute`), lancement des services :
     * Démarrage de l'écoute BMA
     * Établissement de connexions WS2P
-    * Démarrage du service `prover` : 
+    * Démarrage du service `prover` :
         * Si le nœud n'est pas exclu de la preuve de travail, il commence la preuve d'un nouveau bloc
         * Sinon, le nœud attend qu'un bloc arrive par BMA ou WS2P
 
