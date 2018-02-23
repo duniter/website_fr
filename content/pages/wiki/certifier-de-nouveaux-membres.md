@@ -26,7 +26,7 @@ Ces remarques étant faites, sachez qu'il existe 2 outils pour vous aider à « 
 
 ### « willMembers » de ğ-monit
 
-Cet outil, [accessible à cette adresse](https://g1-monit.elois.org/willMembers?lg=fr&hideIdtyWithZeroCert=yes) permet de voir les membres en attente de certification et le nombre déjà reçues.
+Cet outil, [accessible à cette adresse](https://g1-monit.elois.org/willMembers) permet de voir les membres en attente de certification et le nombre déjà reçues.
 
 En outre, l'outil permet de repérer d'éventuels doubles comptes.
 
