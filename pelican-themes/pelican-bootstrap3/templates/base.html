@@ -210,14 +210,6 @@
     var lnkPre = $('#duniterTestVersionLink');
     var initialButtonText = btn.text();
 
-    // Latest release
-    $.get( "https://api.github.com/repos/duniter/duniter/releases/latest", function( data ) {
-      if (data && data.tag_name) {
-        console.log('Prod_version:', data.tag_name);
-        btn.html(initialButtonText + ' ' + data.tag_name);
-      }
-    });
-
     // Latest pre-release
     $.get( "https://git.duniter.org/api/v4/projects/47/repository/tags", function( list ) {
         var max_tag = "";
