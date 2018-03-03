@@ -20,12 +20,12 @@ Ce document est un petit tutoriel pour configurer votre nœud Duniter fraichemen
                     * [WS2P public](#ws2p-public)
                       * [Définir un patch pour votre point d'accès ws2p](#définir-un-patch-pour-votre-point-daccès-ws2p)
                 * [Configurer BMA](#configurer-bma)
-                * [Qu'est ce que l'UPnP ?](#quest-ce-que-lupnp-)
+                * [Qu'est-ce que l'UPnP ?](#quest-ce-que-lupnp-)
                 * [Note sur le WS2P public (recommandé)](#note-sur-le-ws2p-public-recommandé)
         * [Checker votre configuration](#checker-votre-configuration)
         * [Synchroniser votre nœud](#synchroniser-votre-nœud)
         * [Lancement](#lancement)
-        * [Suivre les log](#suivre-les-log)
+        * [Suivre les logs](#suivre-les-logs)
         * [Aller plus loin](#aller-plus-loin)
     * [Via l'interface d'administration web](#via-linterface-dadministration-web)
 
@@ -37,27 +37,27 @@ Ce document est un petit tutoriel pour configurer votre nœud Duniter fraichemen
 
 ### Configurer le trousseau de clés cryptographiques
 
-Tout les nœuds duniter ont un trousseau de clés cryptographiques, qu'ils utilisent pour signer les informations qu'il transmettent sur le réseau. Il y a deux types de nœuds duniter :
+Tous les nœuds duniter ont un trousseau de clés cryptographiques, qu'ils utilisent pour signer les informations qu'ils transmettent sur le réseau. Il y a deux types de nœuds duniter :
 
-**1. les nœuds membre :** Si le trousseau de clé du nœud correspond a une identité membre, alors le nœud est de type "membre", et 
+**1. les nœuds membres :** Si le trousseau de clé du nœud correspond a une identité membre, alors le nœud est de type "membre", et 
 va automatiquement prendre part au calcul des blocs.
 
 **2. les nœuds miroir :** Si le trousseau de clé du nœud ne correspond pas à une identité membre, alors le nœud est de type "miroir", il ne pourra pas écrire de bloc, mais sera quand même utile pour la résilience du réseau ainsi que pour répondre aux requêtes des clients.
 
-Par défaut ce trousseau est aléatoire, et le nœud duniter est donc un nœud miroir. Vous pouvez modifier le trousseau de clés du noeud avec cette commande :
+Par défaut ce trousseau est aléatoire, et le nœud duniter est donc un nœud miroir. Vous pouvez modifier le trousseau de clés du nœud avec cette commande :
 
     duniter wizard key
 
 Attention le trousseau de clés renseigner via cette commande sera stocké en clair sur le disque !
-Pour éviter cela vous pouvez choisir de ne renseigner le trousseau de clés a utiliser qu'au lancement du nœud afin que votre trousseau de clés reste seulement en mémoire vive, pour cela ajoutez l'option `--keyprompt` a la commande de lancement du nœud.
+Pour éviter cela vous pouvez choisir de ne renseigner le trousseau de clés à utiliser qu'au lancement du nœud afin que votre trousseau de clés reste seulement en mémoire vive, pour cela ajoutez l'option `--keyprompt` à la commande de lancement du nœud.
 
 #### Avoir plusieurs nœuds avec le même trousseau de clés
 
-  Il est possible d'avoir plusieurs nœuds membre avec votre trousseau de clés membre mais dans ce cas vous devez attribuer un identifiant unique a chacun de vos nœuds, cet identifiant unique est nommé **préfixe** car sont unique rôle est de préfixer le nonce des blocs que vous calculez afin d'éviter que deux de vos nœuds ne calculent la même preuve.
+  Il est possible d'avoir plusieurs nœuds membres avec votre trousseau de clés membre mais dans ce cas vous devez attribuer un identifiant unique a chacun de vos nœuds, cet identifiant unique est nommé **préfixe** car son unique rôle est de préfixer le nonce des blocs que vous calculez afin d'éviter que deux de vos nœuds ne calculent la même preuve.
   
-Sur votre 1er nœud : Vous n'avez rien a faire, le préfixe vaut `1` par défaut.
+Sur votre 1er nœud : Vous n'avez rien à faire, le préfixe vaut `1` par défaut.
 
-Sur votre 2ème nœud : 
+Sur votre 2ème nœud :
 
     duniter config --prefix 2
 
@@ -73,19 +73,19 @@ Le préfixe doit être un entier compris entre `1` et `899`.
 
 #### Les API
 
-  En version `1.6.x` il existe deux API (Application Programming Interface) permettant a votre nœud duniter de communiquer a  vec d'autres programmes.
+  En version `1.6.x` il existe deux API (Application Programming Interface) permettant a votre nœud duniter de communiquer avec d'autres programmes.
 
-1. WS2P (WebSocketToPeer) : Cette API est dédiée a la communication inter-nœuds, c'est a dire entre votre nœud duniter et les autres nœud de la même monnaie. **WS2P est activée par défaut** sur votre nœud duniter.
-2. BMA  (Basic Merkled Api) : Cette vielle API est dédiée a la communication avec les logiciels clients (Cesium, Sakia, Silkaj), elle peut également être utilisée par n'importequel programme externe souhaitant requêter le réseau (un site web qui voudrais vérifier la présence d'une transaction en blockchain par exemple). BMA est veillissante, nous projettons de développer une nouvelle API client qui la remplacera. **BMA est désactivée par défaut**  sur votre nœud duniter.
+1. WS2P (WebSocketToPeer) : cette API est dédiée à la communication inter-nœuds, c'est-a-dire entre votre nœud duniter et les autres nœuds de la même monnaie. **WS2P est activée par défaut** sur votre nœud duniter.
+2. BMA  (Basic Merkled Api) : cette vielle API est dédiée à la communication avec les logiciels clients (Cesium, Sakia, Silkaj), elle peut également être utilisée par n'importe quel programme externe souhaitant requêter le réseau (un site web qui voudrait vérifier la présence d'une transaction en blockchain par exemple). BMA est veillissante, nous projettons de développer une nouvelle API client qui la remplacera. **BMA est désactivée par défaut**  sur votre nœud duniter.
 
 #### Configurer WS2P
 
 ##### notion de WS2P Public et WS2P Privée
 
-WS2p Privé = connexions WS2p sortantes.  
-WS2p public = connexions WS2p entrantes.
+WS2P Privé = connexions WS2P sortantes.  
+WS2P public = connexions WS2P entrantes.
 
-Une connexion WS2p entre deux nœuds duniter à toujours un sens, elle est initiée par l'un des nœuds qui est donc l'initiateur et l'autre est l'accepteur. Les connexions que votre nœud duniter initie avec d'autres nœuds duniter sont sortantes, elles dépendent de votre configuration WS2p privée. En revanche, les connexions que votre nœud duniter accepte d'un autre nœud sont entrantes, elles dépendent de votre configuration WS2P publique.
+Une connexion WS2P entre deux nœuds duniter a toujours un sens, elle est initiée par l'un des nœuds qui est donc l'initiateur et l'autre l'accepteur. Les connexions que votre nœud duniter initie avec d'autres nœuds duniter sont sortantes, elles dépendent de votre configuration WS2p privée. En revanche, les connexions que votre nœud duniter accepte d'un autre nœud sont entrantes, elles dépendent de votre configuration WS2P publique.
 
 ##### WS2P privé
 
@@ -93,7 +93,7 @@ Ce mode est activé par défaut et configuré automatiquement. Vous pouvez le d�
 
     duniter config --ws2p-noprivate
 
-Et pour le réactiver : 
+Et pour le réactiver :
 
     duniter config --ws2p-private
 
@@ -104,7 +104,7 @@ pour modifier le nombre maximal de connexions WS2p sortantes :
 
     duniter config --ws2p-max-private <count>
 
-Pour ajouter un clé a votre liste de clés préférés :
+Pour ajouter une clé a votre liste de clés préférés :
 
     duniter config --ws2p-prefered-add <pubkey>
     
@@ -118,23 +118,23 @@ Pour consulter la liste de vos clés préférés :
 
 ###### WS2PTOR Privé
 
-Pour demander a votre noeud duniter de passer par Tor dans les connexions privés qu'il établi avec d'autres noeuds il vous suffit de définir un proxy tor et de choisir la politique a adopter vis à vis des points d'accès ws2p normaux (option `--reaching-clear-ep`) :
+Pour demander à votre nœud duniter de passer par Tor dans les connexions privées qu'il établit avec d'autres nœuds il vous suffit de définir un proxy Tor et de choisir la politique à adopter vis-à-vis des points d'accès ws2p normaux (option `--reaching-clear-ep`) :
 
     duniter config --tor-proxy localhost:9050 --reaching-clear-ep tor
 
-Vous devrez en plus installer le *Tor Browser* ou *Tor Standalone* sur la même machine. Par défaut Tor écoute sur localhost sur le port 9050, si vous changez votre configuration de tor vous devrez évidemment mofidier la configuration de Duniter en conséquence.
+Vous devrez en plus installer le *Tor Browser* ou *Tor Standalone* sur la même machine. Par défaut, Tor écoute sur localhost sur le port 9050. Si vous changez votre configuration Tor vous devrez évidemment mofidier la configuration de Duniter en conséquence.
 
-Vous pouvez également opter pour un noeud mixte, qui contactera en clair les points d'accès classiques et qui ne se servira donc de Tor que pour contacter les point d'accès en .onion : 
+Vous pouvez également opter pour un nœud mixte, qui contactera en clair les points d'accès classiques et qui ne se servira donc de Tor que pour contacter les point d'accès en .onion :
 
     duniter config --tor-proxy localhost:9050 --reaching-clear-ep clear
 
-Enfin 3ème choix, vous pouvez décider de ne contacter que les points d'accès en .onion, les points d'accès en clair ne seront jamais contacter :
+Enfin 3ème choix, vous pouvez décider de ne contacter que les points d'accès en .onion, les points d'accès en clair ne seront jamais contactés :
 
     duniter config --tor-proxy localhost:9050 --reaching-clear-ep none
 
-/!\ Chaque fois que vous modifiez l'une de ses 2 options vous devez répéter l'autre en même temps sinon elle est réinitialisée !
+/!\ Chaque fois que vous modifiez l'une de ses deux options vous devez répéter l'autre en même temps sinon elle est réinitialisée !
 
-Enfin pour réinitialiser votre config Tor et revenir a un noeud parfaitement classique : 
+Enfin pour réinitialiser votre configuration Tor et revenir à un nœud parfaitement classique :
 
     duniter --rm-proxies
 
@@ -144,40 +144,40 @@ Vous pouvez aussi décider d'encapsuler Duniter dans une VM Tor comme whonix, da
 
 ##### WS2P Public
 
-Ce mode est désactivé par défaut, pour qu'il fonctionne vous devez configurer un point d'accès que les autres nœuds duniter pourront utilisé pour vous joindre.
+Ce mode est désactivé par défaut, pour qu'il fonctionne vous devez configurer un point d'accès que les autres nœuds duniter pourront utiliser pour vous joindre.
 
 Tout d'abord activez le mode WS2p public
 
     duniter config --ws2p-public
     
-###### Point d'Accès
+###### Point d'accès
     
-Pour que le WS2P Public fonctionne vous devez configurer un point d'accès que les autres nœuds duniter pourront utilisé pour vous joindre. il y a deux cas possibles : 
+Pour que le WS2P Public fonctionne vous devez configurer un point d'accès que les autres nœuds duniter pourront utiliser pour vous joindre. Il y a deux cas possibles :
 
-1. Vous souhaitez utiliser l'UPnP (activé par défaut) et alors vous n'avez rien a faire, duniter vas commander automatiquement votre box pour configurer un point d'accès.
+1. Vous souhaitez utiliser l'UPnP (activé par défaut) et alors vous n'avez rien à faire, duniter va commander automatiquement votre box pour configurer un point d'accès.
 
-2. Vous n'avez pas l'UPnP ou ne souhaitez pas l'utiliser, vous devez alors configurer manuellement un point d'accès : 
+2. Vous n'avez pas l'UPnP ou ne souhaitez pas l'utiliser, vous devez alors configurer manuellement un point d'accès :
 
     duniter config --ws2p-noupnp --ws2p-port PORT --ws2p-host HOST --ws2p-remote-port REMOTE_PORT --ws2p-remote-host REMOTE_HOST
     
 *Les options “remote” correspondent par exemple à une box qui ferait un NAT vers votre machine, ou à un nginx/apache qui ferait un reverse proxy vers votre instance Duniter.*
-Si votre nœud duniter est connecté a internet par l'intermédiaire d'une box, vous devrez configurer une redirection de port sur votre box en redirigeant le port de votre choix vers la machine qui éxécute votre nœud duniter. De plus, afin que l'ip locale de cette machine ne change pas, vous devez demander a votre box de lui attribuée un bail DHCP permanent.
+Si votre nœud duniter est connecté à internet par l'intermédiaire d'une box, vous devrez configurer une redirection de port sur votre box en redirigeant le port de votre choix vers la machine qui éxécute votre nœud duniter. De plus, afin que l'ip locale de cette machine ne change pas, vous devez demander à votre box de lui attribuer un bail DHCP permanent.
 
-###### Point d'Accès WS2PTOR
+###### Point d'accès WS2PTOR
 
-il vous suffit d'indiquer l'adresse .onion de votre hidden service dans l'option `--ws2p-remote-port` et Duniter ce configurera automatiquement en mode WS2PTOR.
+Il vous suffit d'indiquer l'adresse .onion de votre hidden service dans l'option `--ws2p-remote-port` et Duniter se configurera automatiquement en mode WS2PTOR.
 
-###### Nombre maximal de connexions WS2p Publiques
+###### Nombre maximal de connexions WS2P publiques
 
 Pour modifier le nombre maximal de connexions WS2p entrantes :
 
     duniter config --ws2p-max-public <count>
 
-###### Liste des clés invitées/privilégiées 
+###### Liste des clés invitées/privilégiées
 
-De la même façon que vous pouvez définir des clés préférés pour vos connexions WS2p sortantes, vous pouvez définir des clés invitées qui seront alors privilégiées. C'est a dire que si vous recevez plus de demande de connexion que le nombre maximal que vous avez configuré, les connexions initiés par des nœuds dont la clé publique fait partie de vos clés privilégiées seront prioritaires.
+De la même façon que vous pouvez définir des clés préférées pour vos connexions WS2p sortantes, vous pouvez définir des clés invitées qui seront alors privilégiées. C'est-à-dire que si vous recevez plus de demandes de connexion que le nombre maximal que vous avez configuré, les connexions initiées par des nœuds dont la clé publique fait partie de vos clés privilégiées seront prioritaires.
 
-Pour ajouter un clé a votre liste de clés privilégiées  :
+Pour ajouter une clé à votre liste de clés privilégiées  :
 
     duniter config --ws2p-privileged-add <pubkey>
 
@@ -189,7 +189,7 @@ Pour consulter la liste de vos clés privilégiées :
 
     duniter ws2p list-privileged
     
-##### Checker votre configuration WS2p
+##### Vérifier votre configuration WS2P
 
     duniter ws2p show-conf
     
@@ -197,15 +197,15 @@ Pour consulter la liste de vos clés privilégiées :
 
     duniter config --ws2p-remote-path <path>
     
-A n'utiliser que si vous souhaitez placer votre noeud duniter derrière un reverse proxy.
+À n'utiliser que si vous souhaitez placer votre nœud duniter derrière un reverse proxy.
 Cette option vous permet de rajouter un chemin pour votre point d'accès ws2p public.
 Votre point d'accès ws2p sera alors : `ws://host:port/patch`
 
-Notez que ws:// est a remplacé par wws:// si vous réglez le remote port sur 443.
+Notez que ws:// est à remplacer par wws:// si vous réglez le remote port sur 443.
 
 #### Configurer BMA
 
-la seule chose que vosu devez configurer c'est un point d'accès. Répondez au questions de la commande interactive suivante :
+La seule chose que vous devez configurer c'est un point d'accès. Répondez aux questions de la commande interactive suivante :
 
     duniter wizard network
     
@@ -223,24 +223,24 @@ Voici un exemple avec ma propre configuration chez moi :
     2017-10-01T19:02:33+02:00 - debug: Configuration saved.
     
 Je suis en filaire, sinon en wifi il faut choisir l'option wlan0.
-Max box ne supporte hélas pas l'ip v6, donc pas d'interface Ipv6 : None
-Je n'utilise pas l'UPnP donc je défini manuellement un port (ici 10901).
+Ma box ne supporte hélas pas l'IPv6, donc pas d'interface IPv6 : None
+Je n'utilise pas l'UPnP donc je définis manuellement un port (ici 10901).
 Remote IPv4 correspond a l'ip publique de ma box, vous pouvez la connaitre en visitant le site https://www.monip.org/
 Ici je n'ai pas configuré de domaine DNS pointant sur mon nœud duniter.
 
 Si comme moi vous n'utilisez pas UPnP, vous devez configurer manuellement une redirection de port sur votre box.
 
-#### Qu'est ce que l'UPnP ?
+#### Qu'est-ce que l'UPnP ?
 
 L’Universal Plug and Play (UPnP) est un protocole qui, s'il est activé sur votre box internet, permet aux programmes que vous utilisez de configurer eux même le réseau en "commandant" votre box.  
-L'UPnP à l'avantage d'être pratique car il vous évite d'avoir a configurer vous même le réseau, mais en contrepartie vous devez faire confiance aux programmes que vous utilisez car un programme malveillant peut utiliser l'UPnP pour ouvrir votre réseau de manière non désirée.  
+L'UPnP a l’avantage d'être pratique, car il vous évite d'avoir à configurer vous-même le réseau, mais en contrepartie vous devez faire confiance aux programmes que vous utilisez car un programme malveillant peut utiliser l'UPnP pour ouvrir votre réseau de manière non désirée.  
 Si vous n'avez pas peur de la ligne de commande et que vous êtes exigeant sur la sécurité de votre réseau local, nous vous recommendons de désactiver l'UPnP.  
 Si vous installez duniter sur un VPS ou un serveur dédié vous devrez de toute façon faire sans UPnP.
 
 #### Note sur le WS2P public (recommandé)
     
 Il faut nécessairement des nœuds avec ws2p public pour que le réseau duniter fonctionne, et plus il y a de nœuds avec ws2p public, plus le réseau est décentralisé.  
-Ce mode est facultatif ne serait-ce parce que techniquement il est parfois dificile voir impossible d'être accessible par l'extérieur (nœud derrière un routeur 4G par exemple).
+Ce mode est facultatif ne serait-ce parce que techniquement il est parfois difficile, voire impossible d'être accessible par l'extérieur (nœud derrière un routeur 4G par exemple).
 
 ### Checker votre configuration
 
@@ -260,11 +260,11 @@ Pour rejoindre le réseau d'une monnaie vous devez vous synchroniser avec un nœ
 
     duniter sync DUNITER_NODE_HOST DUNITER_NODE_PORT
 
-Pour la Ğ1, si vous ne connaissez aucun nœud vous pouvez choisir le noeud officiel `g1.duniter.org 10901`
+Pour la Ğ1, si vous ne connaissez aucun nœud vous pouvez choisir le nœud officiel `g1.duniter.org 10901`
 
 ### Lancement
 
-Il existe 4 commandes différentes selon que vous voulez daémoniser ou pas votre instance Duniter et selon que vous voulez ou pas utiliser la web-ui : 
+Il existe quatre commandes différentes selon que vous voulez daémoniser ou pas votre instance Duniter et selon que vous voulez ou pas utiliser la web-ui : 
 
     duniter start
     duniter direct_start
@@ -275,7 +275,7 @@ le préfixe `direct_` annule la daémonisation, mais vous devrez alors laisser v
 
 De plus les commandes `direct_start` et `direct_webstart` acceptent l'option `--keyprompt` (cf. partie trousseau de clés).
 
-### Suivre les log
+### Suivre les logs
 
     duniter logs
 
@@ -289,4 +289,4 @@ Consultez le guide des [commandes duniter](https://duniter.org/fr/wiki/duniter/c
 
 ## Via l'interface d'administration web
 
-(wiki en cours de rédaction...)
+(wiki en cours de rédaction…)
