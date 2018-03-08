@@ -3,6 +3,10 @@ body {
     padding-top: 85px;
 }
 
+#social .list-group-item {
+    padding: 10px 10px !important;
+}
+
 .navbar-search {
     margin-top: 10px;
 }

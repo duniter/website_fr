@@ -7,11 +7,15 @@ Authors: cgeek
 
 > **Pour un bug :** merci de suivre la procédure indiquée sur la page [Wiki > Rapporter un bug](../wiki/rapporter-un-bug).
 
-## Le forum
+## Le [forum monnaie-libre.fr](https://forum.monnaie-libre.fr)
 
-Préférez ce moyen pour échanger à votre rythme, et partager avec tous. Le forum est accessible à l'adresse : [https://forum.duniter.org](https://forum.duniter.org)
+C'est le forum a consulter si vous êtes nouveau et découvrez la monnaie libre.
 
-Vous devrez inscrire si vous souhaitez participer aux échanges. Mais la lecture simple ne requiert aucune inscription.
+Vous devrez inscrire si vous souhaitez participer aux échanges écrits, mais la simple lecture ne requiert aucune inscription.
+
+## Le [forum duniter.org](https://forum.duniter.org)
+
+Plus technique, ce forum est réservé **au développement logiciel** de Duniter.
 
 ![]({filename}/images/contact/forum.png)
 

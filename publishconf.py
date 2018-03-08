@@ -74,7 +74,8 @@ ACCEPTED_MENUS = ['comprendre',
          'wiki','faq',
          'a-propos']
 
-SOCIAL = (('Forum', 'https://forum.duniter.org', 'comment'),
+SOCIAL = (('Forum Monnaie Libre', 'https://forum.monnaie-libre.fr', 'comment'),
+          ('Forum Duniter', 'https://forum.duniter.org', 'comment'),
           ('Salon XMPP', 'https://chat.duniter.org', 'comments'),
           ('Bugs', '/fr/wiki/rapporter-un-bug', 'bug'),
           ('Mastodon', 'https://mastodon.xyz/@duniter', 'globe'),
