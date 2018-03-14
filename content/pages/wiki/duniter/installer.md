@@ -151,7 +151,55 @@ Pour les autres distributions, il existe un fichier contenant la version _bureau
 
 ## Docker
 
-Non disponible pour le moment.
+> Note : vous devez avoir installé Docker sur votre machine pour créer un conteneur Duniter.
+
+> Note : seule la version _serveur_ de Duniter existe sous Docker.
+
+Pour récupérer une image de la dernière version :
+
+    docker pull duniter/duniter-ts
+
+Vous pouvez ensuite créer le conteneur par la commande :
+
+    docker run -d -p127.0.0.1:9220:9220 -p10901:10901 -p20901:20901 --name duniter duniter/duniter-ts
+
+Sans autre option, le conteneur va automatiquement exécuter `duniter direct_webstart`. Le `-d` dans la commande permet d'exécuter l'image en tâche de fond (démon). L'option `--name` permet de donner un nom unique au conteneur qui sera ainsi plus facile à utiliser pour les commandes suivantes. Les différentes options `-p` permettent de connecter les ports du conteneur et ceux de l'hôte :
+
+* le port 9220 est le port de l'IHM web ; préciser l'adresse IP 127.0.0.1 (localhost) permet d'empêcher un ordinateur extérieur d'accéder au paramétrage du nœud ;
+* le port 10901 est utilisé pour l'accès BMA, l'export de ce port n'est donc pas nécessaire si vous n'activez pas le BMA ;
+* le port 20901 est utilisé pour l'accès WS2P.
+
+> Note : n'utilisez pas à la fois les options de démonisation de Duniter et de Docker (par exemple `docker run -d duniter/duniter-ts webstart`) sinon le conteneur s'arrêtera immédiatement.
+
+Une fois le nœud démarré, vous pouvez y accéder soit par l'IHM web en vous connectant à l'adresse http://localhost:9220, soit en ligne de commande :
+
+    docker exec -it duniter duniter sync g1.duniter.fr 443
+
+Dans la commande ci-dessus, le premier `duniter` est le nom donné au conteneur lors de son démarrage, tandis que le deuxième est la commande qui sera exécutée.
+
+Vous pouvez arrêter ou redémarrer le conteneur avec les commandes Docker standards :
+
+    docker stop duniter
+    docker start duniter
+
+### Utilisation d'un fichier trousseau
+
+Si un fichier est trouvé dans le conteneur à l'emplacement `/etc/duniter/keys.yml`, il est utilisé comme fichier de trousseau pour l'identité du nœud. Pour que ce fichier soit visible par Duniter, il faut lui mettre les bons droits d'accès. Si votre fichier `keys.yml` se trouve par exemple dans le répertoire `~/duniter/conf`, voici les commandes à exécuter pour qu'il soit pris en compte :
+
+    chown -R 1111:1111 ~/duniter/conf
+    chmod -R 644 ~/duniter/conf
+    docker run -d -p127.0.0.1:9220:9220 -p10901:10901 -p20901:20901 --mount src=~/duniter/conf,dst=/etc/duniter --name duniter duniter/duniter-ts
+
+> Note : certaines des commandes ci-dessus nécessitent des droits « administrateur », l'usage de `sudo` pourra être nécessaire.
+
+### Stockage externe de la configuration
+
+Normalement, la configuration et la base de données sont stockées dans le conteneur. Il est cependant possible de les stocker sur la machine hôte. Pour cela, il faut partager le répertoire `/var/lib/duniter`, en donnant les bons droits d'accès. Par exemple, pour que les données soient enregistrées dans le répertoire `~/duniter/data`, voici les commandes à exécuter :
+
+    chown -R 1111:1111 ~/duniter/data
+    docker run -d -p127.0.0.1:9220:9220 -p10901:10901 -p20901:20901 --mount src=~/duniter/data,dst=/var/lib/duniter --name duniter duniter/duniter-ts
+
+> Note : certaines des commandes ci-dessus nécessitent des droits « administrateur », l'usage de `sudo` pourra être nécessaire.
 
 ## Compilation manuelle
 
