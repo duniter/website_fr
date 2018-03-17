@@ -21,6 +21,7 @@ Ce document est un petit guide pour installer et déployer votre propre instance
     * [Autres distributions](#autres-distributions)
     * [Docker](#docker)
     * [Compilation manuelle](#compilation-manuelle)
+    * [Démarrage automatique](#demarrage-automatique)
 * [Windows](#windows)
 * [MacOS](#macos)
 
@@ -92,33 +93,7 @@ Pour démarrer votre nœud en tâche de fond (version _serveur_), exécutez la c
         
 > Consultez [les commandes Duniter](https://duniter.org/fr/wiki/duniter/commandes/) pour manipuler votre nœud serveur.
 
-### Activez le démarrage automatique
-
-> Le démarrage automatique n'est disponible que sur les versions _serveur_ à partir de la 1.6.15.
-
-Pour que le nœud serveur se lance automatiquement au démarrage de la machine, tapez la commande :
-
-    sudo systemctl enable duniter.service
-
-Par défaut, le serveur qui va démarrer ainsi le fera en tant qu'utilisateur `duniter` dans le répertoire `/var/lib/duniter`.
-
-Vous pouvez personnaliser le comportement du service en utilisant le principe de [drop-ins](https://coreos.com/os/docs/latest/using-systemd-drop-in-units.html). Par exemple, pour démarrer avec l'interface web, vous pouvez créer un fichier `/etc/systemd/system/duniter.service.d/10-web.conf` et y ajouter le contenu suivant :
-
-    [Service]
-    Environment="DUNITER_WEB=web"
-
-Les variables d'environnement que vous pouvez modifier pour le service sont :
-
-| Variable | Description |
-|----------|-------------|
-| `DUNITER_WEB` | Doit être vide pour un démarrage normal, ou _web_ pour démarrer l'interface web |
-| `DUNITER_HOME` | L'emplacement des fichiers du serveur, par défaut : `/var/lib/duniter/.config/duniter` |
-| `DUNITER_DATA` | Le nom (emplacement) de la base de données, par défaut : `duniter_default` |
-| `DUNITER_OPTS` | Diverses autres options à passer à la ligne de commande lors du (re-)démarrage |
-
-> Note : jusqu'à la version 1.6.17, `DUNITER_HOME` était par défaut égal à `/var/lib/duniter`.
-
-Vous pouvez aussi vous inspirer de [ce mode d'emploi](https://duniter.org/fr/wiki/duniter/lancement-au-boot/) pour mieux contrôler le service Duniter.
+Le nœud en version _serveur_ pour Ubuntu/Debian est éligible au [démarrage automatique](#demarrage-automatique) (_Systemd_).
 
 ## Gentoo 64 bits
 
@@ -134,6 +109,8 @@ Les _USE flags_ suivants permettent de contrôler ce qui va être généré :
 |--------|-------------|
 | `desktop` | Génère et installe la version _bureau_ au lieu de la version _serveur_ |
 | `gui` | Ajoute une interface graphique (obligatoire pour la version _bureau_, ajoute l'interface web en version _serveur_) |
+
+Le nœud en version _serveur_ pour Gentoo peut également être [démarré automatiquement](#demarrage-automatique).
 
 ## YunoHost
 
@@ -256,6 +233,53 @@ Allez sur la [page des publications](https://git.duniter.org/nodes/typescript/du
 
     bin/duniter plug duniter-ui@1.4.x
     sed -i "s/duniter\//..\/..\/..\/..\//g" node_modules/duniter-ui/server/controller/webmin.js
+
+## Démarrage automatique
+
+> Le démarrage automatique n'est disponible que sur les versions _serveur_.
+
+Depuis la version 1.6.15, des scripts de démarrage automatique sont livrés pour les distributions basées sur _Systemd_ ou _OpenRC_.
+
+Pour que le nœud serveur se lance automatiquement au démarrage de la machine, tapez la commande suivante avec les droits d'administration (`sudo`) :
+
+* pour _Systemd_ :
+
+    systemctl enable duniter.service
+
+* pour _OpenRC_ :
+
+    rc-update add duniter default
+
+Par défaut, le serveur qui va démarrer ainsi le fera en tant qu'utilisateur `duniter` dans le répertoire `/var/lib/duniter`.
+
+Vous pouvez personnaliser le comportement du service :
+
+* pour _Systemd_, en utilisant le principe de [drop-ins](https://coreos.com/os/docs/latest/using-systemd-drop-in-units.html) — par exemple, pour démarrer avec l'interface web, vous pouvez créer un fichier `/etc/systemd/system/duniter.service.d/10-web.conf` et y ajouter le contenu suivant :
+
+    [Service]
+    Environment="DUNITER_WEB=web"
+
+* pour _OpenRC_, en modifiant le fichier `/etc/conf.d/duniter`.
+
+Les variables d'environnement que vous pouvez modifier pour le service sont :
+
+| Variable | Type | Description |
+|----------|------|-------------|
+| `DUNITER_WEB` | _Systemd_ | Doit être vide pour un démarrage normal, ou `web` pour démarrer l'interface web |
+| `DUNITER_WEB` | _OpenRC_ | Démarre avec l'interface web si la valeur est définie et évaluée à vrai (`yes`, par exemple) |
+| `DUNITER_HOME` | tous | L'emplacement des fichiers du serveur, par défaut : `/var/lib/duniter/.config/duniter` |
+| `DUNITER_DATA` | tous | Le nom (emplacement) de la base de données, par défaut : `duniter_default` |
+| `DUNITER_KEYS` | _OpenRC_ | Si cette variable est définie, elle doit indiquer l'emplacement d'un fichier trousseau pour l'identité du nœud |
+| `DUNITER_WEB_HOST` | _OpenRC_ | Cette variable permet de modifier le nom d'hôte par défaut pour l'interface web |
+| `DUNITER_WEB_PORT` | _OpenRC_ | Cette variable permet de modifier le port par défaut pour l'interface web |
+| `DUNITER_GROUP` | _OpenRC_ | Le nom du groupe avec lequel le nœud est exécuté, par défaut : `duniter` |
+| `DUNITER_USER` | _OpenRC_ | Le nom de l'utilisateur avec lequel le nœud est exécuté, par défaut : `duniter` |
+| `DUNITER_OPTS` | _Systemd_ | Diverses autres options à passer à la ligne de commande lors du (re-)démarrage |
+| `DUNITER_SSD_OPTIONS` | _OpenRC_ | Options à passer à la commande `start-stop-daemon` |
+
+> Note : jusqu'à la version 1.6.17 (_Systemd_) ou 1.6.22 (_OpenRC_), `DUNITER_HOME` était par défaut égal à `/var/lib/duniter`.
+
+Vous pouvez aussi vous inspirer de [ce mode d'emploi](https://duniter.org/fr/wiki/duniter/lancement-au-boot/) pour mieux contrôler le service _Systemd_ Duniter.
 
 # Windows
 
