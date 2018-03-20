@@ -244,11 +244,11 @@ Pour que le nœud serveur se lance automatiquement au démarrage de la machine, 
 
 * pour _Systemd_ :
 
-    systemctl enable duniter.service
+        systemctl enable duniter.service
 
 * pour _OpenRC_ :
 
-    rc-update add duniter default
+        rc-update add duniter default
 
 Par défaut, le serveur qui va démarrer ainsi le fera en tant qu'utilisateur `duniter` dans le répertoire `/var/lib/duniter`.
 
@@ -256,8 +256,8 @@ Vous pouvez personnaliser le comportement du service :
 
 * pour _Systemd_, en utilisant le principe de [drop-ins](https://coreos.com/os/docs/latest/using-systemd-drop-in-units.html) — par exemple, pour démarrer avec l'interface web, vous pouvez créer un fichier `/etc/systemd/system/duniter.service.d/10-web.conf` et y ajouter le contenu suivant :
 
-    [Service]
-    Environment="DUNITER_WEB=web"
+        [Service]
+        Environment="DUNITER_WEB=web"
 
 * pour _OpenRC_, en modifiant le fichier `/etc/conf.d/duniter`.
 
