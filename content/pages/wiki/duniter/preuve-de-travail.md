@@ -46,7 +46,7 @@ La valeur numérique de la difficulté correspond directement à une plage d'emp
 
 Pour interpréter une difficulté il faut effectuer la division euclidienne de cette difficulté par 16. Exemple avec `70` :
 
-70 // 16 = **4** reste **6**. Donc les empreintes valides sont celles qui commencent par **4** zéros et dont le 5<sup>ème</sup> caractère est 9 (car on commence à `F` (index 0), puis on descend ... `E(1), D(2), C(3), B(4), A(5), 9(6)`). On écrit alors que les empreintes valides commencent par : `0000[0-9]`
+70 // 16 = **4** reste **6**. Donc les empreintes valides sont celles qui commencent par **4** zéros et dont le 5<sup>ème</sup> caractère est inférieur ou égal à 9 (car on commence à `F` (index 0), puis on descend ... `E(1), D(2), C(3), B(4), A(5), 9(6)`). On écrit alors que les empreintes valides commencent par : `0000[0-9]`
 
 > Oui mais l'empreinte d'un bloc sera toujours la même pour un bloc donné et n'a aucune raison de commencer par une suite particulière, donc comment fait-on pour trouver un bloc qui a comme par hasard une empreinte qui respecte la difficulté ?
 
