@@ -22,7 +22,13 @@ Exemple de plateformes d'échange compatible avec les crypto-monnaies Duniter co
 
 Simple groupe d'annonces sur le réseau privateur Facebook
 
-* [Ḡcoin, annonces en monnaie libre](https://www.facebook.com/groups/217329018743538/)  
+* [Ḡcoin, annonces en monnaie libre](https://www.facebook.com/groups/217329018743538/)
+
+Dépôt media regroupant les logos, banières et autres outils de communication visuels :
+
+* [Communication G1](https://git.duniter.org/communication/G1)
+* [Logos Logiciels](https://git.duniter.org/communication/logos)
+
 
 ## Écosystème logiciel
 
