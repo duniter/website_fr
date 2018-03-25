@@ -241,7 +241,7 @@ Signature de révocation. Champ à `null` si pas de révocation attachée.
 
 ##### hash (`VARCHAR(64) NOT NULL`)
 
-Empreinte SHA256 du document d'identité.
+`SHA256(uid ++ buid ++ pubkey)`
 
 ##### written (`BOOLEAN NULL`)
 
@@ -277,7 +277,9 @@ Clé publique ciblée par la certification.
 
 ##### target (`CHAR(64) NOT NULL`)
 
-Empreinte SHA256 de l'identité ciblée par la certification. Utile quand une identité n'est pas encore membre, car la clé publique peut encore créer autant d'identités qu'elle le souhaite. Le champ `target` permet de cibler de façon unique l'identité certifiée, même si la clé publique `to` est la même pour plusieurs identités.
+Empreinte SHA256 de l'identité ciblée par la certification, calculée selon le format suivant : 
+`SHA256(idty.uid ++ idty.buid ++ idty.pubkey)`  
+Utile quand une identité n'est pas encore membre, car la clé publique peut encore créer autant d'identités qu'elle le souhaite. Le champ `target` permet de cibler de façon unique l'identité certifiée, même si la clé publique `to` est la même pour plusieurs identités.
 
 > Note : `idty.hash = cert.target` permet d'obtenir les certifications reçues par une identité.
 
