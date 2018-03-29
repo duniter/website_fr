@@ -39,8 +39,7 @@ package "Common" {
     [pass_hand_to_common] ---> [common]
     [dal] ---> [instance_dal]
     [ws2p] ---> [listen_network_events]
-    [gva] ---> [listen_dal_requests]
-    [dasa] ---> [listen_dal_requests]
+    [listen_dal_requests]
 }
 
 package "DefaultModules" {
