@@ -35,30 +35,30 @@ package "CriticalModules" {
   [start_services] ---> [ws2p]
 }
 
-package "DefaultModules" {
-  [start_services] ---> [prover]
-  [start_services] ---> [ui]
-  package "Gva" {
-        [start_services] ---> [gva]
-        [ws2p] ---> [listen_network_events]
-        [common] ---> [listen_blockchain_events]
-    }
-}
-
-package "OptionalModules" {
-    package "Dasa" {
-        [start_services] ---> [dasa]
-        [ws2p] ---> [listen_network_events]
-        [common] ---> [listen_blockchain_events]
-    }
-}
-
 package "Common" {
     [pass_hand_to_common] ---> [common]
     [dal] ---> [instance_dal]
     [ws2p] ---> [listen_network_events]
     [gva] ---> [listen_dal_requests]
     [dasa] ---> [listen_dal_requests]
+}
+
+package "DefaultModules" {
+  [start_services] ---> [prover]
+  [start_services] ---> [ui]
+  package "Gva" {
+        [start_services] ---> [gva]
+        [ws2p] ---> [gva_listen_network_events]
+        [common] ---> [gva_listen_blockchain_events]
+    }
+}
+
+package "OptionalModules" {
+    package "Dasa" {
+        [start_services] ---> [dasa]
+        [ws2p] ---> [dasa_listen_network_events]
+        [common] ---> [dasa_listen_blockchain_events]
+    }
 }
 
 @enduml
