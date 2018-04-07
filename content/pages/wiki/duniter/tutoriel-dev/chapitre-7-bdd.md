@@ -327,6 +327,10 @@ Horodatage du moment où la certification périmera hors blockchain.
 
 Piscine des adhésions : table où les adhésions en attente d'inscription dans la blockchain sont répertoriées. Lorsqu'une adhésion est finalement incluse dans un bloc, elle disparaît de la table `membership`.
 
+##### membership (`CHAR(3) NOT NULL`)
+
+Type d'adhésion : `IN` ou `OUT`.
+
 ##### issuer (`VARCHAR(50) NOT NULL`)
 
 Clé publique de l'émetteur de l'adhésion.
