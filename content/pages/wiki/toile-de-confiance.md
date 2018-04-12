@@ -10,15 +10,18 @@ Aucune connaissance particulière n'est requise pour comprendre ce qui suit, car
 Cependant nous irons assez loin, nous rentrerons nottament dans le détail du protocole duniter (uniquement sur les parties toile de confiance biensûr) ainsi que dans des aspects de théorie des graphes car cela me semble essentiel pour vraiment comprendre tous les rouages d'une toile de confiance duniter.
 Rassurez-vous, nous allons y aller progressivement, nous commencerons par une vision d'ensemble puis nous détaillerons graduellement :)
 
-## Prérequis
+# Prérequis
+
 Avant de lire cet article, il est vivement recommendé d'étudier la [licence Ğ1](https://duniter.org/fr/wiki/licence-g1) et de lire les pages suivantes :
+
 * [Devenir membre de la toile de confiance Ğ1](../devenir-membre)
 * [Certifier de nouveaux membres](../certifier-de-nouveaux-membres)
 * [Question Fréquentes sur la toile de confiance](../faq)
 
-## Pourquoi a-t-on besoin d’une toile de confiance ?
+# Pourquoi a-t-on besoin d’une toile de confiance
 
 Nous avons besoin d'une toile de confiance pour répondre à deux objectifs :
+
 1. S'assurer que chaque être humain membre de la monnaie co-créer bien le même nombre de Dividendes Universel par intervalles de création (dans le cas de la Ğ1 cet intervalle est `86400` (=1 jour exprimé en secondes), c'est le paramètre monétaire* `dt`).
 2. Identifier les calculateurs de blocs pour leur affecter une difficulté personnalisée. Cela est nécessaire afin d'éviter que le mécanisme de [preuve de travail](../duniter/preuve-de-travail) ne permette une centralisation du support de la monnaie (la blockchain) comme c'est hélas le cas dans de nombreuses crypto-monnaies non-libres.
 
@@ -33,6 +36,7 @@ Nous ne traiterons pas ici le deuxième objectif relatif à la preuve de travail
 Revenons donc au premier objectif, s'assurer que chaque humain n'ait qu'un seul compte membre.
 En pratique, le risque zéro n'existe pas, notre objectif n'est donc pas de concevoir une toile de confiance au sein de laquelle la fraude serait impossible (ce qui est de toute manière impossible).
 Voici donc une reformulation plus réaliste en quatre sous-objectifs :
+
 1. Rendre l’acte de certification suffisamment lourd pour obliger les membres à un minimum de vigilance.
 2. Rendre la fraude suffisamment difficile pour qu'elle soit marginale.
 3. Éviter que les éventuelles attaques sybil aient un impact significatif sur la monnaie. (_que les faux DU créés aient un poids négligeable par rapport à la masse monétaire légitime._)
@@ -55,29 +59,29 @@ Mais, nous serions alors dépendants de ces systèmes d'identification centralis
 De plus, les membres d'une monnaie libre peuvent être de n'importe quelle nationalité ou culture, nous perdrions cette universalité en dépendant d'un système d'identification étatique. De plus, cela exclurait les sans-papiers et les apatrides.
 Il est essentiel pour nous de ne dépendre d'aucun état ni d'aucune institution. Nous ne dépendons que du réseau internet, et encore, il existe d'autres réseaux, si internet vennait a s'éteindre, les humains membres d'une monnaie libre pourrait très bien créer leur propre réseau d'information, c'est déjà ce que font certaines d’associations en créant leurs propres bout de réseau, donc c'est possible.
 
-## Quelques bases en théorie des graphes
+# Quelques bases en théorie des graphes
 
-### Un peu de vocabulaire
+## Un peu de vocabulaire
 
-- graphe : ensemble de points (nommés sommets) reliées entre eux par des flèches (nommées arcs).
-- 
-- graphe simple : graphe sans boucle (arc reliant un sommet à lui-même) et sans arcs superposés (plusieurs arcs reliant le même couple de sommets dans le même sens).
-- 
-- graphe orientés : graphe ou les arcs ont un sens, l'arc A –> B est donc différent de l'arc B –> A.
-- 
-- extrémité initiale et finale d'un arc : l'arc A –> B a pour extrémité initiale A et pour extrémité finale B.
-- 
-- sommet isolé : sommet n'étant lié à aucun arc.
-- 
-- degré d'un sommet : nombre d'arcs reliant ce sommet (dans les deux sens).
-- 
-- demi-degré extérieur d'un sommet A : nombre d'arcs ayant pour extrémités initiales le sommet A
-- 
-- demi-degré intérieur d'un sommet A : nombre d'arcs ayant pour extrémités finales le sommet A
-- 
-- chemin : trajet qu'il faut suivre pour se rendre d'un sommet A à un sommet B en respectant le sens des arcs. Le nombre d'arcs traversés est la longueur du chemin.
+* graphe : ensemble de points (nommés sommets) reliées entre eux par des flèches (nommées arcs).
 
-### Définition d’une toile de confiance Duniter
+* graphe simple : graphe sans boucle (arc reliant un sommet à lui-même) et sans arcs superposés (plusieurs arcs reliant le même couple de sommets dans le même sens).
+
+* graphe orientés : graphe ou les arcs ont un sens, l'arc A –> B est donc différent de l'arc B –> A.
+
+* extrémité initiale et finale d'un arc : l'arc A –> B a pour extrémité initiale A et pour extrémité finale B.
+
+* sommet isolé : sommet n'étant lié à aucun arc.
+
+* degré d'un sommet : nombre d'arcs reliant ce sommet (dans les deux sens).
+
+* demi-degré extérieur d'un sommet A : nombre d'arcs ayant pour extrémités initiales le sommet A
+
+* demi-degré intérieur d'un sommet A : nombre d'arcs ayant pour extrémités finales le sommet A
+
+* chemin : trajet qu'il faut suivre pour se rendre d'un sommet A à un sommet B en respectant le sens des arcs. Le nombre d'arcs traversés est la longueur du chemin.
+
+## Définition d’une toile de confiance Duniter
 
 Les toiles de confiance Duniter (une par monnaie) sont des graphes simples orientés et sans sommets isolés.
 Les sommets en sont les membres et les arcs les certifications.
@@ -101,20 +105,20 @@ Résumons tout cela avec un exemple :
 
     A -> B -> C
          |
-	 \--> D
+         \--> D
 
 Si pour une raison x ou y, A perd son statut de membre, alors la toile s'effondre et tous les autres membres perdent aussi leurs statuts de membre en cascade. Pour éviter cela, la certification A –> B restera valide jusqu'à sa date d'expiration, laissant à B le temps de se faire certifier par C ou D par exemple.
 
 L'absence de sommet isolé implique également que lorsque qu'un nouveau membre est ajouté à la toile de confiance il faut ajouter en même temps (c'est-à-dire dans le même bloc) l'ensemble des certifications qui lui permettent de devenir membre.
 C'est pourquoi nous avons besoin d'un espace de stockage intermédiaire qui contient les identités **en attente** de devenir membre ainsi que les certifications émises par des membres envers ces identités, c'est espace c'est la fameuse "piscine" des nœuds Duniter (que l'on aurait aussi pu nommer "bac à sable" puisque dans le code de Duniter c'est le terme `sandbox` qui est utilisé). Notons que ces "piscines" contiennent également d'autres types de documents non mentionnés ici.
 
-## Définition des règles d’une toile de confiance Duniter
+# Définition des règles d’une toile de confiance Duniter
 
 Les toiles de confiance Duniter (une par monnaie) sont régies par huit règles présentées ci-après.
 L'application de ces règles dépendent de onze paramètres variables d'une monnaie à l'autre. La valeur de dix d'entre eux sont fixés dans le bloc zéro, le onzième paramètre `msPeriod` est écrit en dur dans le code, car il a été ajouté après l'écriture du bloc zéro de la Ğ1.
 Cette partie ne présente que les définitions des règles, les raisons d'être de ces règles sont présentés dans le cadre de l'historicité de leur apparition dans la partie "Origine des règles et cas de la  Ğ1".
 
-### 1. Règle de distance et membres référents
+## 1. Règle de distance et membres référents
 
   Paramètres : **StepMax** et **xPercent**
 
@@ -135,14 +139,14 @@ Dans un toile aboutie, c'est-à-dire dans une toile ou chaque membre a certifié
 La vérification de la règle de distance étant couteuse en calcul, elle ne s'applique que lors de l'obtention et du renouvellement du statut de membre. (Voir partie "renouvellement du statut de membre").
 _Cas particulier : la règle de distance ne s'applique pas au bloc zéro (écriture de la toile initiale)._
 
-### 2. Règle du nombre minimal de certifications reçus
+## 2. Règle du nombre minimal de certifications reçus
 
   Paramètre : **sigQty**
 
 C'est la règle la plus simple, elle stipule que tout membre doit à tout moment (comprendre à tous blocs) être le destinataire d'au moins `sigQty` certifications actives.
 Si ne serait-ce que pour le temps d'un seul bloc, un membre A se retrouve avec moins de `sigQty` certifications actives reçus, alors il perd le statut de membre à ce bloc. Il doit alors publier une demande de renouvellement de son adhésion.
 
-### 3. Règle de renouvellement de l’adhésion
+## 3. Règle de renouvellement de l’adhésion
 
   Paramètres : **msValidity**, **msPeriod** et **msWindow**
 
@@ -153,7 +157,7 @@ Lorsqu'une demande de renouvellement d'adhésion est émise, elle est stockée e
 
 Tout membre dont le dernier renouvellement date de plus de `msValidity` secondes perd le statut de membre au premier bloc ou cette durée est atteinte. Dans ce cas, l'ancien membre dispose à nouveau d'une durée de `msValidity` secondes pour redevenir membre par cette même procédure de renouvellement. Passé ce délai, donc `2 × msValidity` après le dernier renouvellement, l'ancien membre est exclu définitivement et ne pourra plus jamais redevenir membre avec ce compte. S'il souhaite redevenir membre il devra se créer un nouveau compte à partir de zéro.
 
-### 4. Règle d’expiration des certifications
+## 4. Règle d’expiration des certifications
 
   Paramètre : **sigValidity**
 
@@ -161,7 +165,7 @@ Toute certification inscrite en blockchain expire **sigValidity** secondes aprè
 
 /!\ L'émission et l'écriture d'une certification ont lieu à des instants différents. Lorsque le membre A émet une certifiation à un instant t1, elle est d'abord stockée en piscine à cet instant t1, puis sera écrite en blockchain à un instant t2, dès que les règles de la toile le permettent, il peut y avoir plusieurs semaines d'écarts entre t1 et t2 !!
 
-### 5. Règle du stock limité de certifications actives
+## 5. Règle du stock limité de certifications actives
 
   Paramètre : **sigStock**
 
@@ -169,25 +173,25 @@ Par certification active nous entendons certification inscrite en blockchain et 
 
 À tout bloc et pour tout membre, l'ensemble des certifications émises par ce membre et actives doit être inférieur ou égal à sigStock. Lorsque ce quota est atteint, le membre en question devra attendre qu'une certification active dont il est l'émetteur expire pour pouvoir en écrire une autre.
 
-### 6. Règle de l’intervalle d’écriture entre deux certifications
+## 6. Règle de l’intervalle d’écriture entre deux certifications
 
   Paramètre : **sigPeriod**
 
 Lorsqu'une certification émise par un membre A est écrite en blockchain, aucune autre certification émise par A ne pourra être écrite en blockchain avant `sigPeriod` secondes.
 
-### 7. Règle de la fenêtre d’écriture d’une certification
+## 7. Règle de la fenêtre d’écriture d’une certification
 
   Paramètre : **sigWindow**
 
 Lorsqu'une certification est émise par un membre A, elle restera stockée en "piscine" pour au plus `sigWindow` secondes. Si la certification en question n'a toujours pas été écrite en blockchain passé ce délai, elle est purement supprimée.
 
-### 8. Règle de la fenêtre d’écriture d'une identité 
+## 8. Règle de la fenêtre d’écriture d'une identité
 
   Paramètre : **idtyWindow**
 
 Lorsqu'une identitée est émise, elle restera stockée en "piscine" pour au plus `idtyWindow` secondes. Si l'identitée en question n'a toujours pas été écrite en blockchain passé ce délai, elle est purement supprimée.
 
-## Le cas particulier de la toile initiale au bloc zéro
+# Le cas particulier de la toile initiale au bloc zéro
 
 L'application des règles présentées ne rend l'expansion d'une toile possible qu’à partir d'une toile pré-éxistante, il y a donc un cas particulier ou certaines règles ne s'appliquent pas : l'écriture du bloc zéro.
 
@@ -196,9 +200,9 @@ Seules les règles 2 et 5 s'appliquent lors de l'écriture du bloc zéro.
 Dans la pratique, c'est l'humain qui génère le bloc zéro qui choisi manuellement quelles identités sont écrites dans le bloc zéro, mais toutes les identités et certifications écrites dans le bloc zéro doivent respecter les règles 2 et 5 et de plus le bloc zéro doit être signé avec la clé privée d'une des identités écrites.
 Dès lors qu'un bloc zéro correct a été généré, toute identité inscrite dans le bloc zéro peut soumettre le bloc suivant, de fait l'auteur du bloc zéro n'a donc plus la main.
 
-## Origine des règles et cas de la Ğ1
+# Origine des règles et cas de la Ğ1
 
-### 1. Distance et taille limite
+## 1. Distance et taille limite
 
 La règle de distance a pour objectif de limiter la taille maximale d'une région sybil ainsi que la taille maximale de la communauté monétaire.
 `xpercent` permet d'éviter une minorité de blocage (membres trop peu actifs).
@@ -240,19 +244,15 @@ Autre moyen de nous prémunir d'une attaque sybil, si elle était suffisamment l
 Le problème c'est qu'une attaque sybil peut être propagée par des comptes robots qui se certifieront très rapidement et de manière optimale, comment donc pourrions-nous les ralentir de force ?
 En imposant un délai minimal entre deux certifications !
 
-### 2. une question de temps
+## 2. une question de temps
 
 Nous venons de voir que pour ralentir de déploiement d'une attaque sybil afin d'avoir le temps de la détecter et de prendre des mesures, nous pourrions imposer un délai minimal entre deux écritures de certifications par le même compte. C’est la raison pour laquelle nous avons créé le paramètre `sigPeriod`.
 
 Voici un graphe d'évolution de la taille d'une région sybil en fonction de `sigPeriod` et de `stepAttackers` :
 
-f[stepAttackers](t) = {p=0, t
-			p=1, t(sigStock/5)
-			...p=n, t(sigStock/5)^n}
-
 ![graphe taille sybil en fonction de sigPeriod et stepAttackers]({filename}/images/wiki/toile-de-confiance/graphe-sigPeriod.png)
 
-### 3. Une confiance éternelle ? (sigValidity, msValidity)
+## 3. Une confiance éternelle ? (sigValidity, msValidity)
 
 Si toute certification restait valable at vitam eternam, cela serait problématique pour au moins deux raisons :
 D'une part il est important que les membres qui décédent cessent de créer des DU.
@@ -270,7 +270,7 @@ Trois ans nous semblait trop long, nous avons donc choisi deux ans.
 Mais considérer qu'un mort va continuer à créer des DU dont personne ne pourra bénéficier pendant une durée pouvant aller jusqu'à deux ans, cela nous semblait trop. C'est pourquoi nous avons opté pour une durée de vie plus faible concernant le renouvellement de l'adhésion.
 Nous avons donc choisi un an. Mais, nous aurions aussi pu choisir six mois. La valeur de **msValidity** est au final assez secondaire et pourrait facilement être modifée dans le futur si la communauté le souhaite.
 
-### 4. Éviter que les piscines ne deviennent des dépôts sédimentaires (idtyWindow, sigWindow, msWindow)
+## 4. Éviter que les piscines ne deviennent des dépôts sédimentaires (idtyWindow, sigWindow, msWindow)
 
 Il faut nettoyer régulièrement les piscines pour éviter qu'elles n'atteignent des tailles astronomiques et pour garantir que même les petites machines peu puissantes puissent exécuter un nœud Duniter.
 Pour ce faire il faut que les identités et certifications en attentes restent le moins longtemps possible en piscine, elles doivent cependant y rester suffisamment longtemps pour avoir une chance raisonnable d'être inscrites en blockchain.
@@ -278,16 +278,16 @@ Pour la Ğ1, nous avons estimé que deux mois étaient un minimum pour que tous 
 Typiquement, choisir sept semaines aurait été plus compliqué à intégrer et à retenir. Nous voulions que les durées à connaître restent le plus facilement intégrable et mémorisables.
 Un mois nous semblait trop court, la valeur de deux mois s'est donc imposée. Et par souci de simplicité, nous avons appliqué cette même valeur de deux mois aux trois paramètres `idtyWindow`, `sigWindow` et `msWindow`.
 
-### 5. Éviter de limiter les membres connaissant beaucoup de monde (sigStock)
+## 5. Éviter de limiter les membres connaissant beaucoup de monde (sigStock)
 
 De nombreuses études sociologiques montrent qu'un humain connait en moyenne cinquante personnes. Bien entendu, c'est une moyenne. Certains humains en connaissent beaucoup plus, d'autres beaucoup moins.
 Là encore, nous avons tranché par le critère "nombre facile à retenir".
 Bien que l'impact de `sigStock` sur la taille maximale des régions sybil soit secondaire, il convient tout de même de ne pas choisir un `sigStock` trop grand !
 150 nous semblait trop élevé, nous avons donc choisi 100.
 
-### 6. Se prémunir des minorités de blocage (xpercent)
+## 6. Se prémunir des minorités de blocage (xpercent)
 
-### 7. L'ajout de msPeriod, une protection anti-spam
+## 7. L'ajout de msPeriod, une protection anti-spam
 
 Ce paramètre un peu à part, rajouté après le bloc zéro, ne sert pas à réguler la toile de confiance mais à proteger le réseau informatique qui porte la monnaie contre les attaques de type spam.
 En effet, des membres malveillants qui souhaitent nuire au bon fonctionnement de la monnaie pourraient demander leur renouvellement à chaque bloc (toutes les cinq minutes), ou pire encore, envoyer des centaines de requêtes de renouvellement par minute pour submerger les nœuds Duniter. En l'absence de limitation, les nœuds Duniter sont cencés traiter toutes les requêtes de renouvellement, même si l’adhésion a été renouvellées il y a cinq minutes !
