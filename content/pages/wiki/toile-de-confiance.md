@@ -252,6 +252,13 @@ Voici un graphe d'évolution de la taille d'une région sybil en fonction de `si
 
 ![graphe taille sybil en fonction de sigPeriod et stepAttackers]({filename}/images/wiki/toile-de-confiance/impact_sig_period.png)
 
+On constate que le paramètre `sigPeriod` a une influence très forte sur la vitesse de propagation d'une région sybil, il nous faut donc choisir un `sigPeriod` suffisamment élevé pour que les zones légitimes de la toile puissent croitre au moins aussi vite que les régions sybil.
+
+De plus, un `sigPeriod` élevé rend l'acte de certification plus couteux, et plus cet acte est couteux plus cela incite l'utilisateur a certifier avec parcimonie.
+Il y a donc beaucoup d'avantages a choisir un `sigPeriod` élevé, et pas d'inconvénient techniques, nous sommes donc parti sur 5 jours.
+
+Nous aurions aussi pu choisir 7 jours (=1 semaine) par souci de simplicité, mais un autre idée sous-tendais le choxi ed 5 jours plutot que 7 : les rythme de nos sociétés. Certifier demande de prendre du temps pour s'assurer du bon respect de la licence Ğ1, et la plupart des humains on davantage de temps le week-end, l'idée était donc de permettre a un utilisateur qui émettrais 1 certification par week-end de ne pas être contraint par sigPeriod, nous nous sommes donc caler sur la durée d'une semaine ouvrée (5jours), plutôt qu'une semaine complète (7 jours).
+
 ## 3. Une confiance éternelle ? (sigValidity, msValidity)
 
 Si toute certification restait valable at vitam eternam, cela serait problématique pour au moins deux raisons :
@@ -286,6 +293,12 @@ Bien que l'impact de `sigStock` sur la taille maximale des régions sybil soit s
 150 nous semblait trop élevé, nous avons donc choisi 100.
 
 ## 6. Se prémunir des minorités de blocage (xpercent)
+
+Il est très facile de devenir membre référent, ainsi une attaque possible pourrait consister a créer une région sybil de membres référents. une telle région sybil croitrai beaucoup plus lentement, mais elle pourrait permettre de bloquer le reste de la toile légitime en jouant sur règle de distance. C'est la raison pour laquelle la règle de distance ne doit pas se baser sur 100% des membres référents. Nous avons donc décider de créer un paramètre `xpercent` qui définie qu'elle proportion des membres référents doivent être a moins de 5 pas de chacun.
+
+Cette proportion doit etre suffisamment faible pour empecher une minorité de blocage (des sybil référents qui serait trop loin des membres légitimes). Mais paradoxalement cette proportion doit également etre suffisament élevée pour que la règle de distance limtie bien la taille maximale des régions sybil. Le paramètre `xpercent` fût l'un des plus difficile a définir, nous nous autorisons donc a ajuster sa valeur au fil de l'expérience Ğ1 si nous constatons que cela est nécessaire.
+
+Nous nous sommes inspirés du principe des 80-20 : si au moins 20% des membres s'assurent de bien densifier les zones légitimes de la toile alors 80% des référents devraient se trouver a moins de 5 pas de chaque membre. 80% est donc une valeur maximale pour `xpercent`, au dessus la règle de distance pourrait etre trop contraignante sur les usages légitimes. Par souci de sécurité, nous avons opter pour la valeur maximale possible.
 
 ## 7. L'ajout de msPeriod, une protection anti-spam
 
