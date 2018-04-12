@@ -207,7 +207,7 @@ Dès lors qu'un bloc zéro correct a été généré, toute identité inscrite d
 La règle de distance a pour objectif de limiter la taille maximale d'une région sybil ainsi que la taille maximale de la communauté monétaire.
 `xpercent` permet d'éviter une minorité de blocage (membres trop peu actifs).
 
-![zone sybil]({filename}/images/wiki/toile-de-confiance/zone-sybil.png)
+![zone sybil]({filename}/images/wiki/toile-de-confiance/wot-sybil.jpg)
 
 Les régions sybil sont isolés du reste du graphe, car les comptes sybil ne reçevrons de certifications que de la part d'autres comptes sybil ou de la part des auteurs de l'attaque. Ainsi, tout plus court chemins entre un membre légitime et un compte sybil passe forcément par un auteur de l'attaque. La limite de la profondeur de la région sybil dépend donc de la distance maximum entre les auteurs de l'attaque et les xpercent% membres référents les plus proches, cette distance caractéristique est nommée `stepAttackers`.
 La taille maximale d'une région sybil crée par sigQty membres malveillants dépend du levier L=sigQty/sigStock :
@@ -224,7 +224,7 @@ Sauf que dans les faits, la plupart des membres ne consommeront pas tout leurs s
 
 Notre toile de confiance peut donc être dimensionnée avec seulement deux paramètres, notre objectif avec la Ğ1 est de créer une zone économique libre de l'ordre du million d'utilisateurs, voyons donc quelles combinaisons du couple (sigQty;stepMax) permettent d'attendre le million :
 
-![graphe WoTmoy en fonction de sigQty et stepMax]({filename}/images/wiki/toile-de-confiance/graphe-WoTmoy.png)
+![graphe WoTmoy en fonction de sigQty et stepMax]({filename}/images/wiki/toile-de-confiance/wot-moy.png)
 
 La taille maximale d'une région sybil croît linéairement par rapport à sigQty mais exponentionellement par rapport à stepMax, donc pour avoir une toile la plus solide possible, nous devons minimiser la valeur de stepMax. Le graphe ci-dessus nous montre que la valeur de stepMax la plus faible permettant d'attendre le million de membres est de cinq.
 Pour la valeur de sigQty nous avons le choix entre quatre pour atteindre 1,2 million ou cinq pour atteindre le demi million.
@@ -248,9 +248,9 @@ En imposant un délai minimal entre deux certifications !
 
 Nous venons de voir que pour ralentir de déploiement d'une attaque sybil afin d'avoir le temps de la détecter et de prendre des mesures, nous pourrions imposer un délai minimal entre deux écritures de certifications par le même compte. C’est la raison pour laquelle nous avons créé le paramètre `sigPeriod`.
 
-Voici un graphe d'évolution de la taille d'une région sybil en fonction de `sigPeriod` et de `stepAttackers` :
+Voici un graphe d'évolution de la taille d'une région sybil en fonction de `sigPeriod` :
 
-![graphe taille sybil en fonction de sigPeriod et stepAttackers]({filename}/images/wiki/toile-de-confiance/graphe-sigPeriod.png)
+![graphe taille sybil en fonction de sigPeriod et stepAttackers]({filename}/images/wiki/toile-de-confiance/impact_sig_period.png)
 
 ## 3. Une confiance éternelle ? (sigValidity, msValidity)
 
