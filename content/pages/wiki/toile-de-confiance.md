@@ -209,7 +209,7 @@ Dès lors qu'un bloc zéro correct a été généré, toute identité inscrite d
 La règle de distance a pour objectif de limiter la taille maximale d'une région Sybil ainsi que la taille maximale de la communauté monétaire.
 `xpercent` permet d'éviter une minorité de blocage (membres trop peu actifs).
 
-![zone Sybil]({filename}/images/wiki/toile-de-confiance/wot-Sybil.jpg)
+![zone Sybil]({filename}/images/wiki/toile-de-confiance/wot-sybil.jpg)
 
 Les régions Sybil sont isolées du reste du graphe, car les comptes Sybil ne recevront de certifications que de la part d'autres comptes Sybil ou de la part des auteurs de l'attaque. Ainsi, tout plus court chemin entre un membre légitime et un compte Sybil passe forcément par un auteur de l'attaque. La limite de la profondeur de la région Sybil dépend donc de la distance maximum entre les auteurs de l'attaque et les xpercent% membres référents les plus proches, cette distance caractéristique est nommée `stepAttackers`.
 La taille maximale d'une région Sybil créée par `sigQty` membres malveillants dépend du levier L=sigQty/sigStock :
