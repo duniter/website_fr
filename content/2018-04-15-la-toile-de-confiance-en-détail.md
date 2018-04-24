@@ -289,7 +289,7 @@ Pour la Ğ1, nous avons estimé que deux mois était un minimum pour que tous le
 Typiquement, choisir sept semaines aurait été plus compliqué à intégrer et à retenir. Nous voulions que les durées à connaître restent le plus facilement intégrables et mémorisables.
 Un mois nous semblait trop court, la valeur de deux mois s'est donc imposée. Et par souci de simplicité, nous avons appliqué cette même valeur de deux mois aux trois paramètres `idtyWindow`, `sigWindow` et `msWindow`.
 
-## 5. Éviter de limiter les membres connaissant beaucoup de monde (`sigStock`)
+## 5. Limiter les membres connaissant beaucoup de monde (`sigStock`)
 
 De nombreuses études sociologiques montrent qu'un humain connaît en moyenne cinquante personnes. Bien entendu, c'est une moyenne. Certains humains en connaissent beaucoup plus, d'autres beaucoup moins.
 Là encore, nous avons tranché par le critère « nombre facile à retenir ».
