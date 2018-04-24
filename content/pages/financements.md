@@ -30,7 +30,7 @@ Toutes les décisions d'attribution de financement seront publiquement consultab
 
 ## Historique des attributions
 
-Pour vérifier les versements, vous pouvez consulter [les mouvements du portefeuille](https://g1.duniter.fr/#/app/wot/78ZwwgpgdH5uLZLbThUQH7LKwPgjMunYfLiCfUCySkM8/.
+Pour vérifier les versements, vous pouvez consulter [les mouvements du portefeuille](https://g1.duniter.fr/#/app/wot/78ZwwgpgdH5uLZLbThUQH7LKwPgjMunYfLiCfUCySkM8/).
 
 * Versement le 08/03/2018 de 100,00Ğ1 à 10 contributeurs
 * Versement le 18/04/2018 de 100,00Ğ1 à 10 contributeurs
