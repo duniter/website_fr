@@ -48,7 +48,7 @@ Par défaut ce trousseau est aléatoire, et le nœud duniter est donc un nœud m
 
     duniter wizard key
 
-Attention le trousseau de clés renseigner via cette commande sera stocké en clair sur le disque !
+Attention le trousseau de clés renseigné via cette commande sera stocké en clair sur le disque !
 Pour éviter cela vous pouvez choisir de ne renseigner le trousseau de clés à utiliser qu'au lancement du nœud afin que votre trousseau de clés reste seulement en mémoire vive, pour cela ajoutez l'option `--keyprompt` à la commande de lancement du nœud.
 
 #### Avoir plusieurs nœuds avec le même trousseau de clés
